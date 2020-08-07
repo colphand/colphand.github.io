@@ -1,0 +1,83 @@
+body, #hero, #header {
+    background-color: #f6f8fb;
+}
+
+#header {
+    border-bottom: 0px solid transparent;
+}
+
+.services, .about {
+    background-color: #3D5471;
+}
+
+h1, #hero h1 {
+    color: #273B53;
+}
+
+.section-title h2 {
+    color: #004875;
+}
+
+
+h3, .contact .info-box h3 {
+    color: #3D5471;
+}
+
+h3, .about .content h3 {
+    font-size: 30px;
+    margin-bottom: 24px;
+}
+
+.clients {
+background: #fff;
+}
+
+.contact .info-box i, .services .icon i {
+    color: #0C72ED;
+    
+}
+
+.services .icon i {
+    background-color: #f6f8fb;
+}
+
+.back-to-top i {
+    background-color: #0C72ED;
+}
+
+.about .icon-boxes .icon-box i {
+    color: #aabbd7;
+}
+
+.about .content {
+    padding: 0;
+}
+
+
+
+
+.about {
+    background-color: #f6f8fb;
+    color: #444444;
+}
+
+#core_values {
+    color: #3D5471;
+}
+
+#features {
+    background-color: #3D5471;
+    color: #fff;
+}
+
+#whatwedo {
+    color: #fff;
+}
+
+.features .content ul i {
+    color: #fff;
+}
+
+.features .content h3 {
+    color: #fff;
+}
