@@ -2,6 +2,11 @@ body, #hero, #header {
     background-color: #f6f8fb;
 }
 
+#logo {
+    width: 20%;
+    margin-bottom: 5%
+}
+
 #header {
     border-bottom: 0px solid transparent;
 }
@@ -54,8 +59,6 @@ background: #fff;
 }
 
 
-
-
 .about {
     background-color: #f6f8fb;
     color: #444444;
@@ -80,4 +83,16 @@ background: #fff;
 
 .features .content h3 {
     color: #fff;
+}
+
+.features .content + .content {
+    margin-top: 0;
+}
+
+/* logo sizes */
+
+@media (min-width: 1200px) {
+    .clients img {
+        max-width: 70%;
+    }
 }
