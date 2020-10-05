@@ -7,22 +7,29 @@ body, #hero, #header {
     margin-bottom: 5%
 }
 
+#header .logo img {
+    margin-bottom: 10px;
+}
+
 #header {
     border-bottom: 0px solid transparent;
 }
 
-.services, .about {
-    background-color: #3D5471;
+#contact_header {
+    margin-left: 30px;
 }
 
 h1, #hero h1 {
     color: #273B53;
 }
 
-.section-title h2 {
+.services .section-title h2 {
     color: #004875;
 }
 
+.services .title {
+    color: #2d405f;
+}
 
 h3, .contact .info-box h3 {
     color: #3D5471;
@@ -38,12 +45,12 @@ background: #fff;
 }
 
 .contact .info-box i, .services .icon i {
-    color: #0C72ED;
+    color: #3b4ef8;
     
 }
 
 .services .icon i {
-    background-color: #f6f8fb;
+    background-color: #e2e5fe66;
 }
 
 .back-to-top i {
@@ -59,17 +66,12 @@ background: #fff;
 }
 
 
-.about {
-    background-color: #f6f8fb;
-    color: #444444;
-}
-
 #core_values {
-    color: #3D5471;
+    color: #FFF;
 }
 
 #features {
-    background-color: #3D5471;
+    background-color: #466393;
     color: #fff;
 }
 
