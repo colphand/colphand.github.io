@@ -168,8 +168,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #2d405f;
   transition: 0.3s;
   font-size: 14px;
-  font-family: "Krub", sans-serif;
-  font-weight: 600;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
@@ -242,7 +242,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
 }
 
-@media (max-width: 1366px) {
+@med ia (max-width: 1366px) {
   .nav-menu .drop-down .drop-down ul {
     left: -90%;
   }
@@ -260,13 +260,13 @@ h1, h2, h3, h4, h5, h6 {
   background: #e2e5fe;
   color: #3b4ef8;
   border-radius: 5px;
-  padding: 8px 25px 10px 25px;
+  padding: 10px 16px 9px 16px;
   white-space: nowrap;
   transition: 0.3s;
   font-size: 14px;
   display: inline-block;
   font-weight: 600;
-  font-family: "Krub", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   letter-spacing: 0.5px;
 }
 
@@ -422,7 +422,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .btn-get-started {
-  font-family: "Krub", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -1114,7 +1114,7 @@ section {
   transition: none;
   font-size: 14px;
   font-weight: 400;
-  font-family: "Krub", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   font-weight: 600;
   transition: 0.3s;
 }
@@ -1444,7 +1444,7 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Krub", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   color: #4e6fa4;
 }
 
