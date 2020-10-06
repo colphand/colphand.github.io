@@ -1,4 +1,6 @@
-body, #hero, #header {
+body,
+#hero,
+#header {
     background-color: #f6f8fb;
 }
 
@@ -19,34 +21,38 @@ body, #hero, #header {
     margin-left: 30px;
 }
 
-h1, #hero h1 {
+h1,
+#hero h1 {
     color: #273B53;
 }
 
 .services .section-title h2 {
-    color: #004875;
+    color: #466393;
 }
 
 .services .title {
-    color: #2d405f;
+    color: #466393;
 }
 
-h3, .contact .info-box h3 {
+h3,
+.contact .info-box h3 {
     color: #3D5471;
 }
 
-h3, .about .content h3 {
+h3,
+.about .content h3 {
     font-size: 30px;
     margin-bottom: 24px;
 }
 
 .clients {
-background: #fff;
+    background: #fff;
 }
 
-.contact .info-box i, .services .icon i {
+.contact .info-box i,
+.services .icon i {
     color: #3b4ef8;
-    
+
 }
 
 .services .icon i {
@@ -54,7 +60,7 @@ background: #fff;
 }
 
 .back-to-top i {
-    background-color: #0C72ED;
+    background-color: #466393;
 }
 
 .about .icon-boxes .icon-box i {
@@ -65,6 +71,41 @@ background: #fff;
     padding: 0;
 }
 
+.highlight:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #3b4ef8;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.highlight:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.drop-down {
+    margin-right: 5px;
+}
+
+#arrow-down {
+    top: -20px;
+    left: 86px;
+}
+
+#arrow-down:after {
+    content: "\ea99";
+    font-family: IcoFont;
+}
+
+.nav-menu > ul > li {
+    height: 39px;
+}
 
 #core_values {
     color: #FFF;
