@@ -1,141 +1,187 @@
-body,
-#hero,
-#header {
-    background-color: #f6f8fb;
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #444444;
 }
 
-#logo {
-    width: 20%;
-    margin-bottom: 5%
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Merriweather", sans-serif;
 }
+
+.nav-menu a {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+}
+
+.get-started-btn {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400
+}
+
 
 #header .logo img {
     margin-bottom: 10px;
 }
 
+
 #header {
-    border-bottom: 0px solid transparent;
+  background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(8px);
 }
 
-#contact_header {
-    margin-left: 30px;
+@-moz-document url-prefix() {
+    #header {
+        background: #F6F7FF;
+    }
 }
 
-h1,
+_:-ms-lang(x), .ie10up {
+    #header {
+        background: #F6F7FF;
+    } 
+}
+
+/*--------------------------------------------------------------
+# Hero
+--------------------------------------------------------------*/
+
 #hero h1 {
-    color: #273B53;
+    width: 100%;
 }
 
-.services .section-title h2 {
-    color: #466393;
+/*--------------------------------------------------------------
+# Steps section
+--------------------------------------------------------------*/
+
+#steps {
+    padding-bottom: 0;
+}
+
+.steps .content-item p {
+    color: rgb(68, 68, 68);
+}
+
+.steps h3 {
+    font-size: 26px;
+    position: relative;
+    color: #2d405f;
+}
+
+.steps .content-item span {
+    font-family: 'Merriweather';
+    font-size: 32px;
+    font-weight:200;
+}
+
+#source {
+    color: #757575;
+    font-size: 12px;
+}
+
+#features1 .container .row .pt-5 {
+    padding-top: 0px !important;
+}
+
+/*
+.steps h3::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #aabbd7;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+*/
+
+
+/*--------------------------------------------------------------
+# Features section
+--------------------------------------------------------------*/
+
+.features .content h3 {
+    font-size: 26px;
+    position: relative;
+    color: #2d405f;
+    font-weight: 400;
+    line-height: 1.6em;
+    padding-bottom: 20px;
+}
+
+
+/*--------------------------------------------------------------
+# Clients section
+--------------------------------------------------------------*/
+
+.clients img {
+    max-width: 70%;
+}
+
+/*--------------------------------------------------------------
+# Services section
+--------------------------------------------------------------*/
+
+.services .title {
+    color: #2d405f;
+}
+
+
+.icon-box ul {
+    list-style: none;
+}
+
+.icon-box ul li {
+    padding-bottom: 10px;
+}
+
+.icon-box ul i {
+    font-size: 20px;
+padding-right: 4px;
+color: #3b4ef8;
+}
+
+.services .description {
+    font-size: 16px;
+    padding-bottom: 10px;
 }
 
 .services .title {
-    color: #466393;
+    padding-top: 20px;
 }
 
-h3,
+.alignleft {
+    text-align: left;
+}
+
+.alignleft ul {
+    padding-left: 0px;
+}
+
+
+.services .icon-box:hover {
+    transform: scale(1.02);
+}
+
+/*--------------------------------------------------------------
+# Contact section
+--------------------------------------------------------------*/
+
+.team .member:hover .member-info-content {
+    bottom: 30px;
+}
+
+/*--------------------------------------------------------------
+# Contact section
+--------------------------------------------------------------*/
+
 .contact .info-box h3 {
-    color: #3D5471;
-}
-
-h3,
-.about .content h3 {
-    font-size: 30px;
-    margin-bottom: 24px;
-}
-
-.clients {
-    background: #fff;
-}
-
-.contact .info-box i,
-.services .icon i {
-    color: #3b4ef8;
-
-}
-
-.services .icon i {
-    background-color: #e2e5fe66;
-}
-
-.back-to-top i {
-    background-color: #466393;
-}
-
-.about .icon-boxes .icon-box i {
-    color: #aabbd7;
-}
-
-.about .content {
-    padding: 0;
-}
-
-.highlight:after {
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    background: #3b4ef8;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-}
-
-.highlight:hover:after {
-    width: 100%;
-    left: 0;
-}
-
-.drop-down {
-    margin-right: 5px;
-}
-
-#arrow-down {
-    top: -20px;
-    left: 86px;
-}
-
-#arrow-down:after {
-    content: "\ea99";
-    font-family: IcoFont;
-}
-
-.nav-menu > ul > li {
-    height: 39px;
-}
-
-#core_values {
-    color: #FFF;
-}
-
-#features {
-    background-color: #466393;
-    color: #fff;
-}
-
-#whatwedo {
-    color: #fff;
-}
-
-.features .content ul i {
-    color: #fff;
-}
-
-.features .content h3 {
-    color: #fff;
-}
-
-.features .content + .content {
-    margin-top: 0;
-}
-
-/* logo sizes */
-
-@media (min-width: 1200px) {
-    .clients img {
-        max-width: 70%;
-    }
+    color: #2d405f;
 }
