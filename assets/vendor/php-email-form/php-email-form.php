@@ -31,7 +31,7 @@ class PHP_Email_Form {
   public $recaptcha_secret_key = false;
 
   public $error_msg = array(
-    'invalid_to_email' => 'Email to (receiving email address) is empty or invalid!',
+    'invalid_to_email' => 'Email to service@lyceumhealth.com is empty or invalid!',
     'invalid_from_name' => 'From Name is empty!',
     'invalid_from_email' => 'Email from: is empty or invalid!',
     'invalid_subject' => 'Subject is too short or empty!',

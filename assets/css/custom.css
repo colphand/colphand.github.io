@@ -33,25 +33,6 @@ h6 {
     margin-bottom: 10px;
 }
 
-
-#header {
-    background: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(8px);
-}
-
-@-moz-document url-prefix() {
-    #header {
-        background: #F6F7FF;
-    }
-}
-
-_:-ms-lang(x),
-.ie10up {
-    #header {
-        background: #F6F7FF;
-    }
-}
-
 /*--------------------------------------------------------------
 # Hero
 --------------------------------------------------------------*/
