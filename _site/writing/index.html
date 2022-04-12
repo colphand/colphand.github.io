@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  	<meta name='viewport' content='width=device-width'>
+
+    <title>My Blog</title>
+    <meta name='description' content=Welcome to my blog>
+    <meta name="theme-color" content="#ffffff"/>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json" />
+
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=Space+Mono&display=swap" rel="stylesheet"> 
+    <link href="/assets/styles/tailwind.css" rel="stylesheet" />
+    <link href="/assets/styles/index.css" rel="stylesheet" />
+    <script>
+      const isDarkMode = () => localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
+      if (isDarkMode()) {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+    </script>
+  </head>
+
+  <body class="dark:text-slate-300 dark:bg-zinc-800 font-sans">
+    
+<div class="min-h-screen flex flex-col">
+
+<main class="flex-1 w-10/12 max-w-screen-sm md:max-w-screen-md mx-auto">
+
+<p class="font-['M_PLUS_1p'] text-xs md:text-base xl:text-xl text-slate-200 dark:text-zinc-600 ascii">
+
+░&emsp;&emsp;▒&emsp;&emsp;▒░▓<br>
+▒▓&emsp;▓&emsp;<br>
+▒&emsp;▓&emsp;▓&emsp;&emsp;░&emsp;▓<br>
+▒&emsp;▓&emsp;▒<br>
+▒░&emsp;&emsp;&emsp;&emsp;░▓<br>
+░&emsp;▓▒░&emsp;<br>
+▓<br>
+░&emsp;&emsp;<br>
+<br>
+▒
+</p>
+
+
+  
+<nav>
+  <ul class="flex space-bet py-2 border-b-2 mb-6">
+    <li class="mr-3"><a href="/">...</a></li>
+    <span>/</span>
+    <li class="mr-3 ml-3"><a href="/writing">Writing</a></li>
+    
+  </ul>
+</nav>
+
+
+
+
+
+
+
+<div class="py-4">
+  <p>
+    <span class="text-2xl sm:text-4xl font-bold hover:text-blue-700 leading-tight"><a href="/posts/2020/07/Flutter/">Flutter</a></span>
+    <span class="text-base sm:text-base font-normal uppercase align-top">Sep 22</span>
+  </p>
+  <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+...</p>
+  
+  <div class="flex justify-between items-center mt-4">
+    <div class="flex-1 pr-4">
+      
+        
+      
+        
+          <a href="/tags/android" class="">
+            <div class="post-tag">android</div>
+          </a>
+        
+      
+        
+          <a href="/tags/flutter" class="">
+            <div class="post-tag">flutter</div>
+          </a>
+        
+      
+    </div>
+
+    <a class="flex-none hover:underline font-semibold text-blue-700" href="/posts/2020/07/Flutter/">Read this post &rarr;</a>
+  </div>
+
+</div>
+
+
+
+
+
+<div class="py-4">
+  <p>
+    <span class="text-2xl sm:text-4xl font-bold hover:text-blue-700 leading-tight"><a href="/posts/2020/07/Kotlin/">Kotlin</a></span>
+    <span class="text-base sm:text-base font-normal uppercase align-top">Jun 20</span>
+  </p>
+  <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+
+...</p>
+  
+  <div class="flex justify-between items-center mt-4">
+    <div class="flex-1 pr-4">
+      
+        
+      
+        
+          <a href="/tags/kotlin" class="">
+            <div class="post-tag">kotlin</div>
+          </a>
+        
+      
+        
+          <a href="/tags/android" class="">
+            <div class="post-tag">android</div>
+          </a>
+        
+      
+    </div>
+
+    <a class="flex-none hover:underline font-semibold text-blue-700" href="/posts/2020/07/Kotlin/">Read this post &rarr;</a>
+  </div>
+
+</div>
+
+
+
+
+
+<nav class="flex justify-center mt-8">
+    <div class="inline-flex">
+      
+        <button class="paginator-text cursor-not-allowed">
+          First
+        </button>
+      
+      
+
+      
+        <button class="py-2 px-4 cursor-not-allowed">
+          <img src="/assets/img/chevron-left.svg" alt="prev">
+        </button>
+      
+
+      
+         
+          <a href="/writing/" aria-current="page">
+            <button class="border bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4">
+              1
+            </button>
+          </a>
+        
+      
+
+
+      
+        <button class="py-2 px-4 cursor-not-allowed">
+          <img src="/assets/img/chevron-right.svg" alt="next">
+        </button>
+      
+
+
+      
+        <button class="paginator-text cursor-not-allowed">
+          Last
+        </button>
+      
+      
+    </div>
+
+</nav>
+
+</main>
+
+<footer class="mt-8 bg-gray-200 dark:bg-zinc-800 py-8 flex-shrink-0">
+  <div class="max-w-screen-sm md:max-w-screen-md mx-auto px-8">
+    <p class="text-sm py-2 text-right">
+
+      <span class="cursor-pointer" id="toggleDarkMode">Dark mode</span> &middot;
+
+      
+        <a href=https://github.io/kohrongying>Github</a>
+      
+
+      
+        &middot; <a href=https://www.linkedin.com/in/rongyingkoh/>LinkedIn</a>
+      
+
+      
+      
+     
+
+    </p>
+    
+  </div>
+</footer>
+</div>
+
+    
+  <script>
+    document.getElementById("toggleDarkMode").addEventListener("click", function() {
+      if (isDarkMode()) {
+        localStorage.theme = 'light'
+        document.documentElement.classList.remove('dark')
+      } else {
+        localStorage.theme = 'dark'
+        document.documentElement.classList.add('dark')
+      }
+    });
+  </script>
+  </body>
+</html>

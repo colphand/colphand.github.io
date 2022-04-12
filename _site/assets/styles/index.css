@@ -1,0 +1,45 @@
+.header-anchor {
+  text-decoration: none !important;
+}
+
+h1 > a.header-anchor {
+  font-weight: 800;
+}
+
+h2 > a.header-anchor {
+  font-weight: 700;
+}
+
+.wavy {
+  padding-bottom: 10px;
+  background: radial-gradient(
+        50% 100% at 50% -5px,
+        #0000 calc(100% - 4px),
+        currentColor calc(100% - 3px) calc(100% - 1px),
+        #0000
+      )
+      0 100%,
+    radial-gradient(
+        50% 100% at 50% calc(100% + 5px),
+        #0000 calc(100% - 4px),
+        currentColor calc(100% - 3px) calc(100% - 1px),
+        #0000
+      )
+      10px calc(100% - 8px);
+  background-size: 20px 10px;
+  background-repeat: repeat-x;
+  transition: 99999s;
+}
+.wavy:hover {
+  color: orange;
+  transition: 40s linear;
+  background-position: 1000px 100%, 1010px calc(100% - 8px);
+}
+
+.ascii {
+  position: absolute;
+  right: 0;
+  text-align: right;
+  line-height: 1;
+  z-index: -1;
+}

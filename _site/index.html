@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  	<meta name='viewport' content='width=device-width'>
+
+    <title>My Blog</title>
+    <meta name='description' content=Welcome to my blog>
+    <meta name="theme-color" content="#ffffff"/>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json" />
+
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=Space+Mono&display=swap" rel="stylesheet"> 
+    <link href="/assets/styles/tailwind.css" rel="stylesheet" />
+    <link href="/assets/styles/index.css" rel="stylesheet" />
+    <script>
+      const isDarkMode = () => localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
+      if (isDarkMode()) {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+    </script>
+  </head>
+
+  <body class="dark:text-slate-300 dark:bg-zinc-800 font-sans">
+    
+<div class="min-h-screen flex flex-col">
+
+<main class="flex-1 w-10/12 max-w-screen-sm md:max-w-screen-md mx-auto">
+
+<p class="font-['M_PLUS_1p'] text-xs md:text-base xl:text-xl text-slate-200 dark:text-zinc-600 ascii">
+
+░&emsp;&emsp;▒&emsp;&emsp;▒░▓<br>
+▒▓&emsp;▓&emsp;<br>
+▒&emsp;▓&emsp;▓&emsp;&emsp;░&emsp;▓<br>
+▒&emsp;▓&emsp;▒<br>
+▒░&emsp;&emsp;&emsp;&emsp;░▓<br>
+░&emsp;▓▒░&emsp;<br>
+▓<br>
+░&emsp;&emsp;<br>
+<br>
+▒
+</p>
+
+
+  
+<div class="py-10 md:py-20">
+<p class="text-3xl md:text-6xl text-slate-600 dark:text-slate-200 font-bold">
+ <a href="/">Colin Olphand</a> </p>
+
+</div>
+
+
+
+<p class="text-xl md:text-2xl leading-relaxed pb-3">Is a Product Designer, </br>
+  currently improving patient care at Lyceum Health.</p>
+<p class="text-xl md:text-2xl leading-relaxed pb-3">He likes to <a href="/writing" class="wavy cursor-pointer text-orange-500">write</a> blog posts here and there when the impostor syndrome kicks in.</p>
+<p class="text-xl md:text-2xl leading-relaxed pb-3">He loves quantum physics, typography, and browsing old magazines. Sounds like a fun guy. You should <a href="mailto:colinolphand@gmail.com" class="wavy cursor-pointer text-orange-500">work with him</a>.</p>
+
+
+<p>More on his background below ☞</p>
+
+</main>
+
+<footer class="mt-8 bg-gray-200 dark:bg-zinc-800 py-8 flex-shrink-0">
+  <div class="max-w-screen-sm md:max-w-screen-md mx-auto px-8">
+    <p class="text-sm py-2 text-right">
+
+      <span class="cursor-pointer" id="toggleDarkMode">Dark mode</span> &middot;
+
+      
+        <a href=https://github.io/kohrongying>Github</a>
+      
+
+      
+        &middot; <a href=https://www.linkedin.com/in/rongyingkoh/>LinkedIn</a>
+      
+
+      
+      
+     
+
+    </p>
+    
+  </div>
+</footer>
+</div>
+
+    
+  <script>
+    document.getElementById("toggleDarkMode").addEventListener("click", function() {
+      if (isDarkMode()) {
+        localStorage.theme = 'light'
+        document.documentElement.classList.remove('dark')
+      } else {
+        localStorage.theme = 'dark'
+        document.documentElement.classList.add('dark')
+      }
+    });
+  </script>
+  </body>
+</html>
