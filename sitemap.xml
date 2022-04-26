@@ -1,11 +1,5 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <pre><code>    &lt;url&gt;
-        &lt;loc&gt;https://colinolphand.com/posts/2020/07/Kotlin/&lt;/loc&gt;
-        &lt;lastmod&gt;Tue Jun 30 2020 20:00:00 GMT-0400 (Eastern Daylight Time)&lt;/lastmod&gt;
-        &lt;changefreq&gt;&lt;/changefreq&gt;
-    &lt;/url&gt;
-
-    &lt;url&gt;
         &lt;loc&gt;https://colinolphand.com/404/&lt;/loc&gt;
         &lt;lastmod&gt;Sat Apr 09 2022 12:14:51 GMT-0400 (Eastern Daylight Time)&lt;/lastmod&gt;
         &lt;changefreq&gt;&lt;/changefreq&gt;
@@ -13,6 +7,12 @@
 
     &lt;url&gt;
         &lt;loc&gt;https://colinolphand.com/about/&lt;/loc&gt;
+        &lt;lastmod&gt;Sat Apr 09 2022 12:14:51 GMT-0400 (Eastern Daylight Time)&lt;/lastmod&gt;
+        &lt;changefreq&gt;&lt;/changefreq&gt;
+    &lt;/url&gt;
+
+    &lt;url&gt;
+        &lt;loc&gt;https://colinolphand.com/resume/&lt;/loc&gt;
         &lt;lastmod&gt;Sat Apr 09 2022 12:14:51 GMT-0400 (Eastern Daylight Time)&lt;/lastmod&gt;
         &lt;changefreq&gt;&lt;/changefreq&gt;
     &lt;/url&gt;
@@ -42,7 +42,25 @@
     &lt;/url&gt;
 
     &lt;url&gt;
-        &lt;loc&gt;https://colinolphand.com/posts/2020/07/Flutter/&lt;/loc&gt;
+        &lt;loc&gt;https://colinolphand.com/posts/2020/07/fresh_eyes/&lt;/loc&gt;
+        &lt;lastmod&gt;Fri Apr 22 2022 20:00:00 GMT-0400 (Eastern Daylight Time)&lt;/lastmod&gt;
+        &lt;changefreq&gt;&lt;/changefreq&gt;
+    &lt;/url&gt;
+
+    &lt;url&gt;
+        &lt;loc&gt;https://colinolphand.com/posts/2020/07/input/&lt;/loc&gt;
+        &lt;lastmod&gt;Fri Apr 22 2022 20:00:00 GMT-0400 (Eastern Daylight Time)&lt;/lastmod&gt;
+        &lt;changefreq&gt;&lt;/changefreq&gt;
+    &lt;/url&gt;
+
+    &lt;url&gt;
+        &lt;loc&gt;https://colinolphand.com/posts/2020/07/opinionated/&lt;/loc&gt;
+        &lt;lastmod&gt;Fri Apr 22 2022 20:00:00 GMT-0400 (Eastern Daylight Time)&lt;/lastmod&gt;
+        &lt;changefreq&gt;&lt;/changefreq&gt;
+    &lt;/url&gt;
+
+    &lt;url&gt;
+        &lt;loc&gt;https://colinolphand.com/posts/2020/07/solution/&lt;/loc&gt;
         &lt;lastmod&gt;Fri Sep 30 2022 20:00:00 GMT-0400 (Eastern Daylight Time)&lt;/lastmod&gt;
         &lt;changefreq&gt;&lt;/changefreq&gt;
     &lt;/url&gt;

@@ -35,7 +35,29 @@
     
 <div class="min-h-screen flex flex-col">
 
-<main class="flex-1 w-10/12 max-w-screen-md md:max-w-screen-lg mx-auto">
+<main class="flex-1 w-10/12 sm:w-8/12 md:w-6/12 max-w-screen-md md:max-w-screen-lg mx-auto">
+
+
+  <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" class="gradient2">
+
+
+
+    <defs><radialGradient id="Gradient1" cx="50%" cy="50%" fx="10%" fy="50%" r=".5"><stop offset="0%" stop-color="#ff0"></stop><stop offset="100%" stop-color="#ff00"></stop></radialGradient><radialGradient id="Gradient2" cx="50%" cy="50%" fx="10%" fy="50%" r=".5"><stop offset="0%" stop-color="#9EFF00"></stop><stop offset="100%" stop-color="#0ff0"></stop></radialGradient><radialGradient id="Gradient3" cx="50%" cy="50%" fx="50%" fy="50%" r=".5"><stop offset="0%" stop-color="#f0f"></stop><stop offset="100%" stop-color="#f0f0"></stop></radialGradient>
+    </defs>
+    
+    <filter id='noiseFilter'>
+        <feTurbulence 
+          type='fractalNoise' 
+          baseFrequency='8' 
+          numOctaves='1' 
+          stitchTiles='stitch'/>
+      </filter>
+      
+      <rect width='100%' height='100%' filter='url(#noiseFilter)'/>
+    
+    
+    <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient1)"><animate attributeName="x" dur="20s" values="25%;0%;25%" repeatCount="indefinite"></animate><animate attributeName="y" dur="21s" values="0%;25%;0%" repeatCount="indefinite"></animate></rect><rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient2)"><animate attributeName="x" dur="23s" values="-25%;0%;-25%" repeatCount="indefinite"></animate><animate attributeName="y" dur="24s" values="0%;50%;0%" repeatCount="indefinite"></animate></rect><rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient3)"><animate attributeName="x" dur="25s" values="0%;25%;0%" repeatCount="indefinite"></animate><animate attributeName="y" dur="26s" values="0%;25%;0%" repeatCount="indefinite"></animate></rect></svg>
+
 
 <p class="font-['M_PLUS_1p'] text-xs md:text-base xl:text-xl text-slate-200 dark:text-zinc-600 ascii">
 
@@ -59,17 +81,17 @@
     <span>/</span>
     <li class="mr-3 ml-3"><a href="/writing">Writing</a></li>
     <span>/</span>
-    <li class="mr-3 ml-3"><a href="#">Who owns the solution?</a></li>
+    <li class="mr-3 ml-3"><a href="#">The worst(best?) input field ever</a></li>
   </ul>
 </nav>
 
 <p class="text-5xl md:text-6xl font-black pt-10 md:pt-30 pb-4 leading-tight">
-    Who owns the solution?
+    The worst(best?) input field ever
 </p>
 
 <div>
-    <em>Sep 2022</em> &middot; 
-    <span>4 min read</span>
+    <em>Apr 2022</em> &middot; 
+    <span>3 min read</span>
 </div>
 
 <div class="mt-3 pb-10">
@@ -77,21 +99,22 @@
     
   
     
-      <a href="/tags/product strategy">
-        <span class="post-tag">product strategy</span>
+      <a href="/tags/UI">
+        <span class="post-tag">UI</span>
       </a>
     
   
     
-      <a href="/tags/management">
-        <span class="post-tag">management</span>
+      <a href="/tags/android">
+        <span class="post-tag">android</span>
       </a>
     
   
   </div>
 
 <div class="prose dark:prose-invert hover:prose-a:text-blue-500">
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+<img class="my-4" src="/assets/img/posts/mailbox.jpg" alt="mailbox" /></p>
 <h1 id="h1-heading" tabindex="-1"><a class="header-anchor" href="#h1-heading"><span>h1 Heading</span></a></h1>
 <h2 id="h2-heading" tabindex="-1"><a class="header-anchor" href="#h2-heading"><span>h2 Heading</span></a></h2>
 <h3>h3 Heading</h3>
@@ -228,7 +251,7 @@ line 3 of code
 
 <div class="mt-16 py-8 border-t-2 flex justify-between items-center">
   <div class="flex items-center flex-1">
-    <div class="inline-block h-8 w-8 bg-blue-700 rounded-full mr-2 flex justify-center items-center">R</div>
+    <div class="inline-block h-8 w-8 bg-blue-700 rounded-full mr-2 flex justify-center items-center">C</div>
     <span class="text-lg font-medium">Colin Olphand</span>
   </div>
   <p class="text-sm flex-1">Talks about the web and almost whatever. She wants you to know this was built with 11ty and tailwind. And works even with Javascript disabled.</p>
