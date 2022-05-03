@@ -4,8 +4,8 @@
     <meta charset="utf-8">
   	<meta name='viewport' content='width=device-width'>
 
-    <title>My Portfolio</title>
-    <meta name='description' content=Welcome to my portfolio>
+    <title>Colin Olphand</title>
+    <meta name='description' content=Colin Olphand is a Product Designer, currently improving patient care at Lyceum Health.>
     <meta name="theme-color" content="#ffffff"/>
 
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
@@ -14,28 +14,25 @@
 
     <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=Space+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link href="/assets/styles/tailwind.css" rel="stylesheet" />
     <link href="/assets/styles/index.css" rel="stylesheet" />
     <script>
       const isDarkMode = () => localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
       if (isDarkMode()) {
-        document.documentElement.classList.add('dark')
+        document.documentElement.classList.add('dark');
       } else {
         document.documentElement.classList.remove('dark')
       }
     </script>
   </head>
 
-  <body class="dark:text-slate-300 dark:bg-zinc-800 font-sans">
-
-  
-  
-
+  <body class="antialiased text-zinc-800 bg-zinc-300 dark:text-zinc-300 dark:bg-zinc-800">
 
     
 <div class="min-h-screen flex flex-col">
 
-<main class="flex-1 w-10/12 sm:w-8/12 md:w-6/12 max-w-screen-md md:max-w-screen-lg mx-auto">
+<main class="flex-1 w-11/12 sm:w-10/12 md:w-8/12 max-w-screen-md md:max-w-screen-lg mx-auto">
 
 
   <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" class="gradient2">
@@ -59,7 +56,7 @@
     <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient1)"><animate attributeName="x" dur="20s" values="25%;0%;25%" repeatCount="indefinite"></animate><animate attributeName="y" dur="21s" values="0%;25%;0%" repeatCount="indefinite"></animate></rect><rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient2)"><animate attributeName="x" dur="23s" values="-25%;0%;-25%" repeatCount="indefinite"></animate><animate attributeName="y" dur="24s" values="0%;50%;0%" repeatCount="indefinite"></animate></rect><rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient3)"><animate attributeName="x" dur="25s" values="0%;25%;0%" repeatCount="indefinite"></animate><animate attributeName="y" dur="26s" values="0%;25%;0%" repeatCount="indefinite"></animate></rect></svg>
 
 
-<p class="font-['M_PLUS_1p'] text-xs md:text-base xl:text-xl text-slate-200 dark:text-zinc-600 ascii">
+<p class="font-['M_PLUS_1p'] text-xs md:text-base xl:text-xl opacity-30 ascii">
 
 ░&emsp;&emsp;▒&emsp;&emsp;▒░▓<br>
 ▒▓&emsp;▓&emsp;<br>
@@ -76,12 +73,12 @@
 
   
 <nav>
-  <ul class="flex space-bet py-2 border-b-2 mb-6">
+  <ul class="flex space-bet py-2 border-b border-opacity-30 border-zinc-800 mb-6">
     <li class="mr-3"><a href="/">...</a></li>
-    <span>/</span>
-    <li class="mr-3 ml-3"><a href="/writing">Writing</a></li>
-    <span>/</span>
-    <li class="mr-3 ml-3"><a href="#">Opinionated vs flexible products</a></li>
+    <span class="opacity-40">/</span>
+    <li class="mx-3 "><a href="/writing">Writing</a></li>
+    <span class="opacity-40">/</span>
+    <li class="mx-3"><a href="#">Opinionated vs flexible products</a></li>
   </ul>
 </nav>
 
@@ -111,10 +108,10 @@
     
   
   </div>
-
-<div class="prose dark:prose-invert hover:prose-a:text-blue-500">
+  
+<div class="prose prose-zinc dark:prose-invert hover:prose-a:text-blue-500">
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-<img class="my-4" src="/assets/img/posts/mailbox.jpg" alt="mailbox" /></p>
+<img class="prose-img-large" src="/assets/img/posts/mailbox.jpg" alt="mailbox" /></p>
 <h1 id="h1-heading" tabindex="-1"><a class="header-anchor" href="#h1-heading"><span>h1 Heading</span></a></h1>
 <h2 id="h2-heading" tabindex="-1"><a class="header-anchor" href="#h2-heading"><span>h2 Heading</span></a></h2>
 <h3>h3 Heading</h3>
@@ -265,18 +262,18 @@ line 3 of code
 
     <p class="text-sm py-2 text-right">
 
-      <span class="cursor-pointer border-b border-slate-700 dark:border-slate-400 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:bg-opacity-50 hover:bg-opacity-50" id="toggleDarkMode">Dark mode</span> &middot;
+      <span class="link" id="toggleDarkMode">Dark mode</span> &middot;
 
       
-        <a href= https://github.com/colphand target="_blank" rel="noreferrer" class="border-b border-slate-700 dark:border-slate-400 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:bg-opacity-50 hover:bg-opacity-50"><span class="mr-1">Github</span><span class="leading-snug">↗</span></a> &middot;
+        <a href= https://github.com/colphand target="_blank" rel="noreferrer" class="link-external">Github</a> &middot;
       
 
         
-        <a href= https://www.linkedin.com/in/olphandc/ target="_blank" rel="noreferrer" class="border-b border-slate-700 dark:border-slate-400 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:bg-opacity-50 hover:bg-opacity-50"><span class="mr-1">LinkedIn</span><span class="leading-snug">↗</span></a> &middot;
+        <a href= https://www.linkedin.com/in/olphandc/ target="_blank" rel="noreferrer" class="link-external">LinkedIn</a> &middot;
       
 
       
-        <a href= https://twitter.com/colfand target="_blank" rel="noreferrer" class="border-b border-slate-700 dark:border-slate-400 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:bg-opacity-50 hover:bg-opacity-50"><span class="mr-1">Twitter</span><span class="leading-snug">↗</span></a>
+        <a href= https://twitter.com/colfand target="_blank" rel="noreferrer" class="link-external">Twitter</a>
       
       
     </p>
@@ -291,10 +288,13 @@ line 3 of code
     document.getElementById("toggleDarkMode").addEventListener("click", function() {
       if (isDarkMode()) {
         localStorage.theme = 'light'
-        document.documentElement.classList.remove('dark')
+        document.documentElement.classList.remove('dark');
+        document.getElementById('toggleDarkMode').innerHTML = 'Dark Mode';
+        console.log( document.getElementById('toggleDarkMode').innerHTML );
       } else {
         localStorage.theme = 'dark'
         document.documentElement.classList.add('dark')
+        document.getElementById('toggleDarkMode').innerHTML = 'Light Mode';
       }
     });
   </script>
