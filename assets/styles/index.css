@@ -160,3 +160,7 @@ h2 > a.header-anchor {
 .prose-image-large {
   width: 50% !important;
 }
+
+/* .tag + .tag::before {
+  content: "·";
+} */
