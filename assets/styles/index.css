@@ -1,56 +1,63 @@
-/* @font-face {
-  font-family: "Apercu Mono Trial";
-  src: url("/assets/fonts/apercu-mono-regular-trial.otf");
-  font-weight: normal;
+@font-face {
+  font-family: "Vulf Sans";
+  src: url("/assets/fonts/Vulf_Sans-Light.woff2") format("woff2");
+  font-weight: 300;
 }
 @font-face {
-  font-family: "Apercu Mono Trial";
-  src: url("/assets/fonts/apercu-mono-light-trial.otf");
-  font-weight: 200;
+  font-family: "Vulf Sans";
+  src: url("/assets/fonts/Vulf_Sans-Regular.woff2") format("woff2");
+  font-weight: 400;
 }
 @font-face {
-  font-family: "Apercu Mono Trial";
-  src: url("/assets/fonts/apercu-mono-medium-trial.otf");
+  font-family: "Vulf Sans";
+  src: url("/assets/fonts/Vulf_Sans-Medium.woff2") format("woff2");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Vulf Sans";
+  src: url("/assets/fonts/Vulf_Sans-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Vulf Sans";
+  src: url("/assets/fonts/Vulf_Sans-Black.woff2") format("woff2");
+  font-weight: 900;
+}
+
+
+@font-face {
+  font-family: "Vulf Mono";
+  src: url("/assets/fonts/Vulf_Mono-Light.woff2") format("woff2");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Vulf Mono";
+  src: url("/assets/fonts/Vulf_Mono-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Vulf Mono";
+  src: url("/assets/fonts/Vulf_Mono-Medium.woff2") format("woff2");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Vulf Mono";
+  src: url("/assets/fonts/Vulf_Mono-Bold.woff2") format("woff2");
   font-weight: 600;
 }
 @font-face {
-  font-family: "Apercu Mono Trial";
-  src: url("/assets/fonts/apercu-mono-bold-trial.otf");
-  font-weight: bold;
+  font-family: "Vulf Mono";
+  src: url("/assets/fonts/Vulf_Mono-Black.woff2") format("woff2");
+  font-weight: 900;
 }
 @font-face {
-  font-family: "Relative Faux Trial";
-  src: url("/assets/fonts/relative-faux-book-trial.otf");
-  font-weight: normal;
-} */
-/* @font-face {
-  font-family: "Test Söhne";
-  src: url("/assets/fonts/TestSöhne-Leicht.otf");
-  font-weight: lighter;
-} */
-/* @font-face {
-  font-family: "Apercu Trial";
-  src: url("/assets/fonts/apercu-regular-trial.otf");
-  font-weight: normal;
-} */
-@font-face {
-  font-family: "VulfSansDemo";
-  src: url("/assets/fonts/VulfSansDemo-Regular.otf");
-  font-weight: normal;
-}
-@font-face {
-  font-family: "VulfSansDemo";
-  src: url("/assets/fonts/VulfSansDemo-Light.otf");
-  font-weight: lighter;
-}
-@font-face {
-  font-family: "Vulf Mono Demo";
-  src: url("/assets/fonts/VulfMonoDemo-LightItalic.otf");
-  font-weight: lighter;
+  font-family: "Vulf Mono";
+  src: url("/assets/fonts/Vulf_Mono-Light_Italic.woff2") format("woff2");
+  font-weight: 300;
+  font-style: italic;
 }
 
-
-.header-anchor {
+/* .header-anchor {
   text-decoration: none !important;
 }
 
@@ -60,7 +67,7 @@ h1 > a.header-anchor {
 
 h2 > a.header-anchor {
   font-weight: 700;
-}
+} */
 
 /* .wavy {
   padding-bottom: 10px;

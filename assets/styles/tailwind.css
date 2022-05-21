@@ -123,7 +123,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: Vulf Mono, ui-sans-serif, system-ui;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -911,10 +911,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-prose-invert-td-borders: #3f3f46;
 }
 
-.bottom-0 {
-  bottom: 0px;
-}
-
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -1038,6 +1034,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-direction: column;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .place-content-between {
   place-content: space-between;
 }
@@ -1050,6 +1050,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   align-items: center;
 }
 
+.items-baseline {
+  align-items: baseline;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -1058,10 +1062,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: space-between;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.self-end {
+  align-self: flex-end;
 }
 
 .rounded {
@@ -1164,10 +1176,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 1rem;
 }
 
-.pb-4 {
-  padding-bottom: 1rem;
-}
-
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1176,12 +1184,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-align: right;
 }
 
-.font-\[\'VulfSansDemo\'\] {
-  font-family: 'VulfSansDemo';
+.font-serif {
+  font-family: Vulf Sans, ui-sans-serif, system-ui;
 }
 
-.font-serif {
-  font-family: Vulf Mono Demo, ui-sans-serif, system-ui;
+.font-mono {
+  font-family: Vulf Mono, ui-sans-serif, system-ui;
 }
 
 .font-\[\'M_PLUS_1p\'\] {
@@ -1190,10 +1198,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-2xl {
   font-size: 1.5rem;
-}
-
-.text-3xl {
-  font-size: 1.65rem;
 }
 
 .text-lg {
@@ -1216,6 +1220,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 1.875rem;
 }
 
+.text-3xl {
+  font-size: 1.65rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1228,20 +1236,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 500;
 }
 
-.font-extralight {
-  font-weight: 200;
-}
-
 .font-black {
   font-weight: 900;
 }
 
 .italic {
   font-style: italic;
-}
-
-.leading-relaxed {
-  line-height: 1.625;
 }
 
 .leading-tight {
@@ -1277,20 +1277,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   -moz-osx-font-smoothing: grayscale;
 }
 
-.opacity-80 {
-  opacity: 0.8;
-}
-
-.opacity-70 {
-  opacity: 0.7;
-}
-
 .opacity-30 {
   opacity: 0.3;
 }
 
 .opacity-40 {
   opacity: 0.4;
+}
+
+.opacity-70 {
+  opacity: 0.7;
 }
 
 .shadow {
@@ -1314,23 +1310,41 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .post-tag {
-  margin-right: 0.25rem;
   display: inline-block;
+}
+
+.post-tag > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.post-tag {
   white-space: nowrap;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
-  --tw-bg-opacity: 0.5;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  font-family: Vulf Mono Demo, ui-sans-serif, system-ui;
+  border-radius: 9999px;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(113 113 122 / var(--tw-border-opacity));
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-bottom: 4.5px;
+  padding-top: 4px;
+  font-family: Vulf Mono, ui-sans-serif, system-ui;
   font-size: .875rem;
+  line-height: 1.625;
   mix-blend-mode: hard-light;
 }
 
 .post-tag:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(24 24 27 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+  background-color: rgb(39 39 42 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(228 228 231 / var(--tw-text-opacity));
 }
 
 .dark .post-tag {
@@ -1346,13 +1360,53 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 @media (min-width: 768px) {
   .post-tag {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    font-size: .75rem;
+  }
+}
+
+.button {
+  cursor: pointer;
+  border-radius: 0.125rem;
+  border-radius: 9999px;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(113 113 122 / var(--tw-border-opacity));
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 3px;
+  padding-bottom: 1px;
+  font-family: Vulf Sans, ui-sans-serif, system-ui;
+  opacity: 0.9;
+}
+
+.button:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(24 24 27 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(39 39 42 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(228 228 231 / var(--tw-text-opacity));
+}
+
+.dark .button {
+  --tw-border-opacity: 1;
+  border-color: rgb(212 212 216 / var(--tw-border-opacity));
+}
+
+.dark .button:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(212 212 216 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(24 24 27 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .button {
+    font-size: .875rem;
   }
 
-  .post-tag {
-    padding-left: 1rem;
-    padding-right: 1rem;
+  .button {
+    font-size: 1rem;
   }
 }
 
@@ -1376,6 +1430,32 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .dark .link:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(212 212 216 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(24 24 27 / var(--tw-text-opacity));
+}
+
+.date {
+  font-family: Vulf Sans, ui-sans-serif, system-ui;
+  opacity: 0.7;
+}
+
+.link-footer {
+  cursor: pointer;
+}
+
+.link-footer:hover {
+  --tw-text-opacity: 1;
+  color: rgb(228 228 231 / var(--tw-text-opacity));
+}
+
+.dark .link-footer {
+  --tw-border-opacity: 1;
+  border-color: rgb(212 212 216 / var(--tw-border-opacity));
+}
+
+.dark .link-footer:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(212 212 216 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
@@ -1413,9 +1493,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .header {
-  font-family: 'VulfSansDemo';
+  font-family: Vulf Sans, ui-sans-serif, system-ui;
   font-size: 1.5rem;
+  font-weight: 300;
   line-height: 1.625;
+}
+
+.article-title {
+  line-height: 1.25;
 }
 
 .main {
@@ -1446,8 +1531,35 @@ Ensure the default browser behavior of the `hidden` attribute.
   /* Heading */
 }
 
+.prose :is(:where(h1, h2, h3, h4, th):not(:where([class~="not-prose"] *))) {
+  font-family: Vulf Sans, ui-sans-serif, system-ui;
+}
+
+.prose :is(:where(h1, h2, h3, h4, th):not(:where([class~="not-prose"] *)))::before {
+  --tw-content: '#';
+  content: var(--tw-content);
+}
+
 .prose :is(:where(h1):not(:where([class~="not-prose"] *))) {
-  font-family: 'VulfSansDemo';
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+
+.prose :is(:where(h2):not(:where([class~="not-prose"] *))) {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.prose :is(:where(h3):not(:where([class~="not-prose"] *))) {
+  font-weight: 400;
+}
+
+.prose :is(:where(a):not(:where([class~="not-prose"] *))) {
+  font-weight: 400;
 }
 
 .prose :is(:where(img):not(:where([class~="not-prose"] *))) {
@@ -1479,9 +1591,14 @@ Ensure the default browser behavior of the `hidden` attribute.
           text-decoration-line: underline;
 }
 
-.hover\:prose-a\:text-blue-500 :is(:where(a):not(:where([class~="not-prose"] *))):hover {
+.prose-a\:no-underline :is(:where(a):not(:where([class~="not-prose"] *))) {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+
+.hover\:prose-a\:text-zinc-700 :is(:where(a):not(:where([class~="not-prose"] *))):hover {
   --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity));
+  color: rgb(63 63 70 / var(--tw-text-opacity));
 }
 
 .dark .dark\:prose-invert {
@@ -1542,6 +1659,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-right: 1rem;
   }
 
+  .md\:-mt-3 {
+    margin-top: -0.75rem;
+  }
+
   .md\:mt-0 {
     margin-top: 0px;
   }
@@ -1597,4 +1718,3 @@ Ensure the default browser behavior of the `hidden` attribute.
     font-size: 1.25rem;
   }
 }
-

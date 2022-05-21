@@ -27,74 +27,135 @@
     </script>
   </head>
 
-  <body class="antialiased text-zinc-800 bg-zinc-300 dark:text-zinc-300 dark:bg-zinc-800">
+  <body class="text-sans antialiased text-zinc-800 bg-zinc-300 dark:text-zinc-300 dark:bg-zinc-800">
 
     
 <div class="min-h-screen flex flex-col">
 
-<main class="flex-1 w-11/12 sm:w-10/12 md:w-8/12 max-w-screen-md md:max-w-screen-lg mx-auto">
+  <main class="flex-1 w-11/12 sm:w-10/12 md:w-8/12 max-w-screen-md md:max-w-screen-lg mx-auto">
 
 
-  <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" class="gradient2">
+    <!-- <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" class="gradient2">
+      <defs>
+        <radialGradient id="Gradient1" cx="50%" cy="50%" fx="10%" fy="50%" r=".5">
+          <stop offset="0%" stop-color="#ff0"></stop>
+          <stop offset="100%" stop-color="#ff00"></stop>
+        </radialGradient>
+        <radialGradient id="Gradient2" cx="50%" cy="50%" fx="10%" fy="50%" r=".5">
+          <stop offset="0%" stop-color="#9EFF00"></stop>
+          <stop offset="100%" stop-color="#0ff0"></stop>
+        </radialGradient>
+        <radialGradient id="Gradient3" cx="50%" cy="50%" fx="50%" fy="50%" r=".5">
+          <stop offset="0%" stop-color="#f0f"></stop>
+          <stop offset="100%" stop-color="#f0f0"></stop>
+        </radialGradient>
+      </defs>
 
-
-
-    <defs><radialGradient id="Gradient1" cx="50%" cy="50%" fx="10%" fy="50%" r=".5"><stop offset="0%" stop-color="#ff0"></stop><stop offset="100%" stop-color="#ff00"></stop></radialGradient><radialGradient id="Gradient2" cx="50%" cy="50%" fx="10%" fy="50%" r=".5"><stop offset="0%" stop-color="#9EFF00"></stop><stop offset="100%" stop-color="#0ff0"></stop></radialGradient><radialGradient id="Gradient3" cx="50%" cy="50%" fx="50%" fy="50%" r=".5"><stop offset="0%" stop-color="#f0f"></stop><stop offset="100%" stop-color="#f0f0"></stop></radialGradient>
-    </defs>
-    
-    <filter id='noiseFilter'>
-        <feTurbulence 
-          type='fractalNoise' 
-          baseFrequency='8' 
-          numOctaves='1' 
-          stitchTiles='stitch'/>
+      <filter id='noiseFilter'>
+        <feTurbulence type='fractalNoise' baseFrequency='8' numOctaves='1' stitchTiles='stitch' />
       </filter>
-      
-      <rect width='100%' height='100%' filter='url(#noiseFilter)'/>
+
+      <rect width='100%' height='100%' filter='url(#noiseFilter)' />
+
+
+      <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient1)">
+        <animate attributeName="x" dur="20s" values="25%;0%;25%" repeatCount="indefinite"></animate>
+        <animate attributeName="y" dur="21s" values="0%;25%;0%" repeatCount="indefinite"></animate>
+      </rect>
+      <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient2)">
+        <animate attributeName="x" dur="23s" values="-25%;0%;-25%" repeatCount="indefinite"></animate>
+        <animate attributeName="y" dur="24s" values="0%;50%;0%" repeatCount="indefinite"></animate>
+      </rect>
+      <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient3)">
+        <animate attributeName="x" dur="25s" values="0%;25%;0%" repeatCount="indefinite"></animate>
+        <animate attributeName="y" dur="26s" values="0%;25%;0%" repeatCount="indefinite"></animate>
+      </rect>
     
+    </svg> -->
+
+
+    <p class="font-['M_PLUS_1p'] text-xs md:text-base xl:text-xl opacity-30 ascii">
+
+      ░&emsp;&emsp;▒&emsp;&emsp;▒░▓<br>
+      ▒▓&emsp;▓&emsp;<br>
+      ▒&emsp;▓&emsp;▓&emsp;&emsp;░&emsp;▓<br>
+      ▒&emsp;▓&emsp;▒<br>
+      ▒░&emsp;&emsp;&emsp;&emsp;░▓<br>
+      ░&emsp;▓▒░&emsp;<br>
+      ▓<br>
+      ░&emsp;&emsp;<br>
+      <br>
+      ▒
+    </p>
+
+
     
-    <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient1)"><animate attributeName="x" dur="20s" values="25%;0%;25%" repeatCount="indefinite"></animate><animate attributeName="y" dur="21s" values="0%;25%;0%" repeatCount="indefinite"></animate></rect><rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient2)"><animate attributeName="x" dur="23s" values="-25%;0%;-25%" repeatCount="indefinite"></animate><animate attributeName="y" dur="24s" values="0%;50%;0%" repeatCount="indefinite"></animate></rect><rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient3)"><animate attributeName="x" dur="25s" values="0%;25%;0%" repeatCount="indefinite"></animate><animate attributeName="y" dur="26s" values="0%;25%;0%" repeatCount="indefinite"></animate></rect></svg>
-
-
-<p class="font-['M_PLUS_1p'] text-xs md:text-base xl:text-xl opacity-30 ascii">
-
-░&emsp;&emsp;▒&emsp;&emsp;▒░▓<br>
-▒▓&emsp;▓&emsp;<br>
-▒&emsp;▓&emsp;▓&emsp;&emsp;░&emsp;▓<br>
-▒&emsp;▓&emsp;▒<br>
-▒░&emsp;&emsp;&emsp;&emsp;░▓<br>
-░&emsp;▓▒░&emsp;<br>
-▓<br>
-░&emsp;&emsp;<br>
-<br>
-▒
-</p>
-
-
-  
 <nav>
-  <ul class="flex space-bet py-4 border-b-2 border-current mb-6">
+  <ul class="flex space-bet py-2 border-b border-opacity-30 border-zinc-800 mb-6">
     <li class="mr-3"><a href="/">...</a></li>
     <span class="opacity-40">/</span>
-    <li class="mr-3 ml-3"><a href="/writing">Writing</a></li>
-    
+    <li class="mx-3 "><a href="/writing">Writing</a></li>
   </ul>
 </nav>
 
 
 
+<p class="opacity-70 text-sm md:text-md">These aren't much articles as they are my own research, reflections, notes and random thoughts on particular topics. They are opinionated, working documents meant to evolve over time. Dive in!</p>
+
+<!-- 
+
+<span>
+    <a href="/tags/UI"><button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow mr-6 mb-4">
+        UI
+    </button>
+    </a>
+</span>
+
+
+<span>
+    <a href="/tags/android"><button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow mr-6 mb-4">
+        android
+    </button>
+    </a>
+</span>
+
+
+<span>
+    <a href="/tags/kotlin"><button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow mr-6 mb-4">
+        kotlin
+    </button>
+    </a>
+</span>
+
+
+<span>
+    <a href="/tags/management"><button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow mr-6 mb-4">
+        management
+    </button>
+    </a>
+</span>
+
+
+<span>
+    <a href="/tags/product strategy"><button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow mr-6 mb-4">
+        product strategy
+    </button>
+    </a>
+</span>
+ -->
 
 
 
 
-<div class="py-4">
-  <div>
-    <p class="text-3xl font-['VulfSansDemo'] leading-relaxed">
+
+<div class="article py-4">
+  <div class="flex justify-between items-baseline flex-wrap">
+    <p class="header article-title">
       <a href="/posts/2020/07/solution/">Who owns the solution?</a>
-    
-    <p class="mt-2 opacity-70">September 2022</p>
+
+    <p class="date">Sep. 2022</p>
   </div>
-  <p class=" mt-2">Both products managers and UX Designers love to decide.
+  <p class="">Both products managers and UX Designers love to decide.
 </p>
 
   <div class="sm:flex justify-between items-end mt-2">
@@ -115,12 +176,7 @@
       
       
     </div>
-    <div>
-      <p>
-        <a class="link"
-          href="/posts/2020/07/solution/">Read this post &rarr;</a>
-      </p>
-    </div>
+    <button class="button" type="button" href="/posts/2020/07/solution/">Read this post &rarr;</button>
   </div>
 
 </div>
@@ -129,14 +185,14 @@
 
 
 
-<div class="py-4">
-  <div>
-    <p class="text-3xl font-['VulfSansDemo'] leading-relaxed">
+<div class="article py-4">
+  <div class="flex justify-between items-baseline flex-wrap">
+    <p class="header article-title">
       <a href="/posts/2020/07/opinionated/">Opinionated vs flexible products</a>
-    
-    <p class="mt-2 opacity-70">April 2022</p>
+
+    <p class="date">Apr. 2022</p>
   </div>
-  <p class=" mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 </p>
 
   <div class="sm:flex justify-between items-end mt-2">
@@ -157,12 +213,7 @@
       
       
     </div>
-    <div>
-      <p>
-        <a class="link"
-          href="/posts/2020/07/opinionated/">Read this post &rarr;</a>
-      </p>
-    </div>
+    <button class="button" type="button" href="/posts/2020/07/opinionated/">Read this post &rarr;</button>
   </div>
 
 </div>
@@ -171,14 +222,14 @@
 
 
 
-<div class="py-4">
-  <div>
-    <p class="text-3xl font-['VulfSansDemo'] leading-relaxed">
-      <a href="/posts/2020/07/input/">The worst(best?) input field ever</a>
-    
-    <p class="mt-2 opacity-70">April 2022</p>
+<div class="article py-4">
+  <div class="flex justify-between items-baseline flex-wrap">
+    <p class="header article-title">
+      <a href="/posts/2020/07/input/">The worst (best?) input field ever</a>
+
+    <p class="date">Apr. 2022</p>
   </div>
-  <p class=" mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 </p>
 
   <div class="sm:flex justify-between items-end mt-2">
@@ -199,12 +250,7 @@
       
       
     </div>
-    <div>
-      <p>
-        <a class="link"
-          href="/posts/2020/07/input/">Read this post &rarr;</a>
-      </p>
-    </div>
+    <button class="button" type="button" href="/posts/2020/07/input/">Read this post &rarr;</button>
   </div>
 
 </div>
@@ -213,14 +259,14 @@
 
 
 
-<div class="py-4">
-  <div>
-    <p class="text-3xl font-['VulfSansDemo'] leading-relaxed">
+<div class="article py-4">
+  <div class="flex justify-between items-baseline flex-wrap">
+    <p class="header article-title">
       <a href="/posts/2020/07/fresh_eyes/">A set of fresh eyes</a>
-    
-    <p class="mt-2 opacity-70">April 2022</p>
+
+    <p class="date">Apr. 2022</p>
   </div>
-  <p class=" mt-2">Why rotating ownership and designers can bring a new perspective.
+  <p class="">Why rotating ownership and designers can bring a new perspective.
 </p>
 
   <div class="sm:flex justify-between items-end mt-2">
@@ -241,12 +287,7 @@
       
       
     </div>
-    <div>
-      <p>
-        <a class="link"
-          href="/posts/2020/07/fresh_eyes/">Read this post &rarr;</a>
-      </p>
-    </div>
+    <button class="button" type="button" href="/posts/2020/07/fresh_eyes/">Read this post &rarr;</button>
   </div>
 
 </div>
@@ -298,26 +339,28 @@
 
 </nav> -->
 
-</main>
+  </main>
 
-<footer class="bg:transparent py-8 flex-shrink-0 flex-1 w-10/12 max-w-screen-md md:max-w-screen-lg mx-auto">
+  <footer class="bg:transparent py-8 flex-shrink-0 flex-1 w-10/12 max-w-screen-md md:max-w-screen-lg mx-auto">
 
- <div class="flex flex-row items-center space-x-4">
+ <div class="flex flex-row justify-center space-x-4">
 
-    <p class="text-sm py-2 text-right">
+    <p class="text-sm py-2 text-right font-serif">
 
-      <span class="link" id="toggleDarkMode">Dark mode</span> &middot;
+      <span class="link-footer" id="toggleDarkMode">dark mode</span> &middot;
+
+      <!-- <a class="link-footer" href= mailto: https://github.com/colphand target="_blank">colinolphand@gmail.com</a> &middot; -->
 
       
-        <a href= https://github.com/colphand target="_blank" rel="noreferrer" class="link-external">Github</a> &middot;
+        <a class="link-footer" href= https://github.com/colphand target="_blank">github</a> &middot;
       
 
         
-        <a href= https://www.linkedin.com/in/olphandc/ target="_blank" rel="noreferrer" class="link-external">LinkedIn</a> &middot;
+        <a class="link-footer" href=  target="_blank">linkedin</a> &middot;
       
 
       
-        <a href= https://twitter.com/colfand target="_blank" rel="noreferrer" class="link-external">Twitter</a>
+        <a class="link-footer" href= https://twitter.com/colfand target="_blank">twitter</a>
       
       
     </p>
@@ -326,19 +369,18 @@
 
 </footer>
 </div>
-
     
   <script>
     document.getElementById("toggleDarkMode").addEventListener("click", function() {
       if (isDarkMode()) {
         localStorage.theme = 'light'
         document.documentElement.classList.remove('dark');
-        document.getElementById('toggleDarkMode').innerHTML = 'Dark Mode';
+        document.getElementById('toggleDarkMode').innerHTML = 'dark mode';
         console.log( document.getElementById('toggleDarkMode').innerHTML );
       } else {
         localStorage.theme = 'dark'
         document.documentElement.classList.add('dark')
-        document.getElementById('toggleDarkMode').innerHTML = 'Light Mode';
+        document.getElementById('toggleDarkMode').innerHTML = 'light mode';
       }
     });
   </script>
