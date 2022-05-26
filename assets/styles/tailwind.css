@@ -911,14 +911,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-prose-invert-td-borders: #3f3f46;
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mx-3 {
@@ -974,10 +974,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 2rem;
 }
 
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-
 .inline-block {
   display: inline-block;
 }
@@ -998,16 +994,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   min-height: 100vh;
 }
 
-.w-11\/12 {
-  width: 91.666667%;
-}
-
 .w-8 {
   width: 2rem;
 }
 
 .w-10\/12 {
   width: 83.333333%;
+}
+
+.w-11\/12 {
+  width: 91.666667%;
 }
 
 .max-w-screen-md {
@@ -1182,16 +1178,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 2.5rem;
 }
 
-.font-\[\'M_PLUS_1p\'\] {
-  font-family: 'M PLUS 1p';
+.font-serif {
+  font-family: Vulf Sans, ui-sans-serif, system-ui;
 }
 
 .font-mono {
   font-family: Vulf Mono, ui-sans-serif, system-ui;
 }
 
-.text-xs {
-  font-size: .75rem;
+.font-\[\'M_PLUS_1p\'\] {
+  font-family: 'M PLUS 1p';
 }
 
 .text-2xl {
@@ -1210,8 +1206,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 3rem;
 }
 
-.text-5xl {
-  font-size: 1.875rem;
+.text-xs {
+  font-size: .75rem;
 }
 
 .text-3xl {
@@ -1236,6 +1232,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .italic {
   font-style: italic;
+}
+
+.leading-relaxed {
+  line-height: 1.625;
 }
 
 .leading-7 {
@@ -1344,8 +1344,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(113 113 122 / var(--tw-border-opacity));
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-  padding-top: 5px;
-  padding-bottom: 3px;
+  padding-bottom: 2px;
   font-family: Vulf Sans, ui-sans-serif, system-ui;
   opacity: 0.9;
 }
@@ -1378,11 +1377,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 
   .button {
-    padding-top: 3px;
-  }
-
-  .button {
-    padding-bottom: 1px;
+    padding-bottom: 2px;
   }
 }
 
@@ -1393,6 +1388,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .button {
     font-size: 1rem;
+  }
+}
+
+/* Firefox 11+ */
+
+@supports (-moz-appearance:none) {
+  .button {
+    padding-top: 5px;
+    padding-bottom: 3px;
   }
 }
 
@@ -1447,9 +1451,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .link-external {
+  cursor: pointer;
   border-bottom-width: 1px;
-  --tw-border-opacity: 1;
-  border-color: rgb(24 24 27 / var(--tw-border-opacity));
+  border-style: dotted;
+  border-color: currentColor;
 }
 
 .link-external::after {
@@ -1458,22 +1463,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .link-external:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(24 24 27 / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: rgb(212 212 216 / var(--tw-text-opacity));
-}
-
-.dark .link-external {
-  --tw-border-opacity: 1;
-  border-color: rgb(212 212 216 / var(--tw-border-opacity));
-}
-
-.dark .link-external:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(212 212 216 / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: rgb(24 24 27 / var(--tw-text-opacity));
+  opacity: 0.7;
 }
 
 .header {
@@ -1490,7 +1480,30 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .article-title {
+  margin-top: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-family: Vulf Sans, ui-sans-serif, system-ui;
+  font-size: 1.875rem;
+  font-weight: 300;
   line-height: 1.25;
+}
+
+@media (min-width: 768px) {
+  .article-title {
+    margin-top: 5rem;
+  }
+
+  .article-title {
+    margin-bottom: 0px;
+  }
+
+  .article-title {
+    font-size: 2.25rem;
+  }
+
+  .article-title {
+    line-height: 1.625;
+  }
 }
 
 .main {
@@ -1685,12 +1698,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 66.666667%;
   }
 
-  .md\:max-w-screen-md {
-    max-width: 768px;
-  }
-
   .md\:max-w-screen-lg {
     max-width: 1024px;
+  }
+
+  .md\:max-w-screen-md {
+    max-width: 768px;
   }
 
   .md\:flex-1 {
@@ -1710,16 +1723,16 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-top: 5rem;
   }
 
-  .md\:text-base {
-    font-size: 1rem;
-  }
-
   .md\:text-sm {
     font-size: .875rem;
   }
 
   .md\:text-8xl {
     font-size: 4rem;
+  }
+
+  .md\:text-base {
+    font-size: 1rem;
   }
 
   .md\:text-6xl {

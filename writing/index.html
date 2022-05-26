@@ -1,41 +1,49 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-  	<meta name='viewport' content='width=device-width'>
 
-    <title>Colin Olphand</title>
-    <meta name='description' content=Colin Olphand is a Product Designer, currently improving patient care at Lyceum Health.>
-    <meta name="theme-color" content="#ffffff"/>
+<head>
+  <meta charset="utf-8">
+  <meta name='viewport' content='width=device-width'>
 
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
-    <link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
-    <link rel="manifest" href="/manifest.json" />
+  <title>Colin Olphand</title>
+  <meta name='description' content=Colin Olphand is a Product Designer, currently improving patient care at Lyceum Health.>
+  <!-- To rework these using the theme color -->
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#ffffff">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#ffffff">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💭</text></svg>">
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="https://c.tenor.com/D61XbAM9d9MAAAAd/doom-doomguy.gif"> -->
+  <link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.json" />
 
-    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=Space+Mono&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    <link href="/assets/styles/tailwind.css" rel="stylesheet" />
-    <link href="/assets/styles/index.css" rel="stylesheet" />
-    <script>
-      const isDarkMode = () => localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
-      if (isDarkMode()) {
-        document.documentElement.classList.add('dark');
-      } else {
-        document.documentElement.classList.remove('dark')
-      }
-    </script>
-  </head>
+  <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=Space+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link href="/assets/styles/tailwind.css" rel="stylesheet" />
+  <link href="/assets/styles/index.css" rel="stylesheet" />
+  <script>
+    const isDarkMode = () => localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
+    if (isDarkMode()) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+  </script>
+</head>
 
-  <body class="text-serif antialiased text-zinc-800 bg-zinc-300 dark:text-zinc-300 dark:bg-zinc-800">
+<body class="text-serif antialiased text-zinc-800 bg-zinc-300 dark:text-zinc-300 dark:bg-zinc-800">
 
-    
+  
 <div class="min-h-screen flex flex-col">
 
   <main class="flex-1 w-11/12 sm:w-10/12 md:w-8/12 max-w-screen-md md:max-w-screen-md mx-auto">
 
 
-    <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" class="gradient2">
+    <!-- <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" class="gradient2">
       <defs>
         <radialGradient id="Gradient1" cx="50%" cy="50%" fx="10%" fy="50%" r=".5">
           <stop offset="0%" stop-color="#ff0"></stop>
@@ -71,7 +79,7 @@
         <animate attributeName="y" dur="26s" values="0%;25%;0%" repeatCount="indefinite"></animate>
       </rect>
     
-    </svg>
+    </svg> -->
 
 
     <p class="font-['M_PLUS_1p'] text-xs md:text-base xl:text-xl opacity-30 ascii">
@@ -146,154 +154,162 @@
 
 
 
-
-
-<div class="article mb-12">
-  <div class="flex justify-between items-baseline flex-wrap">
-    <p class="header article-title">
-      <a href="/posts/2020/07/solution/">Who owns the solution?</a>
-    <p class="date">Sep. 2022</p>
-  </div>
-
-  <div class="sm:flex space-x-3 items-start mb-3">
     
-      
-      
-      
-      
-      <a href="/tags/product strategy" class="tag">
-        <div class="post-tag">product strategy</div>
-      </a>
-      
-      
-      
-      <a href="/tags/management" class="tag">
-        <div class="post-tag">management</div>
-      </a>
-      
-      
+
+        <div class="article mb-12">
+            <div class="flex justify-between items-baseline flex-wrap">
+                <p class="header article-title">
+                    <a href="/posts/2020/07/solution/">Who owns the solution?</a>
+                </p>
+                <p class="date">Sep. 2022</p>
+            </div>
+
+            <div class="sm:flex space-x-3 items-start mb-3">
+
+                
+                    
+                
+                    
+                        <a class="tag" href="/tags/product strategy">
+                            <div class="post-tag">product strategy</div>
+                        </a>
+                    
+                
+                    
+                        <a class="tag" href="/tags/management">
+                            <div class="post-tag">management</div>
+                        </a>
+                    
+                
+            </div>
+
+            <p class="leading-7">Both products managers and UX Designers love to decide.
+<span class="button">
+                    <a href="/posts/2020/07/solution/">Read more &rarr;</a>
+                </span>
+            </p>
+
+        </div>
+
     
-    <!-- <button class="button" type="button" href="/posts/2020/07/solution/">Read this post &rarr;</button> -->
-  </div>
 
-  <p class="leading-7">Both products managers and UX Designers love to decide.
-<span class="button"><a href="/posts/2020/07/solution/">Read more &rarr;</a></span></p>
-
-</div>
-
-
-
-
-
-<div class="article mb-12">
-  <div class="flex justify-between items-baseline flex-wrap">
-    <p class="header article-title">
-      <a href="/posts/2020/07/opinionated/">Opinionated vs flexible products</a>
-    <p class="date">Apr. 2022</p>
-  </div>
-
-  <div class="sm:flex space-x-3 items-start mb-3">
     
-      
-      
-      
-      
-      <a href="/tags/kotlin" class="tag">
-        <div class="post-tag">kotlin</div>
-      </a>
-      
-      
-      
-      <a href="/tags/android" class="tag">
-        <div class="post-tag">android</div>
-      </a>
-      
-      
+
+        <div class="article mb-12">
+            <div class="flex justify-between items-baseline flex-wrap">
+                <p class="header article-title">
+                    <a href="/posts/2020/07/opinionated/">Opinionated vs flexible products</a>
+                </p>
+                <p class="date">Apr. 2022</p>
+            </div>
+
+            <div class="sm:flex space-x-3 items-start mb-3">
+
+                
+                    
+                
+                    
+                        <a class="tag" href="/tags/kotlin">
+                            <div class="post-tag">kotlin</div>
+                        </a>
+                    
+                
+                    
+                        <a class="tag" href="/tags/android">
+                            <div class="post-tag">android</div>
+                        </a>
+                    
+                
+            </div>
+
+            <p class="leading-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+<span class="button">
+                    <a href="/posts/2020/07/opinionated/">Read more &rarr;</a>
+                </span>
+            </p>
+
+        </div>
+
     
-    <!-- <button class="button" type="button" href="/posts/2020/07/opinionated/">Read this post &rarr;</button> -->
-  </div>
 
-  <p class="leading-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-<span class="button"><a href="/posts/2020/07/opinionated/">Read more &rarr;</a></span></p>
-
-</div>
-
-
-
-
-
-<div class="article mb-12">
-  <div class="flex justify-between items-baseline flex-wrap">
-    <p class="header article-title">
-      <a href="/posts/2020/07/input/">The worst (best?) input field ever</a>
-    <p class="date">Apr. 2022</p>
-  </div>
-
-  <div class="sm:flex space-x-3 items-start mb-3">
     
-      
-      
-      
-      
-      <a href="/tags/UI" class="tag">
-        <div class="post-tag">UI</div>
-      </a>
-      
-      
-      
-      <a href="/tags/android" class="tag">
-        <div class="post-tag">android</div>
-      </a>
-      
-      
+
+        <div class="article mb-12">
+            <div class="flex justify-between items-baseline flex-wrap">
+                <p class="header article-title">
+                    <a href="/posts/2020/07/input/">The worst (best?) input field ever</a>
+                </p>
+                <p class="date">Apr. 2022</p>
+            </div>
+
+            <div class="sm:flex space-x-3 items-start mb-3">
+
+                
+                    
+                
+                    
+                        <a class="tag" href="/tags/UI">
+                            <div class="post-tag">UI</div>
+                        </a>
+                    
+                
+                    
+                        <a class="tag" href="/tags/android">
+                            <div class="post-tag">android</div>
+                        </a>
+                    
+                
+            </div>
+
+            <p class="leading-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+<span class="button">
+                    <a href="/posts/2020/07/input/">Read more &rarr;</a>
+                </span>
+            </p>
+
+        </div>
+
     
-    <!-- <button class="button" type="button" href="/posts/2020/07/input/">Read this post &rarr;</button> -->
-  </div>
 
-  <p class="leading-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-<span class="button"><a href="/posts/2020/07/input/">Read more &rarr;</a></span></p>
-
-</div>
-
-
-
-
-
-<div class="article mb-12">
-  <div class="flex justify-between items-baseline flex-wrap">
-    <p class="header article-title">
-      <a href="/posts/2020/07/fresh_eyes/">A set of fresh eyes</a>
-    <p class="date">Apr. 2022</p>
-  </div>
-
-  <div class="sm:flex space-x-3 items-start mb-3">
     
-      
-      
-      
-      
-      <a href="/tags/kotlin" class="tag">
-        <div class="post-tag">kotlin</div>
-      </a>
-      
-      
-      
-      <a href="/tags/android" class="tag">
-        <div class="post-tag">android</div>
-      </a>
-      
-      
+
+        <div class="article mb-12">
+            <div class="flex justify-between items-baseline flex-wrap">
+                <p class="header article-title">
+                    <a href="/posts/2020/07/fresh_eyes/">A set of fresh eyes</a>
+                </p>
+                <p class="date">Apr. 2022</p>
+            </div>
+
+            <div class="sm:flex space-x-3 items-start mb-3">
+
+                
+                    
+                
+                    
+                        <a class="tag" href="/tags/kotlin">
+                            <div class="post-tag">kotlin</div>
+                        </a>
+                    
+                
+                    
+                        <a class="tag" href="/tags/android">
+                            <div class="post-tag">android</div>
+                        </a>
+                    
+                
+            </div>
+
+            <p class="leading-7">Why rotating ownership and designers can bring a new perspective.
+<span class="button">
+                    <a href="/posts/2020/07/fresh_eyes/">Read more &rarr;</a>
+                </span>
+            </p>
+
+        </div>
+
     
-    <!-- <button class="button" type="button" href="/posts/2020/07/fresh_eyes/">Read this post &rarr;</button> -->
-  </div>
-
-  <p class="leading-7">Why rotating ownership and designers can bring a new perspective.
-<span class="button"><a href="/posts/2020/07/fresh_eyes/">Read more &rarr;</a></span></p>
-
-</div>
-
-
 
 
 
@@ -370,14 +386,14 @@
 
 </footer>
 </div>
-    
+
   <script>
-    document.getElementById("toggleDarkMode").addEventListener("click", function() {
+    document.getElementById("toggleDarkMode").addEventListener("click", function () {
       if (isDarkMode()) {
         localStorage.theme = 'light'
         document.documentElement.classList.remove('dark');
         document.getElementById('toggleDarkMode').innerHTML = 'dark mode';
-        console.log( document.getElementById('toggleDarkMode').innerHTML );
+        console.log(document.getElementById('toggleDarkMode').innerHTML);
       } else {
         localStorage.theme = 'dark'
         document.documentElement.classList.add('dark')
@@ -385,5 +401,6 @@
       }
     });
   </script>
-  </body>
+</body>
+
 </html>
