@@ -1203,7 +1203,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .text-7xl {
-  font-size: 3rem;
+  font-size: 2.75rem;
 }
 
 .text-xs {
@@ -1236,10 +1236,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .leading-relaxed {
   line-height: 1.625;
-}
-
-.leading-7 {
-  line-height: 1.75rem;
 }
 
 .leading-tight {
@@ -1340,8 +1336,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 0.125rem;
   border-radius: 9999px;
   border-width: 1px;
-  --tw-border-opacity: 1;
-  border-color: rgb(113 113 122 / var(--tw-border-opacity));
+  border-color: currentColor;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   padding-bottom: 2px;
@@ -1411,7 +1406,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   opacity: 0.7;
 }
 
-.date {
+.readtime {
   font-family: Vulf Sans, ui-sans-serif, system-ui;
   opacity: 0.7;
 }
@@ -1479,31 +1474,31 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
-.article-title {
-  margin-top: 2.5rem;
-  margin-bottom: 0.5rem;
+.writing_article-title {
+  margin-top: 3rem;
   font-family: Vulf Sans, ui-sans-serif, system-ui;
-  font-size: 1.875rem;
-  font-weight: 300;
-  line-height: 1.25;
+  font-size: 2.75rem;
+  font-weight: 500;
+  line-height: 1;
+  opacity: 0.9;
 }
 
 @media (min-width: 768px) {
-  .article-title {
-    margin-top: 5rem;
+  .writing_article-title {
+    line-height: 1.25;
   }
+}
 
-  .article-title {
-    margin-bottom: 0px;
-  }
+.writing_date {
+  white-space: nowrap;
+  font-family: Vulf Sans, ui-sans-serif, system-ui;
+  font-size: 1.25rem;
+  opacity: 0.6;
+}
 
-  .article-title {
-    font-size: 2.25rem;
-  }
-
-  .article-title {
-    line-height: 1.625;
-  }
+.writing_excerpt {
+  font-family: Vulf Sans, ui-sans-serif, system-ui;
+  line-height: 2rem;
 }
 
 .main {
@@ -1534,11 +1529,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: Vulf Sans, ui-sans-serif, system-ui;
 }
 
-.prose :is(:where(h1, h2, h3, h4, th):not(:where([class~="not-prose"] *)))::before {
-  --tw-content: '#';
-  content: var(--tw-content);
-}
-
 .prose :is(:where(h1):not(:where([class~="not-prose"] *))) {
   margin-top: 2.5rem;
   margin-bottom: 0px;
@@ -1563,6 +1553,24 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .prose :is(:where(a):not(:where([class~="not-prose"] *))) {
   font-weight: 400;
+}
+
+.prose :is(:where(blockquote):not(:where([class~="not-prose"] *))) {
+  border-left-width: 1px;
+  --tw-border-opacity: 1;
+  border-left-color: rgb(161 161 170 / var(--tw-border-opacity));
+  font-family: Vulf Sans, ui-sans-serif, system-ui;
+  font-weight: 400;
+}
+
+.prose :is(:where(code):not(:where([class~="not-prose"] *))) {
+  font-family: Vulf Mono, ui-sans-serif, system-ui !important;
+  font-size: .875rem !important;
+}
+
+.prose :is(:where(pre):not(:where([class~="not-prose"] *))) {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(24 24 27 / var(--tw-bg-opacity)) !important;
 }
 
 .prose * :is(:where(li):not(:where([class~="not-prose"] *)))::marker {
