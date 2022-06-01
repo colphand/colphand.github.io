@@ -10,12 +10,13 @@
 
   <!-- To rework these using the theme color -->
   <!-- Chrome, Firefox OS and Opera -->
-  <!-- <meta name="theme-color" content="#fff"> -->
+  <!-- <meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black"> -->
   <!-- Windows Phone -->
   <meta name="msapplication-navbutton-color" content="#ffffff">
   <!-- Safari -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <!-- <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> -->
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💭</text></svg>">
 
@@ -41,48 +42,69 @@
 <body class="text-serif antialiased text-zinc-800 bg-zinc-300 dark:text-zinc-300 dark:bg-zinc-800">
 
   
-
-
 <!-- Homepage. Static gradient -->
 
-
-<!-- <div class="gradient">
+<div class="gradient">
 
 <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" class="gradient">
 
 
 
-<defs><radialGradient id="Gradient1" cx="50%" cy="50%" fx="10%" fy="50%" r=".5"><animate attributeName="fx" dur="34s" values="0%;3%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="#ff0"></stop><stop offset="100%" stop-color="#ff00"></stop></radialGradient><radialGradient id="Gradient2" cx="50%" cy="50%" fx="10%" fy="50%" r=".5"><animate attributeName="fx" dur="23.5s" values="0%;3%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="#9EFF00"></stop><stop offset="100%" stop-color="#0ff0"></stop></radialGradient><radialGradient id="Gradient3" cx="50%" cy="50%" fx="50%" fy="50%" r=".5"><animate attributeName="fx" dur="21.5s" values="0%;3%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="#f0f"></stop><stop offset="100%" stop-color="#f0f0"></stop></radialGradient>
+<defs>
+  <radialGradient id="Gradient1" cx="50%" cy="50%" fx="10%" fy="50%" r=".5">
+    <!-- <animate attributeName="fx" dur="34s" values="0%;3%;0%" repeatCount="indefinite"></animate> -->
+    <stop offset="0%" stop-color="#ff0"></stop><stop offset="100%" stop-color="#ff00"></stop>
+  </radialGradient>
+  <radialGradient id="Gradient2" cx="50%" cy="50%" fx="10%" fy="50%" r=".5">
+    <!-- <animate attributeName="fx" dur="23.5s" values="0%;3%;0%" repeatCount="indefinite"></animate> -->
+    <stop offset="0%" stop-color="#9EFF00"></stop><stop offset="100%" stop-color="#0ff0"></stop>
+  </radialGradient>
+  <radialGradient id="Gradient3" cx="50%" cy="50%" fx="50%" fy="50%" r=".5">
+    <!-- <animate attributeName="fx" dur="21.5s" values="0%;3%;0%" repeatCount="indefinite"></animate> -->
+    <stop offset="0%" stop-color="#f0f"></stop><stop offset="100%" stop-color="#f0f0"></stop>
+  </radialGradient>
 </defs>
 
-  
-  <rect width='100%' height='100%' filter='url(#noiseFilter)'/>
+<rect width='100%' height='100%' filter='url(#noiseFilter)'/>
 
 
-<rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient1)"><animate attributeName="x" dur="20s" values="25%;0%;25%" repeatCount="indefinite"></animate><animate attributeName="y" dur="21s" values="0%;25%;0%" repeatCount="indefinite"></animate><animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="17s" repeatCount="indefinite"></animateTransform></rect><rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient2)"><animate attributeName="x" dur="23s" values="-25%;0%;-25%" repeatCount="indefinite"></animate><animate attributeName="y" dur="24s" values="0%;50%;0%" repeatCount="indefinite"></animate><animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="18s" repeatCount="indefinite"></animateTransform></rect><rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient3)"><animate attributeName="x" dur="25s" values="0%;25%;0%" repeatCount="indefinite"></animate><animate attributeName="y" dur="26s" values="0%;25%;0%" repeatCount="indefinite"></animate><animateTransform attributeName="transform" type="rotate" from="360 50 50" to="0 50 50" dur="19s" repeatCount="indefinite"></animateTransform></rect></svg>
+<rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient1)">
+  <!-- <animate attributeName="x" dur="20s" values="25%;0%;25%" repeatCount="indefinite"></animate>
+  <animate attributeName="y" dur="21s" values="0%;25%;0%" repeatCount="indefinite"></animate>
+  <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="17s" repeatCount="indefinite"></animateTransform> -->
+</rect>
+<rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient2)">
+  <!-- <animate attributeName="x" dur="23s" values="-25%;0%;-25%" repeatCount="indefinite"></animate>
+  <animate attributeName="y" dur="24s" values="0%;50%;0%" repeatCount="indefinite"></animate>
+  <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="18s" repeatCount="indefinite"></animateTransform> -->
+</rect>
+<rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient3)">
+  <!-- <animate attributeName="x" dur="25s" values="0%;25%;0%" repeatCount="indefinite"></animate>
+  <animate attributeName="y" dur="26s" values="0%;25%;0%" repeatCount="indefinite"></animate>
+  <animateTransform attributeName="transform" type="rotate" from="360 50 50" to="0 50 50" dur="19s" repeatCount="indefinite"></animateTransform> -->
+</rect>
+</svg>
 
-</div> -->
+</div>
 
 <div class="min-h-screen flex flex-col">
+  <main class="flex-1 w-11/12 max-w-screen-md md:max-w-screen-lg mx-auto">
+    <p
+      class="font-['M_PLUS_1p'] text-xs md:text-base xl:text-xl opacity-30 ascii"
+    >
+      ░&emsp;&emsp;▒&emsp;&emsp;▒░▓<br />
+      ▒▓&emsp;▓&emsp;<br />
+      ▒&emsp;▓&emsp;▓&emsp;&emsp;░&emsp;▓<br />
+      ▒&emsp;▓&emsp;▒<br />
+      ▒░&emsp;&emsp;&emsp;&emsp;░▓<br />
+      ░&emsp;▓▒░&emsp;<br />
+      ▓<br />
+      ░&emsp;&emsp;<br />
+      <br />
+      ▒
+    </p>
 
-<main class="flex-1 w-11/12 max-w-screen-md md:max-w-screen-lg mx-auto">
-
-<p class="font-['M_PLUS_1p'] text-xs md:text-base xl:text-xl opacity-30 ascii">
-
-░&emsp;&emsp;▒&emsp;&emsp;▒░▓<br>
-▒▓&emsp;▓&emsp;<br>
-▒&emsp;▓&emsp;▓&emsp;&emsp;░&emsp;▓<br>
-▒&emsp;▓&emsp;▒<br>
-▒░&emsp;&emsp;&emsp;&emsp;░▓<br>
-░&emsp;▓▒░&emsp;<br>
-▓<br>
-░&emsp;&emsp;<br>
-<br>
-▒
-</p>
-
-
-  
+    
 <div class="py-10 md:py-20">
   <p class="text-7xl md:text-8xl text-slate-900 dark:text-slate-50 text-opacity-60 font-mono italic title">
     <a href="/">Colin Olphand</a>
@@ -92,21 +114,22 @@
 
 <div class="md:flex md:flex-row">
   <div class="md:flex-1 md:mr-4">
-    <p class="header mb-3">Is a Product Designer, currently improving patient care at Lyceum Health.</p>
-    <p class="header mb-3">He has worked with startups, Saas companies, agencies and as a freelancer. </p>
-    <p class="header mb-3">He likes to <a href="/writing" class="link">write</a> blog posts here and there when the impostor syndrome kicks in.</p>
+    <p class="header mb-4">Is a Product Designer, currently improving patient care at Lyceum Health.</p>
+    <p class="header mb-4">He has worked with startups, Saas companies, agencies and as a freelancer. </p>
+    <p class="header mb-4">He likes to <span class="home_button"><a href="/writing">write</a></span> blog posts here and there when the impostor syndrome kicks in.</p>
   </div>
 
   <div class="md:flex-1">
-    <p class="header mb-3">
+    <p class="header mb-3 md:mb-4">
       He loves quantum physics, typography, and detaching instances.
     </p>
-    <p class="header mb-3">
-      He has an <a href="/about" class="link">about</a> page where he stops talking in the 3rd person.
+    <p class="header mb-4">
+      He has an <span class="home_button"><a href="/about">about</a></span> page where he stops talking in the 3rd person.
     </p>
-    <p class="header mb-3">
-      Sounds like a fun guy. <br> You should <a href="mailto:colinolphand@gmail.com" class="link-external">work with
-        him</a>.
+    <p class="header mb-4">
+      Sounds like a fun guy. <br> You should 
+      <span class="home_button"><a href="mailto:colinolphand@gmail.com">work with him ↗</a></span>
+      
     </p>
   </div>
 </div>
@@ -215,10 +238,9 @@
 
 
 </div>
+  </main>
 
-</main>
-
-<footer class="bg:transparent py-8 flex-shrink-0 flex-1 w-10/12 max-w-screen-md md:max-w-screen-lg mx-auto">
+  <footer class="bg:transparent py-8 flex-shrink-0 flex-1 w-10/12 max-w-screen-md md:max-w-screen-lg mx-auto">
 
  <div class="flex flex-row justify-center space-x-4">
 

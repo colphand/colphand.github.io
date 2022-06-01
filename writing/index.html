@@ -10,12 +10,13 @@
 
   <!-- To rework these using the theme color -->
   <!-- Chrome, Firefox OS and Opera -->
-  <!-- <meta name="theme-color" content="#fff"> -->
+  <!-- <meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black"> -->
   <!-- Windows Phone -->
   <meta name="msapplication-navbutton-color" content="#ffffff">
   <!-- Safari -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <!-- <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> -->
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💭</text></svg>">
 
@@ -46,7 +47,7 @@
   <main class="flex-1 w-11/12 sm:w-10/12 md:w-8/12 max-w-screen-md md:max-w-screen-md mx-auto">
 
 
-    <!-- <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" class="gradient2">
+    <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" class="gradient2">
       <defs>
         <radialGradient id="Gradient1" cx="50%" cy="50%" fx="10%" fy="50%" r=".5">
           <stop offset="0%" stop-color="#ff0"></stop>
@@ -70,19 +71,19 @@
 
 
       <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient1)">
-        <animate attributeName="x" dur="20s" values="25%;0%;25%" repeatCount="indefinite"></animate>
-        <animate attributeName="y" dur="21s" values="0%;25%;0%" repeatCount="indefinite"></animate>
+        <!-- <animate attributeName="x" dur="20s" values="25%;0%;25%" repeatCount="indefinite"></animate>
+        <animate attributeName="y" dur="21s" values="0%;25%;0%" repeatCount="indefinite"></animate> -->
       </rect>
       <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient2)">
-        <animate attributeName="x" dur="23s" values="-25%;0%;-25%" repeatCount="indefinite"></animate>
-        <animate attributeName="y" dur="24s" values="0%;50%;0%" repeatCount="indefinite"></animate>
+        <!-- <animate attributeName="x" dur="23s" values="-25%;0%;-25%" repeatCount="indefinite"></animate>
+        <animate attributeName="y" dur="24s" values="0%;50%;0%" repeatCount="indefinite"></animate> -->
       </rect>
       <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient3)">
-        <animate attributeName="x" dur="25s" values="0%;25%;0%" repeatCount="indefinite"></animate>
-        <animate attributeName="y" dur="26s" values="0%;25%;0%" repeatCount="indefinite"></animate>
+        <!-- <animate attributeName="x" dur="25s" values="0%;25%;0%" repeatCount="indefinite"></animate>
+        <animate attributeName="y" dur="26s" values="0%;25%;0%" repeatCount="indefinite"></animate> -->
       </rect>
     
-    </svg> -->
+    </svg>
 
 
     <p class="font-['M_PLUS_1p'] text-xs md:text-base xl:text-xl opacity-30 ascii">
@@ -101,12 +102,13 @@
 
 
     
-<nav>
-  <ul class="flex space-bet py-2 border-b border-opacity-30 border-zinc-800 mb-6">
+<nav class="mb-16">
+  <a class="font-serif text-7xl opacity-20 hover:opacity-70" href="/">&larr;</a>
+  <!-- <ul class="flex space-bet py-2 border-b border-opacity-30 border-zinc-800 mb-6">
     <li class="mr-3"><a href="/">...</a></li>
     <span class="opacity-40">/</span>
     <li class="mx-3 "><a href="/writing">Writing</a></li>
-  </ul>
+  </ul> -->
 </nav>
 
 
@@ -159,7 +161,7 @@
 
     
 
-        <div class="article mb-12">
+        <div class="mb-16">
             <div class="flex justify-between items-baseline flex-wrap">
                 <p class="writing_article-title">
                     <a href="/posts/2020/07/solution/">Who owns the solution?</a>
@@ -188,8 +190,9 @@
             </div>
 
             <p class="writing_excerpt">Both products managers and UX Designers love to decide.
-<span class="button">
-                    <a href="/posts/2020/07/solution/">Read more &rarr;</a>
+
+                <span class="button">
+                    <a href="/posts/2020/07/solution/">Read more</a>
                 </span>
             </p>
 
@@ -199,7 +202,7 @@
 
     
 
-        <div class="article mb-12">
+        <div class="mb-16">
             <div class="flex justify-between items-baseline flex-wrap">
                 <p class="writing_article-title">
                     <a href="/posts/2020/07/opinionated/">Opinionated vs flexible products</a>
@@ -227,10 +230,11 @@
                 
             </div>
 
-            <p class="writing_excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <p class="writing_excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedempor incididunt ut labore et dolore magna aliqua.
 
-<span class="button">
-                    <a href="/posts/2020/07/opinionated/">Read more &rarr;</a>
+
+                <span class="button">
+                    <a href="/posts/2020/07/opinionated/">Read more</a>
                 </span>
             </p>
 
@@ -240,7 +244,7 @@
 
     
 
-        <div class="article mb-12">
+        <div class="mb-16">
             <div class="flex justify-between items-baseline flex-wrap">
                 <p class="writing_article-title">
                     <a href="/posts/2020/07/input/">The worst (best?) input field ever</a>
@@ -269,8 +273,9 @@
             </div>
 
             <p class="writing_excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-<span class="button">
-                    <a href="/posts/2020/07/input/">Read more &rarr;</a>
+
+                <span class="button">
+                    <a href="/posts/2020/07/input/">Read more</a>
                 </span>
             </p>
 
@@ -280,7 +285,7 @@
 
     
 
-        <div class="article mb-12">
+        <div class="mb-16">
             <div class="flex justify-between items-baseline flex-wrap">
                 <p class="writing_article-title">
                     <a href="/posts/2020/07/fresh_eyes/">A set of fresh eyes</a>
@@ -309,8 +314,9 @@
             </div>
 
             <p class="writing_excerpt">Why rotating ownership and designers can bring a new perspective.
-<span class="button">
-                    <a href="/posts/2020/07/fresh_eyes/">Read more &rarr;</a>
+
+                <span class="button">
+                    <a href="/posts/2020/07/fresh_eyes/">Read more</a>
                 </span>
             </p>
 
