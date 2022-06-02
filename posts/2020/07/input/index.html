@@ -9,24 +9,15 @@
   <meta name='description' content=Colin Olphand is a Product Designer, currently improving patient care at Lyceum Health.>
 
   <!-- To rework these using the theme color -->
-  <!-- Chrome, Firefox OS and Opera -->
-  <!-- <meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
-  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black"> -->
-  <!-- Windows Phone -->
-  <meta name="msapplication-navbutton-color" content="#ffffff">
-  <!-- Safari -->
-  <!-- <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> -->
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black">
+
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💭</text></svg>">
-
-  <!-- <link rel="icon" type="image/png" sizes="32x32" href="https://c.tenor.com/D61XbAM9d9MAAAAd/doom-doomguy.gif"> -->
   <link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
   <link rel="manifest" href="/manifest.json" />
-
   <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=Space+Mono&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=M+PLUS+1p&display=swap" rel="stylesheet">
   <link href="/assets/styles/tailwind.css" rel="stylesheet" />
   <link href="/assets/styles/index.css" rel="stylesheet" />
   <script>
@@ -34,12 +25,12 @@
     if (isDarkMode()) {
       document.documentElement.classList.add('dark');
     } else {
-      document.documentElement.classList.remove('dark')
+      document.documentElement.classList.remove('dark');
     }
   </script>
 </head>
 
-<body class="text-serif antialiased text-zinc-800 bg-zinc-300 dark:text-zinc-300 dark:bg-zinc-800">
+<body class="text-serif antialiased text-zinc-900 bg-zinc-300 dark:text-zinc-300 dark:bg-zinc-800">
 
   
 <div class="min-h-screen flex flex-col">
@@ -102,7 +93,7 @@
 
 
     
-<nav class="mb-16">
+<nav class="mb-8">
   <a class="font-serif text-7xl opacity-20 hover:opacity-" href="/writing">&larr;</a>
   <!-- <ul class="flex space-bet py-2 border-b border-opacity-30 border-zinc-800 mb-6">
     <li class="mr-3"><a href="/">...</a></li>
@@ -140,24 +131,24 @@
     <span>3 min</span>
   </div> -->
 </div>
-<div class="prose prose-zinc dark:prose-invert">
+<div class="prose dark:prose-invert">
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 <!-- <img class="prose-img-large" src="/assets/img/posts/mailbox.jpg" alt="mailbox" /> -->
-<h1 id="h1-heading" tabindex="-1"><a class="header-anchor" href="#h1-heading"><span>h1 Heading</span></a></h1>
-<h2 id="h2-heading" tabindex="-1"><a class="header-anchor" href="#h2-heading"><span>h2 Heading</span></a></h2>
+<h1>h1 Heading</h1>
+<h2>h2 Heading</h2>
 <h3>h3 Heading</h3>
 <h4>h4 Heading</h4>
 <h5>h5 Heading</h5>
 <h6>h6 Heading</h6>
-<h2 id="horizontal-rules" tabindex="-1"><a class="header-anchor" href="#horizontal-rules"><span>Horizontal Rules</span></a></h2>
+<h2>Horizontal Rules</h2>
 <hr>
-<h2 id="emphasis" tabindex="-1"><a class="header-anchor" href="#emphasis"><span>Emphasis</span></a></h2>
+<h2>Emphasis</h2>
 <p><strong>This is bold text</strong></p>
 <p><strong>This is bold text</strong></p>
 <p><em>This is italic text</em></p>
 <p><em>This is italic text</em></p>
 <p><s>Strikethrough</s></p>
-<h2 id="blockquotes" tabindex="-1"><a class="header-anchor" href="#blockquotes"><span>Blockquotes</span></a></h2>
+<h2>Blockquotes</h2>
 <blockquote>
 <p>Blockquotes can also be nested...</p>
 <blockquote>
@@ -167,7 +158,7 @@
 </blockquote>
 </blockquote>
 </blockquote>
-<h2 id="lists" tabindex="-1"><a class="header-anchor" href="#lists"><span>Lists</span></a></h2>
+<h2>Lists</h2>
 <p>Unordered</p>
 <ul>
 <li>Create a list by starting a line with <code>+</code>, <code>-</code>, or <code>*</code></li>
@@ -211,7 +202,7 @@
 <li>foo</li>
 <li>bar</li>
 </ol>
-<h2 id="code" tabindex="-1"><a class="header-anchor" href="#code"><span>Code</span></a></h2>
+<h2>Code</h2>
 <p>Inline <code>code</code></p>
 <p>Indented code</p>
 <pre><code>// Some comments
@@ -224,7 +215,7 @@ line 3 of code
 </code></pre>
 <p>Syntax highlighting</p>
 <pre class="language-js"><code class="language-js"><span class="token keyword">var</span> <span class="token function-variable function">foo</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">bar</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>  <span class="token keyword">return</span> bar<span class="token operator">++</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><span class="token punctuation">;</span><br><br>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">foo</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
-<h2 id="tables" tabindex="-1"><a class="header-anchor" href="#tables"><span>Tables</span></a></h2>
+<h2>Tables</h2>
 <table>
 <thead>
 <tr>
@@ -270,19 +261,25 @@ line 3 of code
 </tr>
 </tbody>
 </table>
-<h2 id="links" tabindex="-1"><a class="header-anchor" href="#links"><span>Links</span></a></h2>
+<h2>Links</h2>
 <p><a href="http://dev.nodeca.com">link text</a></p>
 <p><a href="http://nodeca.github.io/pica/demo/" title="title text!">link with title</a></p>
 <p>Autoconverted link <a href="https://github.com/nodeca/pica">https://github.com/nodeca/pica</a> (enable linkify to see)</p>
 
 </div>
 
-<div class="mt-16 py-8 border-t-2 flex justify-between items-center">
-  <div class="flex items-center flex-1">
-    <div class="inline-block h-8 w-8 bg-[url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABZJREFUeNpi2r9//38gYGAEESAAEGAAasgJOgzOKCoAAAAASUVORK5CYII=)] rounded-full mr-2 flex justify-center items-center">C</div>
-    <span class="text-lg font-medium">Colin Olphand</span>
+<div class="mt-16 py-8 border-t border-current flex justify-between">
+  <div class="flex flex-1 items-start">
+    <div class="flex items-center">
+      <div
+        class="inline-block h-8 w-8 bg-[url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABZJREFUeNpi2r9//38gYGAEESAAEGAAasgJOgzOKCoAAAAASUVORK5CYII=)] rounded-full mr-2 flex justify-center items-center">
+        C</div>
+      <span class="text-lg font-medium">Colin Olphand</span>
+    </div>
   </div>
-  <p class="text-sm flex-1"> I’ve worked with startups, Saas companies, agencies and as a freelancer. I’ve been one of a team and a team of one. I’ve built design systems, products, and processes. I get a kick out of mentoring new design talent.</p>
+  <p class="text-sm flex-1"> I’ve worked with startups, Saas companies, agencies and as a freelancer. I’ve been one of a
+    team and a team of one. I’ve built design systems, products, and processes. I get a kick out of mentoring new design
+    talent.</p>
 </div>
 
   </main>
@@ -312,24 +309,40 @@ line 3 of code
     </p>
     
   </div>
-
+<div>
+  <p id="quote" class="text-center opacity-60 text-sm">test</p>
+</div>
 </footer>
 </div>
 
   <script>
+    var picture = document.getElementById('profpic');
     document.getElementById("toggleDarkMode").addEventListener("click", function () {
       if (isDarkMode()) {
         localStorage.theme = 'light'
         document.documentElement.classList.remove('dark');
         document.getElementById('toggleDarkMode').innerHTML = 'dark mode';
-        console.log(document.getElementById('toggleDarkMode').innerHTML);
+        picture.src = '../assets/img/profile-pic.png';
       } else {
         localStorage.theme = 'dark'
         document.documentElement.classList.add('dark')
         document.getElementById('toggleDarkMode').innerHTML = 'light mode';
+        picture.src = '../assets/img/posts/mailbox.jpg';
+        console.log(picture);
       }
+
     });
+    var currDate = new Date();
+    var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    var dayOfWeekNumber = currDate.getDay();
+    var nameOfDay = daysOfWeek[dayOfWeekNumber];
+    var niceDay = "Have a nice " + nameOfDay + "!";
+    var quotes = ["🥐", "You're telling me a user centered this design?", "Not that funny in person", "A E S T H E T I C S", "Don't forget to like and subscribe", "lorem ipsum dolor dolor bills", "Built with 11ty, Tailwind and too much googling", "Press Cancel to Cancel", "Can gradients replace user research?", "No pixels were harmed while making this website", "That's all Folks!"];
+    quotes.push(niceDay);
+    var randomItem = quotes[Math.random() * quotes.length | 0];
+    document.getElementById('quote').innerHTML = randomItem;
   </script>
+
 </body>
 
 </html>
