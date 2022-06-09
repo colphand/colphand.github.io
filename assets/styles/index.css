@@ -75,8 +75,8 @@
   z-index: -1;
   opacity: .5;
   position: fixed;
-  background: 
-    url(https://grainy-gradients.vercel.app/noise.svg);
+  /* background: 
+    url(https://grainy-gradients.vercel.app/noise.svg); */
     
     /* mix-blend-mode: multiply; */
     /* filter: contrast(170%) brightness(1000%); */
@@ -95,8 +95,8 @@
   z-index: -1;
   opacity: .2;
   position: fixed;
-  background: 
-    url(https://grainy-gradients.vercel.app/noise.svg);
+  /* background: 
+    url(https://grainy-gradients.vercel.app/noise.svg); */
     
     /* mix-blend-mode: multiply; */
     /* filter: contrast(170%) brightness(1000%); */

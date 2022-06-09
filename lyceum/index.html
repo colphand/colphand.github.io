@@ -30,70 +30,101 @@
   </script>
 </head>
 
-<body class="text-serif antialiased text-zinc-900 bg-zinc-300 dark:text-zinc-300 dark:bg-zinc-800">
+<body class="text-serif antialiased text-zinc-900 bg-zinc-300 dark:text-zinc-100 dark:bg-zinc-700">
+
+  <p class="ascii">
+    ░&emsp;&emsp;▒&emsp;&emsp;▒░▓<br />
+    ▒▓&emsp;▓&emsp;<br />
+    ▒&emsp;▓&emsp;▓&emsp;&emsp;░&emsp;▓<br />
+    ▒&emsp;▓&emsp;▒<br />
+    ▒░&emsp;&emsp;&emsp;&emsp;░▓<br />
+    ░&emsp;▓▒░&emsp;<br />
+    ▓<br />
+    ░&emsp;&emsp;<br />
+    <br />
+    ▒
+  </p>
 
   
 <div class="min-h-screen flex flex-col">
 
   <main class="flex-1 w-11/12 sm:w-10/12 md:w-8/12 max-w-screen-md md:max-w-screen-md mx-auto">
 
+    <filter id='noiseFilter'>
+      <feTurbulence type='fractalNoise' baseFrequency='8' numOctaves='1' stitchTiles='stitch' />
+    </filter>  
+    <rect width='100%' height='100%' filter='url(#noiseFilter)' />
 
-    <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" class="gradient2">
-      <defs>
-        <radialGradient id="Gradient1" cx="50%" cy="50%" fx="10%" fy="50%" r=".5">
-          <stop offset="0%" stop-color="#ff0"></stop>
-          <stop offset="100%" stop-color="#ff00"></stop>
-        </radialGradient>
-        <radialGradient id="Gradient2" cx="50%" cy="50%" fx="10%" fy="50%" r=".5">
-          <stop offset="0%" stop-color="#9EFF00"></stop>
-          <stop offset="100%" stop-color="#0ff0"></stop>
-        </radialGradient>
-        <radialGradient id="Gradient3" cx="50%" cy="50%" fx="50%" fy="50%" r=".5">
-          <stop offset="0%" stop-color="#f0f"></stop>
-          <stop offset="100%" stop-color="#f0f0"></stop>
-        </radialGradient>
-      </defs>
-
-      <filter id='noiseFilter'>
-        <feTurbulence type='fractalNoise' baseFrequency='8' numOctaves='1' stitchTiles='stitch' />
-      </filter>
-
-      <rect width='100%' height='100%' filter='url(#noiseFilter)' />
-
-
-      <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient1)">
-        <!-- <animate attributeName="x" dur="20s" values="25%;0%;25%" repeatCount="indefinite"></animate>
-        <animate attributeName="y" dur="21s" values="0%;25%;0%" repeatCount="indefinite"></animate> -->
-      </rect>
-      <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient2)">
-        <!-- <animate attributeName="x" dur="23s" values="-25%;0%;-25%" repeatCount="indefinite"></animate>
-        <animate attributeName="y" dur="24s" values="0%;50%;0%" repeatCount="indefinite"></animate> -->
-      </rect>
-      <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient3)">
-        <!-- <animate attributeName="x" dur="25s" values="0%;25%;0%" repeatCount="indefinite"></animate>
-        <animate attributeName="y" dur="26s" values="0%;25%;0%" repeatCount="indefinite"></animate> -->
-      </rect>
     
-    </svg>
+<nav class="mb-8">
+    <a class="font-serif text-7xl opacity-20 hover:opacity-" href="/writing">&larr;</a>
+    <!-- 
+<div class="fixed right-4">   
+    <div class="circle top-0 -right-20 bg-teal-300 animate-blob"></div>
+    <div class="circle top-0 -right-4 bg-amber-300 animate-blob animation-delay-2000 "></div>
+    <div class="circle -bottom-8 -right-6 bg-pink-300 animate-blob animation-delay-4000"></div>
+</div>  -->
+
+</nav>
 
 
-    <p class="font-['M_PLUS_1p'] text-xs md:text-base xl:text-xl opacity-30 ascii">
 
-      ░&emsp;&emsp;▒&emsp;&emsp;▒░▓<br>
-      ▒▓&emsp;▓&emsp;<br>
-      ▒&emsp;▓&emsp;▓&emsp;&emsp;░&emsp;▓<br>
-      ▒&emsp;▓&emsp;▒<br>
-      ▒░&emsp;&emsp;&emsp;&emsp;░▓<br>
-      ░&emsp;▓▒░&emsp;<br>
-      ▓<br>
-      ░&emsp;&emsp;<br>
-      <br>
-      ▒
-    </p>
+<p class="writing_article-title">
+  Lyceum
+  
+  <span class="writing_date"></span>
+</p>
 
+<div class="flex justify-between items-baseline flex-wraplex mb-4">
+  
 
-    <p>Lyceum</p>
+  <div class="sm:flex space-x-3 items-start mb-3">
+    
+  </div>
+  <!-- <div class="readtime">
+    <span>1 min</span>
+  </div> -->
+</div>
+<div class="prose dark:prose-invert max-w-none">
+  <!-- When pharmaceutical manufacturers design expensive specialty drugs, one of their goals in that patients get on therapy fast and that they are provided with the resources they need to manage their condition. One of these tools is Patient Support Programs (PSPs).
+ creates digital PSPs. where patients are enrolled  -->
+<p>Lyceum Health creates <a href="https://lyceumhealth.com/dpsp.html">Digital Patients Support Programs</a> to support patients suffering from advanced conditions. and <a href="https://lyceumhealth.com/cap.html">Clinical Assessment Programs</a> to support clinics and their patients and in staying on top of their condition and facilitate their journey, from coverage eligibility to reimbursement.</p>
+<p>I was hired as their first designer, in charge</p>
+<p>As with any startup, I had to wear multiple hats (which I love, but only figuratively), and so I ended up taking part in shaping the product vision and strategy, coding my own designs, and translating our apps. I introduced the team to <a href="https://notion.so">Notion</a>, which became our go-to for Documentation and Product work.</p>
+<h3>Challenges</h3>
+<ul>
+<li>A lot of users</li>
+<li>B2B2C model</li>
+<li>Users are hard to reach.</li>
+</ul>
+<h3>Learnings</h3>
+<ul>
+<li>Process is everything</li>
+<li>Documentation is even more</li>
+<li>Knowledge is siloed</li>
+</ul>
+<p>how did that go?
+´´</p>
+<blockquote>
+<p>How to design a system used by</p>
+</blockquote>
 
+</div>
+
+<hr class="mt-16 mb-4 border-[.5px] border-current opacity-40">
+<div class="flex justify-between">
+  <div class="flex flex-1 items-start">
+    <div class="flex items-center">
+      <div
+        class=" h-8 w-8 bg-[url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABZJREFUeNpi2r9//38gYGAEESAAEGAAasgJOgzOKCoAAAAASUVORK5CYII=)] rounded-full mr-2 flex justify-center items-center">
+        C</div>
+      <span class="text-lg font-medium">Colin Olphand</span>
+    </div>
+  </div>
+  <p class="text-sm flex-1"> I’ve worked with startups, Saas companies, agencies and as a freelancer. I’ve been one of a
+    team and a team of one. I’ve built design systems, products, and processes. I get a kick out of mentoring new design
+    talent.</p>
+</div>
 
   </main>
 
@@ -135,12 +166,12 @@
         localStorage.theme = 'light'
         document.documentElement.classList.remove('dark');
         document.getElementById('toggleDarkMode').innerHTML = 'dark mode';
-        picture.src = '../assets/img/profile-pic.png';
+        picture.src = '../assets/img/profile-pic2.png';
       } else {
         localStorage.theme = 'dark'
         document.documentElement.classList.add('dark')
         document.getElementById('toggleDarkMode').innerHTML = 'light mode';
-        picture.src = '../assets/img/posts/mailbox.jpg';
+        picture.src = '../assets/img/profile-pic5.png';
         console.log(picture);
       }
 
@@ -150,7 +181,7 @@
     var dayOfWeekNumber = currDate.getDay();
     var nameOfDay = daysOfWeek[dayOfWeekNumber];
     var niceDay = "Have a nice " + nameOfDay + "!";
-    var quotes = ["🥐", "You're telling me a user centered this design?", "Not that funny in person", "A E S T H E T I C S", "Don't forget to like and subscribe", "lorem ipsum dolor dolor bills", "Built with 11ty, Tailwind and too much googling", "Press Cancel to Cancel", "Can gradients replace user research?", "No pixels were harmed while making this website", "That's all Folks!"];
+    var quotes = ["🥐", "You're telling me a user centered this design?", "Not that funny in person", "A E S T H E T I C S", "Don't forget to like and subscribe", "lorem ipsum dolor dolor bills", "Built with 11ty, Tailwind and too much googling", "Press Cancel to Cancel", "Can gradients save the world?", "No pixels were harmed in making this website", "That's all Folks!"];
     quotes.push(niceDay);
     var randomItem = quotes[Math.random() * quotes.length | 0];
     document.getElementById('quote').innerHTML = randomItem;

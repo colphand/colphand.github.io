@@ -30,120 +30,59 @@
   </script>
 </head>
 
-<body class="text-serif antialiased text-zinc-900 bg-zinc-300 dark:text-zinc-300 dark:bg-zinc-800">
+<body class="text-serif antialiased text-zinc-900 bg-zinc-300 dark:text-zinc-100 dark:bg-zinc-700">
+
+  <p class="ascii">
+    ░&emsp;&emsp;▒&emsp;&emsp;▒░▓<br />
+    ▒▓&emsp;▓&emsp;<br />
+    ▒&emsp;▓&emsp;▓&emsp;&emsp;░&emsp;▓<br />
+    ▒&emsp;▓&emsp;▒<br />
+    ▒░&emsp;&emsp;&emsp;&emsp;░▓<br />
+    ░&emsp;▓▒░&emsp;<br />
+    ▓<br />
+    ░&emsp;&emsp;<br />
+    <br />
+    ▒
+  </p>
 
   
 <div class="min-h-screen flex flex-col">
 
   <main class="flex-1 w-11/12 sm:w-10/12 md:w-8/12 max-w-screen-md md:max-w-screen-md mx-auto">
 
-
-    <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" class="gradient2">
-      <defs>
-        <radialGradient id="Gradient1" cx="50%" cy="50%" fx="10%" fy="50%" r=".5">
-          <stop offset="0%" stop-color="#ff0"></stop>
-          <stop offset="100%" stop-color="#ff00"></stop>
-        </radialGradient>
-        <radialGradient id="Gradient2" cx="50%" cy="50%" fx="10%" fy="50%" r=".5">
-          <stop offset="0%" stop-color="#9EFF00"></stop>
-          <stop offset="100%" stop-color="#0ff0"></stop>
-        </radialGradient>
-        <radialGradient id="Gradient3" cx="50%" cy="50%" fx="50%" fy="50%" r=".5">
-          <stop offset="0%" stop-color="#f0f"></stop>
-          <stop offset="100%" stop-color="#f0f0"></stop>
-        </radialGradient>
-      </defs>
-
-      <filter id='noiseFilter'>
-        <feTurbulence type='fractalNoise' baseFrequency='8' numOctaves='1' stitchTiles='stitch' />
-      </filter>
-
-      <rect width='100%' height='100%' filter='url(#noiseFilter)' />
-
-
-      <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient1)">
-        <!-- <animate attributeName="x" dur="20s" values="25%;0%;25%" repeatCount="indefinite"></animate>
-        <animate attributeName="y" dur="21s" values="0%;25%;0%" repeatCount="indefinite"></animate> -->
-      </rect>
-      <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient2)">
-        <!-- <animate attributeName="x" dur="23s" values="-25%;0%;-25%" repeatCount="indefinite"></animate>
-        <animate attributeName="y" dur="24s" values="0%;50%;0%" repeatCount="indefinite"></animate> -->
-      </rect>
-      <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient3)">
-        <!-- <animate attributeName="x" dur="25s" values="0%;25%;0%" repeatCount="indefinite"></animate>
-        <animate attributeName="y" dur="26s" values="0%;25%;0%" repeatCount="indefinite"></animate> -->
-      </rect>
-    
-    </svg>
-
-
-    <p class="font-['M_PLUS_1p'] text-xs md:text-base xl:text-xl opacity-30 ascii">
-
-      ░&emsp;&emsp;▒&emsp;&emsp;▒░▓<br>
-      ▒▓&emsp;▓&emsp;<br>
-      ▒&emsp;▓&emsp;▓&emsp;&emsp;░&emsp;▓<br>
-      ▒&emsp;▓&emsp;▒<br>
-      ▒░&emsp;&emsp;&emsp;&emsp;░▓<br>
-      ░&emsp;▓▒░&emsp;<br>
-      ▓<br>
-      ░&emsp;&emsp;<br>
-      <br>
-      ▒
-    </p>
-
+    <filter id='noiseFilter'>
+      <feTurbulence type='fractalNoise' baseFrequency='8' numOctaves='1' stitchTiles='stitch' />
+    </filter>  
+    <rect width='100%' height='100%' filter='url(#noiseFilter)' />
 
     
-<nav class="mb-8">
+<nav class="mb-8 flex justify-between">
   <a class="font-serif text-7xl opacity-20 hover:opacity-70" href="/">&larr;</a>
-  <!-- <ul class="flex space-bet py-2 border-b border-opacity-30 border-zinc-800 mb-6">
-    <li class="mr-3"><a href="/">...</a></li>
-    <span class="opacity-40">/</span>
-    <li class="mx-3 "><a href="/writing">Writing</a></li>
-  </ul> -->
+  <!-- 
+<div class="fixed right-4">   
+    <div class="circle top-0 -right-20 bg-teal-300 animate-blob"></div>
+    <div class="circle top-0 -right-4 bg-amber-300 animate-blob animation-delay-2000 "></div>
+    <div class="circle -bottom-8 -right-6 bg-pink-300 animate-blob animation-delay-4000"></div>
+</div>  -->
+
 </nav>
 
 <p class="mb-4 opacity-70 text-lg">Thoughts on design, development and more.</p>
 
 <div class="sm:flex space-x-3 items-start mb-8">
     
-            <a class="post-tag" href="/tags/UI">UI</a>
+            <a class="post-tag" href="/tags/collaboration">collaboration</a>
     
-            <a class="post-tag" href="/tags/android">android</a>
-    
-            <a class="post-tag" href="/tags/kotlin">kotlin</a>
-    
-            <a class="post-tag" href="/tags/management">management</a>
+            <a class="post-tag" href="/tags/front-end">front-end</a>
     
             <a class="post-tag" href="/tags/product strategy">product strategy</a>
     
 </div>
-<hr class="mb-8 opacity-20">
+<hr class="mb-8 border-1 border-current opacity-30">
 
 
 
   
-
-
-<div class="mb-16">
-  <p class="writing_article-title hover:opacity-100">
-      <a href="/posts/2020/07/fresh_eyes/">A set of fresh eyes</a>
-  </p>
-  <p class="writing_date">Apr. 2022</p>
-  <p class="writing_excerpt">Why rotating ownership and designers can bring a new perspective.
-<span class="button"><a href="/posts/2020/07/fresh_eyes/">Read more</a></span></p>
-</div>
-
-
-
-<div class="mb-16">
-  <p class="writing_article-title hover:opacity-100">
-      <a href="/posts/2020/07/input/">The worst (best?) input field ever</a>
-  </p>
-  <p class="writing_date">Apr. 2022</p>
-  <p class="writing_excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-<span class="button"><a href="/posts/2020/07/input/">Read more</a></span></p>
-</div>
-
 
 
 <div class="mb-16">
@@ -154,6 +93,39 @@
   <p class="writing_excerpt">How to approach designing each.
 
 <span class="button"><a href="/posts/2020/07/opinionated/">Read more</a></span></p>
+</div>
+
+
+
+<div class="mb-16">
+  <p class="writing_article-title hover:opacity-100">
+      <a href="/posts/2020/07/file_fatigue/">A set of fresh eyes</a>
+  </p>
+  <p class="writing_date">Jun. 2022</p>
+  <p class="writing_excerpt">Rotating ownership and designers can bring a new perspective.
+<span class="button"><a href="/posts/2020/07/file_fatigue/">Read more</a></span></p>
+</div>
+
+
+
+<div class="mb-16">
+  <p class="writing_article-title hover:opacity-100">
+      <a href="/posts/2020/07/should_designers_know_how_to_code copy/">Documenting Documentation</a>
+  </p>
+  <p class="writing_date">Jun. 2022</p>
+  <p class="writing_excerpt">A tale of two extremes.
+<span class="button"><a href="/posts/2020/07/should_designers_know_how_to_code copy/">Read more</a></span></p>
+</div>
+
+
+
+<div class="mb-16">
+  <p class="writing_article-title hover:opacity-100">
+      <a href="/posts/2020/07/should_designers_know_how_to_code/">Should designers know how to code?</a>
+  </p>
+  <p class="writing_date">Jun. 2022</p>
+  <p class="writing_excerpt">Oh no not this again...
+<span class="button"><a href="/posts/2020/07/should_designers_know_how_to_code/">Read more</a></span></p>
 </div>
 
 
@@ -211,12 +183,12 @@
         localStorage.theme = 'light'
         document.documentElement.classList.remove('dark');
         document.getElementById('toggleDarkMode').innerHTML = 'dark mode';
-        picture.src = '../assets/img/profile-pic.png';
+        picture.src = '../assets/img/profile-pic2.png';
       } else {
         localStorage.theme = 'dark'
         document.documentElement.classList.add('dark')
         document.getElementById('toggleDarkMode').innerHTML = 'light mode';
-        picture.src = '../assets/img/posts/mailbox.jpg';
+        picture.src = '../assets/img/profile-pic5.png';
         console.log(picture);
       }
 
@@ -226,7 +198,7 @@
     var dayOfWeekNumber = currDate.getDay();
     var nameOfDay = daysOfWeek[dayOfWeekNumber];
     var niceDay = "Have a nice " + nameOfDay + "!";
-    var quotes = ["🥐", "You're telling me a user centered this design?", "Not that funny in person", "A E S T H E T I C S", "Don't forget to like and subscribe", "lorem ipsum dolor dolor bills", "Built with 11ty, Tailwind and too much googling", "Press Cancel to Cancel", "Can gradients replace user research?", "No pixels were harmed while making this website", "That's all Folks!"];
+    var quotes = ["🥐", "You're telling me a user centered this design?", "Not that funny in person", "A E S T H E T I C S", "Don't forget to like and subscribe", "lorem ipsum dolor dolor bills", "Built with 11ty, Tailwind and too much googling", "Press Cancel to Cancel", "Can gradients save the world?", "No pixels were harmed in making this website", "That's all Folks!"];
     quotes.push(niceDay);
     var randomItem = quotes[Math.random() * quotes.length | 0];
     document.getElementById('quote').innerHTML = randomItem;

@@ -33,114 +33,86 @@
 <body class="text-serif antialiased text-zinc-900 bg-zinc-300 dark:text-zinc-300 dark:bg-zinc-800">
 
   
+<div class="gradient">
+
+<svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" class="gradient">
+
+
+
+<defs>
+  <radialGradient id="Gradient1" cx="50%" cy="50%" fx="10%" fy="50%" r=".5">
+    <!-- <animate attributeName="fx" dur="34s" values="0%;3%;0%" repeatCount="indefinite"></animate> -->
+    <stop offset="0%" stop-color="#ff0"></stop><stop offset="100%" stop-color="#ff00"></stop>
+  </radialGradient>
+  <radialGradient id="Gradient2" cx="50%" cy="50%" fx="10%" fy="50%" r=".5">
+    <!-- <animate attributeName="fx" dur="23.5s" values="0%;3%;0%" repeatCount="indefinite"></animate> -->
+    <stop offset="0%" stop-color="#9EFF00"></stop><stop offset="100%" stop-color="#0ff0"></stop>
+  </radialGradient>
+  <radialGradient id="Gradient3" cx="50%" cy="50%" fx="50%" fy="50%" r=".5">
+    <!-- <animate attributeName="fx" dur="21.5s" values="0%;3%;0%" repeatCount="indefinite"></animate> -->
+    <stop offset="0%" stop-color="#f0f"></stop><stop offset="100%" stop-color="#f0f0"></stop>
+  </radialGradient>
+</defs>
+
+<rect width='100%' height='100%' filter='url(#noiseFilter)'/>
+
+
+<rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient1)">
+  <!-- <animate attributeName="x" dur="20s" values="25%;0%;25%" repeatCount="indefinite"></animate>
+  <animate attributeName="y" dur="21s" values="0%;25%;0%" repeatCount="indefinite"></animate>
+  <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="17s" repeatCount="indefinite"></animateTransform> -->
+</rect>
+<rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient2)">
+  <!-- <animate attributeName="x" dur="23s" values="-25%;0%;-25%" repeatCount="indefinite"></animate>
+  <animate attributeName="y" dur="24s" values="0%;50%;0%" repeatCount="indefinite"></animate>
+  <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="18s" repeatCount="indefinite"></animateTransform> -->
+</rect>
+<rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient3)">
+  <!-- <animate attributeName="x" dur="25s" values="0%;25%;0%" repeatCount="indefinite"></animate>
+  <animate attributeName="y" dur="26s" values="0%;25%;0%" repeatCount="indefinite"></animate>
+  <animateTransform attributeName="transform" type="rotate" from="360 50 50" to="0 50 50" dur="19s" repeatCount="indefinite"></animateTransform> -->
+</rect>
+</svg>
+
+</div>
+
 <div class="min-h-screen flex flex-col">
-
-  <main class="flex-1 w-11/12 sm:w-10/12 md:w-8/12 max-w-screen-md md:max-w-screen-md mx-auto">
-
-
-    <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" class="gradient2">
-      <defs>
-        <radialGradient id="Gradient1" cx="50%" cy="50%" fx="10%" fy="50%" r=".5">
-          <stop offset="0%" stop-color="#ff0"></stop>
-          <stop offset="100%" stop-color="#ff00"></stop>
-        </radialGradient>
-        <radialGradient id="Gradient2" cx="50%" cy="50%" fx="10%" fy="50%" r=".5">
-          <stop offset="0%" stop-color="#9EFF00"></stop>
-          <stop offset="100%" stop-color="#0ff0"></stop>
-        </radialGradient>
-        <radialGradient id="Gradient3" cx="50%" cy="50%" fx="50%" fy="50%" r=".5">
-          <stop offset="0%" stop-color="#f0f"></stop>
-          <stop offset="100%" stop-color="#f0f0"></stop>
-        </radialGradient>
-      </defs>
-
-      <filter id='noiseFilter'>
-        <feTurbulence type='fractalNoise' baseFrequency='8' numOctaves='1' stitchTiles='stitch' />
-      </filter>
-
-      <rect width='100%' height='100%' filter='url(#noiseFilter)' />
-
-
-      <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient1)">
-        <!-- <animate attributeName="x" dur="20s" values="25%;0%;25%" repeatCount="indefinite"></animate>
-        <animate attributeName="y" dur="21s" values="0%;25%;0%" repeatCount="indefinite"></animate> -->
-      </rect>
-      <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient2)">
-        <!-- <animate attributeName="x" dur="23s" values="-25%;0%;-25%" repeatCount="indefinite"></animate>
-        <animate attributeName="y" dur="24s" values="0%;50%;0%" repeatCount="indefinite"></animate> -->
-      </rect>
-      <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient3)">
-        <!-- <animate attributeName="x" dur="25s" values="0%;25%;0%" repeatCount="indefinite"></animate>
-        <animate attributeName="y" dur="26s" values="0%;25%;0%" repeatCount="indefinite"></animate> -->
-      </rect>
-    
-    </svg>
-
-
-    <p class="font-['M_PLUS_1p'] text-xs md:text-base xl:text-xl opacity-30 ascii">
-
-      ░&emsp;&emsp;▒&emsp;&emsp;▒░▓<br>
-      ▒▓&emsp;▓&emsp;<br>
-      ▒&emsp;▓&emsp;▓&emsp;&emsp;░&emsp;▓<br>
-      ▒&emsp;▓&emsp;▒<br>
-      ▒░&emsp;&emsp;&emsp;&emsp;░▓<br>
-      ░&emsp;▓▒░&emsp;<br>
-      ▓<br>
-      ░&emsp;&emsp;<br>
-      <br>
+  <main class="flex-1 w-11/12 max-w-screen-md md:max-w-screen-lg mx-auto">
+    <p
+      class="font-['M_PLUS_1p'] text-xs md:text-base xl:text-xl opacity-30 ascii"
+    >
+      ░&emsp;&emsp;▒&emsp;&emsp;▒░▓<br />
+      ▒▓&emsp;▓&emsp;<br />
+      ▒&emsp;▓&emsp;▓&emsp;&emsp;░&emsp;▓<br />
+      ▒&emsp;▓&emsp;▒<br />
+      ▒░&emsp;&emsp;&emsp;&emsp;░▓<br />
+      ░&emsp;▓▒░&emsp;<br />
+      ▓<br />
+      ░&emsp;&emsp;<br />
+      <br />
       ▒
     </p>
 
-
-    
-<nav class="mb-8">
+    <nav class="mb-8">
   <a class="font-serif text-7xl opacity-20 hover:opacity-70" href="/">&larr;</a>
 </nav>
 
-<p class="mb-4 opacity-70 text-lg">Thoughts on design, development and more.</p>
 
-<div class="sm:flex space-x-3 items-start mb-8">
+
+
+<div class="md:flex md:flex-row gap-2">
+
+<div class="grow self-end font-serif font-light text-lg" >
+
+who dat
     
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
+Hi! I am a French product designer currently based in Toronto. I’ve worked with startups, Saas companies, agencies and as a freelancer. I’ve been one of a team and a team of one. I’ve built design systems, products, and processes. I get a kick out of mentoring new design talent. 
+
+I have a passion for the craft, and as such I've learned front-end code. Along with UX Design am experienced in Product Strategy, Front End technologies,
+
 </div>
-<hr class="mb-8 opacity-20">
-
-
-
-  
-
-
-<div class="mb-16">
-  <p class="writing_article-title hover:opacity-100">
-      <a href="/posts/2020/07/fresh_eyes/">A set of fresh eyes</a>
-  </p>
-  <p class="writing_date">Apr. 2022</p>
-  <p class="writing_excerpt">Why rotating ownership and designers can bring a new perspective.
-<span class="button"><a href="/posts/2020/07/fresh_eyes/">Read more</a></span></p>
+<img class="w-64 h-fit" id="profpic" src="/assets/img/profile-pic.png"></img>
 </div>
-
-
-
-<div class="mb-16">
-  <p class="writing_article-title hover:opacity-100">
-      <a href="/posts/2020/07/input/">The worst (best?) input field ever</a>
-  </p>
-  <p class="writing_date">Apr. 2022</p>
-  <p class="writing_excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-<span class="button"><a href="/posts/2020/07/input/">Read more</a></span></p>
-</div>
-
-
-
 
 
   </main>
@@ -176,6 +148,7 @@
 </footer>
 </div>
 
+
   <script>
     var picture = document.getElementById('profpic');
     document.getElementById("toggleDarkMode").addEventListener("click", function () {
@@ -183,12 +156,12 @@
         localStorage.theme = 'light'
         document.documentElement.classList.remove('dark');
         document.getElementById('toggleDarkMode').innerHTML = 'dark mode';
-        picture.src = '../assets/img/profile-pic2.png';
+        picture.src = '../assets/img/profile-pic.png';
       } else {
         localStorage.theme = 'dark'
         document.documentElement.classList.add('dark')
         document.getElementById('toggleDarkMode').innerHTML = 'light mode';
-        picture.src = '../assets/img/profile-pic5.png';
+        picture.src = '../assets/img/posts/mailbox.jpg';
         console.log(picture);
       }
 

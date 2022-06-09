@@ -30,13 +30,12 @@
   </script>
 </head>
 
-<body class="text-serif antialiased text-zinc-900 bg-zinc-300 dark:text-zinc-300 dark:bg-zinc-800">
+<body class="text-serif antialiased text-zinc-900 bg-zinc-300 dark:text-zinc-100 dark:bg-zinc-700">
 
   
 <div class="min-h-screen flex flex-col">
 
   <main class="flex-1 w-11/12 sm:w-10/12 md:w-8/12 max-w-screen-md md:max-w-screen-md mx-auto">
-
 
     <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" class="gradient2">
       <defs>
@@ -95,29 +94,20 @@
     
 <nav class="mb-8">
   <a class="font-serif text-7xl opacity-20 hover:opacity-70" href="/">&larr;</a>
-  <!-- <ul class="flex space-bet py-2 border-b border-opacity-30 border-zinc-800 mb-6">
-    <li class="mr-3"><a href="/">...</a></li>
-    <span class="opacity-40">/</span>
-    <li class="mx-3 "><a href="/writing">Writing</a></li>
-  </ul> -->
 </nav>
 
 <p class="mb-4 opacity-70 text-lg">Thoughts on design, development and more.</p>
 
 <div class="sm:flex space-x-3 items-start mb-8">
     
-            <a class="post-tag" href="/tags/UI">UI</a>
-    
-            <a class="post-tag" href="/tags/android">android</a>
-    
-            <a class="post-tag" href="/tags/kotlin">kotlin</a>
+            <a class="post-tag" href="/tags/front-end">front-end</a>
     
             <a class="post-tag" href="/tags/management">management</a>
     
             <a class="post-tag" href="/tags/product strategy">product strategy</a>
     
 </div>
-<hr class="mb-8 opacity-20">
+<hr class="mb-8 border-1 border-current opacity-30">
 
 
 
@@ -126,11 +116,11 @@
 
 <div class="mb-16">
   <p class="writing_article-title hover:opacity-100">
-      <a href="/posts/2020/07/solution/">Who owns the solution?</a>
+      <a href="/posts/2020/07/file_fatigue/">A set of fresh eyes</a>
   </p>
-  <p class="writing_date">Sep. 2022</p>
-  <p class="writing_excerpt">Both products managers and UX Designers love to decide.
-<span class="button"><a href="/posts/2020/07/solution/">Read more</a></span></p>
+  <p class="writing_date">Jun. 2022</p>
+  <p class="writing_excerpt">Rotating ownership and designers can bring a new perspective.
+<span class="button"><a href="/posts/2020/07/file_fatigue/">Read more</a></span></p>
 </div>
 
 
@@ -177,12 +167,12 @@
         localStorage.theme = 'light'
         document.documentElement.classList.remove('dark');
         document.getElementById('toggleDarkMode').innerHTML = 'dark mode';
-        picture.src = '../assets/img/profile-pic.png';
+        picture.src = '../assets/img/profile-pic2.png';
       } else {
         localStorage.theme = 'dark'
         document.documentElement.classList.add('dark')
         document.getElementById('toggleDarkMode').innerHTML = 'light mode';
-        picture.src = '../assets/img/posts/mailbox.jpg';
+        picture.src = '../assets/img/profile-pic5.png';
         console.log(picture);
       }
 
@@ -192,7 +182,7 @@
     var dayOfWeekNumber = currDate.getDay();
     var nameOfDay = daysOfWeek[dayOfWeekNumber];
     var niceDay = "Have a nice " + nameOfDay + "!";
-    var quotes = ["🥐", "You're telling me a user centered this design?", "Not that funny in person", "A E S T H E T I C S", "Don't forget to like and subscribe", "lorem ipsum dolor dolor bills", "Built with 11ty, Tailwind and too much googling", "Press Cancel to Cancel", "Can gradients replace user research?", "No pixels were harmed while making this website", "That's all Folks!"];
+    var quotes = ["🥐", "You're telling me a user centered this design?", "Not that funny in person", "A E S T H E T I C S", "Don't forget to like and subscribe", "lorem ipsum dolor dolor bills", "Built with 11ty, Tailwind and too much googling", "Press Cancel to Cancel", "Can gradients save the world?", "No pixels were harmed in making this website", "That's all Folks!"];
     quotes.push(niceDay);
     var randomItem = quotes[Math.random() * quotes.length | 0];
     document.getElementById('quote').innerHTML = randomItem;
