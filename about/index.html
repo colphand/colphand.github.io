@@ -46,6 +46,8 @@
   </p>
 
   
+
+
 <div class="min-h-screen flex flex-col">
   <main class="flex-1 w-11/12 max-w-screen-md md:max-w-screen-lg mx-auto">
     
@@ -68,73 +70,64 @@
 </nav>
 
 
-
 <p class="page_header">About Me</p>
 
-<div class="md:flex md:flex-row gap-2">
+<div class="flex flex-col-reverse md:flex-row gap-2">
+    <div>
+        <p class="font-serif font-light leading-relaxed md:text-lg mt-3 md:mt-0"> Hi! I am a French product designer currently based in Toronto. I’ve worked with startups, Saas companies, agencies and as a freelancer. I’ve been one of a team and a team of one. I’ve built design systems, products, and processes. I get a kick out of mentoring new design talent.</p>
 
-<div class="grow self-end font-serif font-light text-lg" >
+        <p class="font-serif font-light leading-relaxed md:text-lg mt-2">I have a passion for the craft, and as such I've learned front-end code. Along with UX Design am experienced in Product Strategy, Front End technologies,</p>
 
-
-    
-Hi! I am a French product designer currently based in Toronto. I’ve worked with startups, Saas companies, agencies and as a freelancer. I’ve been one of a team and a team of one. I’ve built design systems, products, and processes. I get a kick out of mentoring new design talent. 
-
-I have a passion for the craft, and as such I've learned front-end code. Along with UX Design am experienced in Product Strategy, Front End technologies,
-
+    </div>
+    <div class="profpic"></div>
 </div>
-<img class="w-64 h-fit" id="profpic" src="/assets/img/profile-pic2.png"></img>
-</div>
-
 
     
   </main>
 
-  <footer class="bg:transparent py-8 flex-shrink-0 flex-1 w-10/12 max-w-screen-md md:max-w-screen-lg mx-auto">
+  <footer class="mt-auto flex-shrink-0 w-full pt-12">
 
- <div class="flex flex-row justify-center space-x-4">
+  <div class="w-11/12 mx-auto">
 
-    <p class="py-2">
+    <div class="flex flex-row justify-center space-x-4">
 
-      <span class="link-footer" id="toggleDarkMode">dark mode</span> &middot;
-
-      <!-- <a class="link-footer" href= mailto: https://github.com/colphand target="_blank">colinolphand@gmail.com</a> &middot; -->
-
-      
-        <a class="link-footer" href= https://github.com/colphand target="_blank">github</a> &middot;
-      
-
+      <p class="py-2">
+        <span class="link-footer" id="toggleDarkMode">dark mode</span> &middot;
         
-        <a class="link-footer" href=  target="_blank">linkedin</a> &middot;
-      
+          <a class="link-footer" href=https://github.com/colphand target="_blank">github</a> &middot;
+        
+        
+          <a class="link-footer" href= target="_blank">linkedin</a> &middot;
+        
+        
+          <a class="link-footer" href=https://twitter.com/colfand target="_blank">twitter</a>
+        
+      </p>
 
-      
-        <a class="link-footer" href= https://twitter.com/colfand target="_blank">twitter</a>
-      
-      
-    </p>
-    
+    </div>
+
+    <div>
+      <p id="quote" class="quote"></p>
+    </div>
+
   </div>
-<div>
-  <p id="quote" class="text-center opacity-60 text-sm">test</p>
-</div>
+
+  <div class="poolsuite"></div>
+
 </footer>
 </div>
 
 
   <script>
-    var picture = document.getElementById('profpic');
     document.getElementById("toggleDarkMode").addEventListener("click", function () {
       if (isDarkMode()) {
         localStorage.theme = 'light'
         document.documentElement.classList.remove('dark');
         document.getElementById('toggleDarkMode').innerHTML = 'dark mode';
-        picture.src = '../assets/img/profile-pic2.png';
       } else {
         localStorage.theme = 'dark'
         document.documentElement.classList.add('dark')
         document.getElementById('toggleDarkMode').innerHTML = 'light mode';
-        picture.src = '../assets/img/profile-pic5.png';
-        console.log(picture);
       }
 
     });
@@ -143,10 +136,23 @@ I have a passion for the craft, and as such I've learned front-end code. Along w
     var dayOfWeekNumber = currDate.getDay();
     var nameOfDay = daysOfWeek[dayOfWeekNumber];
     var niceDay = "Have a nice " + nameOfDay + "!";
-    var quotes = ["🥐", "You're telling me a user centered this design?", "Not that funny in person", "A E S T H E T I C S", "Don't forget to like and subscribe", "lorem ipsum dolor dolor bills", "Built with 11ty, Tailwind and too much googling", "Press Cancel to Cancel", "Can gradients save the world?", "No pixels were harmed in making this website", "That's all Folks!"];
+    var quotes = ["🥐", "You're telling me a user centered this design?", "⌐■-■", "A E S T H E T I C S", "Don't forget to like and subscribe", "lorem ipsum dolor dolor bills", "Built with 11ty, Tailwind and too much googling", "Press Cancel to Cancel", "Can gradients save the world?", "No pixels were harmed in making this website", "That's all Folks!"];
     quotes.push(niceDay);
     var randomItem = quotes[Math.random() * quotes.length | 0];
     document.getElementById('quote').innerHTML = randomItem;
+
+
+
+ 
+    // let color = '#';
+    // for (let i = 0; i < 6; i++) {
+    //   const random = Math.random();
+    //   const bit = (random * 16) | 0;
+    //   color += (bit).toString(16);
+    // };
+    // document.getElementById("gradientStop").setAttribute("stop-color", color + "77");
+    // document.getElementById("gradientStop2").setAttribute("stop-color", color + "00");
+
   </script>
 
 </body>

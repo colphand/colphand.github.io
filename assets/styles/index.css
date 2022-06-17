@@ -2,52 +2,70 @@
   font-family: "Vulf Sans";
   src: url("/assets/fonts/Vulf_Sans-Light.woff2") format("woff2");
   font-weight: 300;
+  font-style: normal;
 }
 @font-face {
   font-family: "Vulf Sans";
   src: url("/assets/fonts/Vulf_Sans-Regular.woff2") format("woff2");
   font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Vulf Sans";
+  src: url("/assets/fonts/Vulf_Sans-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
 }
 @font-face {
   font-family: "Vulf Sans";
   src: url("/assets/fonts/Vulf_Sans-Medium.woff2") format("woff2");
   font-weight: 500;
+  font-style: normal;
 }
 @font-face {
   font-family: "Vulf Sans";
   src: url("/assets/fonts/Vulf_Sans-Bold.woff2") format("woff2");
   font-weight: 700;
+  font-style: normal;
 }
 @font-face {
   font-family: "Vulf Sans";
   src: url("/assets/fonts/Vulf_Sans-Black.woff2") format("woff2");
   font-weight: 900;
+  font-style: normal;
 }
 
 @font-face {
   font-family: "Vulf Mono";
   src: url("/assets/fonts/Vulf_Mono-Light.woff2") format("woff2");
   font-weight: 300;
+  font-style: normal;
 }
 @font-face {
   font-family: "Vulf Mono";
   src: url("/assets/fonts/Vulf_Mono-Regular.woff2") format("woff2");
   font-weight: 400;
+  font-style: normal;
 }
 @font-face {
   font-family: "Vulf Mono";
-  src: url("/assets/fonts/Vulf_Mono-Medium.woff2") format("woff2");
-  font-weight: 500;
+  src: url("/assets/fonts/Vulf_Mono-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
 }
+
 @font-face {
   font-family: "Vulf Mono";
   src: url("/assets/fonts/Vulf_Mono-Bold.woff2") format("woff2");
   font-weight: 600;
+  font-style: normal;
 }
+
 @font-face {
   font-family: "Vulf Mono";
   src: url("/assets/fonts/Vulf_Mono-Black.woff2") format("woff2");
   font-weight: 900;
+  font-style: normal;
 }
 @font-face {
   font-family: "Vulf Mono";
@@ -62,6 +80,7 @@
   text-align: right;
   line-height: 1;
   z-index: -1;
+  /* mix-blend-mode: multiply; */
 }
 
 .gradient {
@@ -75,8 +94,8 @@
   z-index: -1;
   opacity: .5;
   position: fixed;
-  /* background: 
-    url(https://grainy-gradients.vercel.app/noise.svg); */
+  /* background:  */
+    /* url(https://grainy-gradients.vercel.app/noise.svg); */
     
     /* mix-blend-mode: multiply; */
     /* filter: contrast(170%) brightness(1000%); */
@@ -93,7 +112,7 @@
   left: 0px;
   transform: translateZ(0px);
   z-index: -1;
-  opacity: .2;
+  opacity: .1;
   position: fixed;
   /* background: 
     url(https://grainy-gradients.vercel.app/noise.svg); */
@@ -139,3 +158,76 @@
 .prose-image-large {
   width: 50% !important;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* The work below, CSSBox, is released under the Creative Commons
+   Attribution-ShareAlike 4.0 license and is available on
+   https://github.com/TheLastProject/CSSBox. You are not required to add
+   additional credit to your website, just leave the above text in this file */
+
+span.cssbox_full {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.8);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s, opacity .15s linear;
+}
+
+span.cssbox_full img {
+  position: fixed;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  max-height: 90%;
+  max-width: 90%;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+img.cssbox_thumb:focus + span.cssbox_full {
+  visibility: visible;
+  opacity: 1;
+}
+
+img.cssbox_thumb, span.cssbox_full {
+  cursor: pointer;
+}
+  /* This is the end of CSSBox */
+  

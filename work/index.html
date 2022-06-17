@@ -46,6 +46,8 @@
   </p>
 
   
+
+
 <div class="min-h-screen flex flex-col">
   <main class="flex-1 w-11/12 max-w-screen-md md:max-w-screen-lg mx-auto">
     
@@ -176,52 +178,49 @@
     
   </main>
 
-  <footer class="bg:transparent py-8 flex-shrink-0 flex-1 w-10/12 max-w-screen-md md:max-w-screen-lg mx-auto">
+  <footer class="mt-auto flex-shrink-0 w-full pt-12">
 
- <div class="flex flex-row justify-center space-x-4">
+  <div class="w-11/12 mx-auto">
 
-    <p class="py-2">
+    <div class="flex flex-row justify-center space-x-4">
 
-      <span class="link-footer" id="toggleDarkMode">dark mode</span> &middot;
-
-      <!-- <a class="link-footer" href= mailto: https://github.com/colphand target="_blank">colinolphand@gmail.com</a> &middot; -->
-
-      
-        <a class="link-footer" href= https://github.com/colphand target="_blank">github</a> &middot;
-      
-
+      <p class="py-2">
+        <span class="link-footer" id="toggleDarkMode">dark mode</span> &middot;
         
-        <a class="link-footer" href=  target="_blank">linkedin</a> &middot;
-      
+          <a class="link-footer" href=https://github.com/colphand target="_blank">github</a> &middot;
+        
+        
+          <a class="link-footer" href= target="_blank">linkedin</a> &middot;
+        
+        
+          <a class="link-footer" href=https://twitter.com/colfand target="_blank">twitter</a>
+        
+      </p>
 
-      
-        <a class="link-footer" href= https://twitter.com/colfand target="_blank">twitter</a>
-      
-      
-    </p>
-    
+    </div>
+
+    <div>
+      <p id="quote" class="quote"></p>
+    </div>
+
   </div>
-<div>
-  <p id="quote" class="text-center opacity-60 text-sm">test</p>
-</div>
+
+  <div class="poolsuite"></div>
+
 </footer>
 </div>
 
 
   <script>
-    var picture = document.getElementById('profpic');
     document.getElementById("toggleDarkMode").addEventListener("click", function () {
       if (isDarkMode()) {
         localStorage.theme = 'light'
         document.documentElement.classList.remove('dark');
         document.getElementById('toggleDarkMode').innerHTML = 'dark mode';
-        picture.src = '../assets/img/profile-pic2.png';
       } else {
         localStorage.theme = 'dark'
         document.documentElement.classList.add('dark')
         document.getElementById('toggleDarkMode').innerHTML = 'light mode';
-        picture.src = '../assets/img/profile-pic5.png';
-        console.log(picture);
       }
 
     });
@@ -230,10 +229,23 @@
     var dayOfWeekNumber = currDate.getDay();
     var nameOfDay = daysOfWeek[dayOfWeekNumber];
     var niceDay = "Have a nice " + nameOfDay + "!";
-    var quotes = ["🥐", "You're telling me a user centered this design?", "Not that funny in person", "A E S T H E T I C S", "Don't forget to like and subscribe", "lorem ipsum dolor dolor bills", "Built with 11ty, Tailwind and too much googling", "Press Cancel to Cancel", "Can gradients save the world?", "No pixels were harmed in making this website", "That's all Folks!"];
+    var quotes = ["🥐", "You're telling me a user centered this design?", "⌐■-■", "A E S T H E T I C S", "Don't forget to like and subscribe", "lorem ipsum dolor dolor bills", "Built with 11ty, Tailwind and too much googling", "Press Cancel to Cancel", "Can gradients save the world?", "No pixels were harmed in making this website", "That's all Folks!"];
     quotes.push(niceDay);
     var randomItem = quotes[Math.random() * quotes.length | 0];
     document.getElementById('quote').innerHTML = randomItem;
+
+
+
+ 
+    // let color = '#';
+    // for (let i = 0; i < 6; i++) {
+    //   const random = Math.random();
+    //   const bit = (random * 16) | 0;
+    //   color += (bit).toString(16);
+    // };
+    // document.getElementById("gradientStop").setAttribute("stop-color", color + "77");
+    // document.getElementById("gradientStop2").setAttribute("stop-color", color + "00");
+
   </script>
 
 </body>
