@@ -87,28 +87,16 @@
   
   <div class="min-h-screen flex flex-col">
     <main class="flex-1 w-11/12 max-w-screen-md md:max-w-screen-lg mx-auto">
-      <p class="ascii">
-        ░&emsp;&emsp;▒&emsp;&emsp;▒░▓<br />
-        ▒▓&emsp;▓&emsp;<br />
-        ▒&emsp;▓&emsp;▓&emsp;&emsp;░&emsp;▓<br />
-        ▒&emsp;▓&emsp;▒<br />
-        ▒░&emsp;&emsp;&emsp;&emsp;░▓<br />
-        ░&emsp;▓▒░&emsp;<br />
-        ▓<br />
-        ░&emsp;&emsp;<br />
-        <br />
-        ▒
-      </p>
   
       <div class="py-10 md:py-20">
-        <p class="text-7xl md:text-8xl text-slate-900 dark:text-slate-50 text-opacity-60 font-mono italic title">
+        <p class="hero">
           <a href="/">Colin Olphand</a>
         </p>
       </div>
       
       
 <div class="md:flex md:flex-row">
-  <div class="md:flex-1 md:mr-4">
+  <div class="md:flex-1 md:mr-5">
     <p class="header mb-4">Is a Product Designer, currently improving patient care at Lyceum Health.</p>
     <p class="header mb-4">He has <span class="home_button"><a href="/work">worked</a></span> with startups, Saas companies, agencies and as a freelancer. </p>
     <p class="header mb-4">He sometimes <span class="home_button"><a href="/writing">writes</a></span> blog posts when the impostor syndrome kicks in.</p>
@@ -141,7 +129,7 @@
     <div class="flex flex-row justify-center space-x-4">
 
       <p class="py-2">
-        <span class="link-footer" id="toggleDarkMode">dark mode</span> &middot;
+        <span class="link-footer" id="toggleDarkMode"></span> &middot;
         
           <a class="link-footer" href=https://github.com/colphand target="_blank">github</a> &middot;
         
@@ -169,18 +157,19 @@
 
 
   <script>
+
     document.getElementById("toggleDarkMode").addEventListener("click", function () {
       if (isDarkMode()) {
         localStorage.theme = 'light'
         document.documentElement.classList.remove('dark');
-        document.getElementById('toggleDarkMode').innerHTML = 'dark mode';
+        // document.getElementById('toggleDarkMode').innerHTML = 'dark mode';
       } else {
         localStorage.theme = 'dark'
         document.documentElement.classList.add('dark')
-        document.getElementById('toggleDarkMode').innerHTML = 'light mode';
+        // document.getElementById('toggleDarkMode').innerHTML = 'light mode';
       }
-
     });
+    
     var currDate = new Date();
     var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     var dayOfWeekNumber = currDate.getDay();

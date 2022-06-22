@@ -50,10 +50,7 @@
 
   <main class="flex-1 w-11/12 sm:w-10/12 md:w-8/12 max-w-screen-md md:max-w-screen-md mx-auto">
 
-    <filter id='noiseFilter'>
-      <feTurbulence type='fractalNoise' baseFrequency='8' numOctaves='1' stitchTiles='stitch' />
-    </filter>  
-    <rect width='100%' height='100%' filter='url(#noiseFilter)' />
+    <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" class="noise"></svg>
 
     
 <nav class="mb-8 flex justify-between">
@@ -67,27 +64,17 @@
 
 </nav>
 
-<p class="opacity-70 text-lg">Thoughts on design, development and more.</p>
-
-<div class="flex flex-wrap flex-row items-start mb-8">
+<p class="text-lg font-serif mb-8 opacity-60 italic leading-175">Thoughts on 
+     
+        <span> <a class="link" href="/tags/collaboration">collaboration</a></span>,
+     
+        <span> <a class="link" href="/tags/front-end">front-end</a></span>,
+     
+        <span> <a class="link" href="/tags/product strategy">product strategy</a></span>,
     
-    <div class="tag-bg">
-    
-        <a class="post-tag2 mr-2 mt-2" href="/tags/collaboration">collaboration</a>
-    </div>
-    
-    <div class="tag-bg">
-    
-        <a class="post-tag2 mr-2 mt-2" href="/tags/front-end">front-end</a>
-    </div>
-    
-    <div class="tag-bg">
-    
-        <a class="post-tag2 mr-2 mt-2" href="/tags/product strategy">product strategy</a>
-    </div>
-    
-</div>
-<hr class="mb-8 border-1 border-current opacity-30">
+    and more.
+</p>
+<!-- <hr class="mb-8 border-1 border-current opacity-30"> -->
 
 <!-- flex flex-col space-y-3 sm:space-y-0 sm:flex-row sm:space-x-3 items-start mb-8 -->
 
@@ -128,7 +115,7 @@
     <div class="flex flex-row justify-center space-x-4">
 
       <p class="py-2">
-        <span class="link-footer" id="toggleDarkMode">dark mode</span> &middot;
+        <span class="link-footer" id="toggleDarkMode"></span> &middot;
         
           <a class="link-footer" href=https://github.com/colphand target="_blank">github</a> &middot;
         
@@ -154,18 +141,19 @@
 </div>
 
   <script>
+
     document.getElementById("toggleDarkMode").addEventListener("click", function () {
       if (isDarkMode()) {
         localStorage.theme = 'light'
         document.documentElement.classList.remove('dark');
-        document.getElementById('toggleDarkMode').innerHTML = 'dark mode';
+        // document.getElementById('toggleDarkMode').innerHTML = 'dark mode';
       } else {
         localStorage.theme = 'dark'
         document.documentElement.classList.add('dark')
-        document.getElementById('toggleDarkMode').innerHTML = 'light mode';
+        // document.getElementById('toggleDarkMode').innerHTML = 'light mode';
       }
-
     });
+    
     var currDate = new Date();
     var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     var dayOfWeekNumber = currDate.getDay();

@@ -51,11 +51,7 @@
 <div class="min-h-screen flex flex-col">
   <main class="flex-1 w-11/12 max-w-screen-md md:max-w-screen-lg mx-auto">
     
-    <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" class="gradient2">
-      <filter id='noiseFilter'>
-        <feTurbulence type='fractalNoise' baseFrequency='8' numOctaves='1' stitchTiles='stitch' />
-      </filter>  
-    </svg>
+    <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" class="noise"></svg>
 
     <nav class="mb-8 flex content-between">
   <!-- 
@@ -72,14 +68,15 @@
 
 <p class="page_header">About Me</p>
 
-<div class="flex flex-col-reverse md:flex-row gap-2">
+<div class="flex flex-col md:flex-row gap-2">
+    <div class="profpic"></div>
     <div>
-        <p class="font-serif font-light leading-relaxed md:text-lg mt-3 md:mt-0"> Hi! I am a French product designer currently based in Toronto. I’ve worked with startups, Saas companies, agencies and as a freelancer. I’ve been one of a team and a team of one. I’ve built design systems, products, and processes. I get a kick out of mentoring new design talent.</p>
+        <p class="font-serif font-light leading-relaxed text-lg mt-3 md:mt-0"> Hi! I am a French product designer currently based in Toronto. I’ve worked with startups, Saas companies, agencies and as a freelancer. I’ve been one of a team and a team of one. I’ve built design systems, products, and processes. I get a kick out of mentoring new design talent.</p>
 
-        <p class="font-serif font-light leading-relaxed md:text-lg mt-2">I have a passion for the craft, and as such I've learned front-end code. Along with UX Design am experienced in Product Strategy, Front End technologies,</p>
+        <p class="font-serif font-light leading-relaxed text-lg mt-2">I have a passion for the craft, and as such I've learned front-end code. Along with UX Design am experienced in Product Strategy, Front End technologies,</p>
 
     </div>
-    <div class="profpic"></div>
+    
 </div>
 
     
@@ -92,7 +89,7 @@
     <div class="flex flex-row justify-center space-x-4">
 
       <p class="py-2">
-        <span class="link-footer" id="toggleDarkMode">dark mode</span> &middot;
+        <span class="link-footer" id="toggleDarkMode"></span> &middot;
         
           <a class="link-footer" href=https://github.com/colphand target="_blank">github</a> &middot;
         
@@ -119,18 +116,19 @@
 
 
   <script>
+
     document.getElementById("toggleDarkMode").addEventListener("click", function () {
       if (isDarkMode()) {
         localStorage.theme = 'light'
         document.documentElement.classList.remove('dark');
-        document.getElementById('toggleDarkMode').innerHTML = 'dark mode';
+        // document.getElementById('toggleDarkMode').innerHTML = 'dark mode';
       } else {
         localStorage.theme = 'dark'
         document.documentElement.classList.add('dark')
-        document.getElementById('toggleDarkMode').innerHTML = 'light mode';
+        // document.getElementById('toggleDarkMode').innerHTML = 'light mode';
       }
-
     });
+    
     var currDate = new Date();
     var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     var dayOfWeekNumber = currDate.getDay();
