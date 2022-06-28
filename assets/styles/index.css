@@ -82,16 +82,16 @@
   left: 0px;
   transform: translateZ(0px);
   z-index: -1;
-  opacity: .5;
+  opacity: .7;
   position: fixed;
   /* background:  */
     /* url(https://grainy-gradients.vercel.app/noise.svg); */
     
     /* mix-blend-mode: multiply; */
-    /* filter: contrast(170%) brightness(1000%); */
+    /* filter: contrast(550%); */
     /* filter: saturate(100%); */
-
 }
+
 
 .noise {
   /* filter: hue-rotate(300deg); */
@@ -102,11 +102,11 @@
   left: 0px;
   /* transform: translateZ(0px); */
   z-index: -1;
-  opacity: .22;
+  opacity: .2;
   background: 
     url(https://grainy-gradients.vercel.app/noise.svg);
     
-    /* mix-blend-mode: multiply; */
+    mix-blend-mode: difference;
     /* filter: contrast(170%) brightness(1000%); */
     /* filter: saturate(100%); */
 
