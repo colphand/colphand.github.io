@@ -12,8 +12,9 @@
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#D6D3D1">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1E293B">
 
+  
   <link rel="icon"
-    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💭</text></svg>">
+  href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💭</text></svg>">
   <link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
   <link rel="manifest" href="/manifest.json" />
   <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
@@ -49,52 +50,65 @@
 <div class="gradient">
 
   <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" class="gradient">
-  
-  <defs>
-    <radialGradient id="Gradient1" cx="50%" cy="50%" fx="10%" fy="50%" r=".5">
-      <animate attributeName="fx" dur="34s" values="0%;3%;0%" repeatCount="indefinite"></animate>
-      <stop offset="0%" stop-color="#ff0"></stop><stop offset="100%" stop-color="#ff00"></stop>
-    </radialGradient>
-    <radialGradient id="Gradient2" cx="50%" cy="50%" fx="10%" fy="50%" r=".5">
-      <animate attributeName="fx" dur="23.5s" values="0%;3%;0%" repeatCount="indefinite"></animate>
-      <stop offset="0%" stop-color="#9EFF00"></stop><stop offset="100%" stop-color="#0ff0"></stop>
-    </radialGradient>
-    <radialGradient id="Gradient3" cx="50%" cy="50%" fx="50%" fy="50%" r=".5">
-      <animate attributeName="fx" dur="21.5s" values="0%;3%;0%" repeatCount="indefinite"></animate>
-      <stop offset="0%" stop-color="#f0f"></stop><stop offset="100%" stop-color="#f0f0"></stop>
-    </radialGradient>
-  </defs>
+
+    <defs>
+      <radialGradient id="Gradient1" cx="50%" cy="50%" fx="10%" fy="50%" r=".5">
+        <animate attributeName="fx" dur="34s" values="0%;3%;0%" repeatCount="indefinite"></animate>
+        <stop offset="0%" stop-color="#ff0"></stop>
+        <stop offset="100%" stop-color="#ff00"></stop>
+      </radialGradient>
+      <radialGradient id="Gradient2" cx="50%" cy="50%" fx="10%" fy="50%" r=".5">
+        <animate attributeName="fx" dur="23.5s" values="0%;3%;0%" repeatCount="indefinite"></animate>
+        <stop offset="0%" stop-color="#9EFF00"></stop>
+        <stop offset="100%" stop-color="#0ff0"></stop>
+      </radialGradient>
+      <radialGradient id="Gradient3" cx="50%" cy="50%" fx="50%" fy="50%" r=".5">
+        <animate attributeName="fx" dur="21.5s" values="0%;3%;0%" repeatCount="indefinite"></animate>
+        <stop offset="0%" stop-color="#f0f"></stop>
+        <stop offset="100%" stop-color="#f0f0"></stop>
+      </radialGradient>
+    </defs>
 
 
-  <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient1)">
-    <animate attributeName="x" dur="20s" values="25%;0%;25%" repeatCount="indefinite"></animate>
-    <animate attributeName="y" dur="21s" values="0%;25%;0%" repeatCount="indefinite"></animate>
-    <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="17s" repeatCount="indefinite"></animateTransform>
-  </rect>
-  <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient2)">
-    <animate attributeName="x" dur="23s" values="-25%;0%;-25%" repeatCount="indefinite"></animate>
-    <animate attributeName="y" dur="24s" values="0%;50%;0%" repeatCount="indefinite"></animate>
-    <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="18s" repeatCount="indefinite"></animateTransform>
-  </rect>
-  <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient3)">
-    <animate attributeName="x" dur="25s" values="0%;25%;0%" repeatCount="indefinite"></animate>
-    <animate attributeName="y" dur="26s" values="0%;25%;0%" repeatCount="indefinite"></animate>
-    <animateTransform attributeName="transform" type="rotate" from="360 50 50" to="0 50 50" dur="19s" repeatCount="indefinite"></animateTransform>
-  </rect>
+    <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient1)">
+      <animate attributeName="x" dur="20s" values="25%;0%;25%" repeatCount="indefinite"></animate>
+      <animate attributeName="y" dur="21s" values="0%;25%;0%" repeatCount="indefinite"></animate>
+      <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="17s"
+        repeatCount="indefinite"></animateTransform>
+    </rect>
+    <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient2)">
+      <animate attributeName="x" dur="23s" values="-25%;0%;-25%" repeatCount="indefinite"></animate>
+      <animate attributeName="y" dur="24s" values="0%;50%;0%" repeatCount="indefinite"></animate>
+      <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="18s"
+        repeatCount="indefinite"></animateTransform>
+    </rect>
+    <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient3)">
+      <animate attributeName="x" dur="25s" values="0%;25%;0%" repeatCount="indefinite"></animate>
+      <animate attributeName="y" dur="26s" values="0%;25%;0%" repeatCount="indefinite"></animate>
+      <animateTransform attributeName="transform" type="rotate" from="360 50 50" to="0 50 50" dur="19s"
+        repeatCount="indefinite"></animateTransform>
+    </rect>
   </svg>
-  
+
 </div>
-  
-  <div class="min-h-screen flex flex-col">
-    <main class="flex-1 w-11/12 max-w-screen-md md:max-w-screen-lg mx-auto">
-  
-      <div class="py-10 md:py-20">
-        <p class="hero">
+
+<div class="min-h-screen flex flex-col">
+  <main class="flex-1 w-11/12 max-w-screen-md md:max-w-screen-lg mx-auto">
+
+    <div class="py-10 md:py-20">
+      <div>
+        <p class="hero1">
           <a href="/">Colin Olphand</a>
         </p>
       </div>
-      
-      
+      <div class="absolute top-10  md:top-20">
+        <p class="hero2">
+          <a href="/">Colin Olphand</a>
+        </p>
+      </div>
+    </div>
+
+    
 <div class="md:flex md:flex-row">
   <div class="md:flex-1 md:mr-5">
     <p class="header mb-4">Is a Product Designer, currently improving patient care at Lyceum Health.</p>
@@ -120,9 +134,9 @@
 
 
 
-    </main>
-  
-    <footer class="mt-auto flex-shrink-0 w-full pt-12">
+  </main>
+
+  <footer class="mt-auto flex-shrink-0 w-full pt-12">
 
   <div class="w-11/12 mx-auto">
 
@@ -152,9 +166,7 @@
   <div class="poolsuite"></div>
 
 </footer>
-  </div>
-
-
+</div>
 
   <script>
 
@@ -175,7 +187,7 @@
     var dayOfWeekNumber = currDate.getDay();
     var nameOfDay = daysOfWeek[dayOfWeekNumber];
     var niceDay = "Have a nice " + nameOfDay + "!";
-    var quotes = ["🥐", "You're telling me a user centered this design?", "⌐■-■", "A E S T H E T I C S", "Don't forget to like and subscribe", "lorem ipsum dolor dolor bills", "Built with 11ty, Tailwind and too much googling", "Press Cancel to Cancel", "Can gradients save the world?", "No pixels were harmed in making this website", "That's all Folks!"];
+    var quotes = ["🥐", "You're telling me a user centered this design?", "⌐■-■", "A E S T H E T I C S", "Don't forget to like and subscribe", "lorem ipsum dolor dolor bills", "Built with 11ty, Tailwind and too much googling", "Press Cancel to Cancel", "Can gradients save the world?", "No pixels were harmed in making this website", "That's all Folks!", "This website is from the internet, check that it is genuine."];
     quotes.push(niceDay);
     var randomItem = quotes[Math.random() * quotes.length | 0];
     document.getElementById('quote').innerHTML = randomItem;

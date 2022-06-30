@@ -880,6 +880,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: fixed;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .right-4 {
   right: 1rem;
 }
@@ -902,6 +906,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .-right-6 {
   right: -1.5rem;
+}
+
+.top-10 {
+  top: 2.5rem;
 }
 
 .my-8 {
@@ -1666,30 +1674,50 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: Vulf Mono, ui-sans-serif, system-ui;
 }
 
-.hero {
+/* .hero { @apply
+  text-[3.3rem] md:text-8xl text-slate-900 dark:text-slate-50 font-mono italic
+  mix-blend-luminosity opacity-60
+  dark:mix-blend-overlay sm:dark:opacity-100
+}  */
+
+.hero1 {
   font-family: Vulf Mono, ui-sans-serif, system-ui;
   font-size: 3.3rem;
   font-style: italic;
   --tw-text-opacity: 1;
-  color: rgb(15 23 42 / var(--tw-text-opacity));
-  opacity: 0.6;
-  mix-blend-mode: luminosity;
+  color: rgb(58 58 58 / var(--tw-text-opacity));
+  opacity: 1;
+  mix-blend-mode: color-burn;
 }
 
-.dark .hero {
+.dark .hero1 {
   --tw-text-opacity: 1;
   color: rgb(248 250 252 / var(--tw-text-opacity));
   mix-blend-mode: overlay;
 }
 
-@media (min-width: 376px) {
-  .dark .hero {
-    opacity: 1;
+@media (min-width: 740px) {
+  .hero1 {
+    font-size: 4rem;
   }
 }
 
+.hero2 {
+  font-family: Vulf Mono, ui-sans-serif, system-ui;
+  font-size: 3.3rem;
+  font-style: italic;
+  opacity: 0.2;
+}
+
+.dark .hero2 {
+  --tw-text-opacity: 1;
+  color: rgb(248 250 252 / var(--tw-text-opacity));
+  opacity: 1;
+  mix-blend-mode: overlay;
+}
+
 @media (min-width: 740px) {
-  .hero {
+  .hero2 {
     font-size: 4rem;
   }
 }
@@ -1897,6 +1925,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 740px) {
+  .md\:top-20 {
+    top: 5rem;
+  }
+
   .md\:mt-0 {
     margin-top: 0px;
   }

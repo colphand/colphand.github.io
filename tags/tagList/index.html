@@ -12,8 +12,9 @@
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#D6D3D1">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1E293B">
 
+  
   <link rel="icon"
-    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💭</text></svg>">
+  href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💭</text></svg>">
   <link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
   <link rel="manifest" href="/manifest.json" />
   <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
@@ -179,7 +180,7 @@
     var dayOfWeekNumber = currDate.getDay();
     var nameOfDay = daysOfWeek[dayOfWeekNumber];
     var niceDay = "Have a nice " + nameOfDay + "!";
-    var quotes = ["🥐", "You're telling me a user centered this design?", "⌐■-■", "A E S T H E T I C S", "Don't forget to like and subscribe", "lorem ipsum dolor dolor bills", "Built with 11ty, Tailwind and too much googling", "Press Cancel to Cancel", "Can gradients save the world?", "No pixels were harmed in making this website", "That's all Folks!"];
+    var quotes = ["🥐", "You're telling me a user centered this design?", "⌐■-■", "A E S T H E T I C S", "Don't forget to like and subscribe", "lorem ipsum dolor dolor bills", "Built with 11ty, Tailwind and too much googling", "Press Cancel to Cancel", "Can gradients save the world?", "No pixels were harmed in making this website", "That's all Folks!", "This website is from the internet, check that it is genuine."];
     quotes.push(niceDay);
     var randomItem = quotes[Math.random() * quotes.length | 0];
     document.getElementById('quote').innerHTML = randomItem;
