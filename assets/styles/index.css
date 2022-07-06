@@ -82,12 +82,12 @@
 
 /* SWUP */
 
-.transition-fade {
+.swup-transition-test {
   transition: 0.4s;
   opacity: 1;
 }
 
-html.is-animating .transition-fade {
+html.is-animating .swup-transition-test {
   opacity: 0;
 }
 

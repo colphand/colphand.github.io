@@ -33,7 +33,7 @@
   </script>
 </head>
 
-<body class="text-serif antialiased text-zinc-900 bg-stone-200 dark:text-zinc-100 dark:bg-slate-800">
+<body id="swup" class="text-serif antialiased text-zinc-900 bg-stone-200 dark:text-zinc-100 dark:bg-slate-800 swup-transition-test">
 
   <p class="ascii">
     ░&emsp;&emsp;▒&emsp;&emsp;▒░▓<br />
@@ -195,7 +195,13 @@
     var randomItem = quotes[Math.random() * quotes.length | 0];
     document.getElementById('quote').innerHTML = randomItem;
 
-    const swup = new Swup();
+    let options = {
+    // LINK_SELECTOR: 'a',
+    debugMode: true,
+    animationSelector: '[class*="swup-transition-"]',
+    };
+
+    const swup = new Swup(options);
 
  
     // let color = '#';

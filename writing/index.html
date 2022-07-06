@@ -33,7 +33,7 @@
   </script>
 </head>
 
-<body class="text-serif antialiased text-zinc-900 bg-stone-200 dark:text-zinc-100 dark:bg-slate-800">
+<body id="swup" class="text-serif antialiased text-zinc-900 bg-stone-200 dark:text-zinc-100 dark:bg-slate-800 swup-transition-test">
 
   <p class="ascii">
     ░&emsp;&emsp;▒&emsp;&emsp;▒░▓<br />
@@ -51,7 +51,7 @@
   
 <div class="min-h-screen flex flex-col">
 
-  <main id="swup" class="flex-1 w-11/12 sm:w-10/12 max-w-screen-md md:max-w-screen-md mx-auto transition-fade">
+  <main  class="flex-1 w-11/12 sm:w-10/12 max-w-screen-md md:max-w-screen-md mx-auto">
 
     <!-- <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" class="noise"></svg> -->
 
@@ -244,7 +244,13 @@
     var randomItem = quotes[Math.random() * quotes.length | 0];
     document.getElementById('quote').innerHTML = randomItem;
 
-    const swup = new Swup();
+    let options = {
+    // LINK_SELECTOR: 'a',
+    debugMode: true,
+    animationSelector: '[class*="swup-transition-"]',
+    };
+
+    const swup = new Swup(options);
 
  
     // let color = '#';
