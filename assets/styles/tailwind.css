@@ -1674,6 +1674,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: Vulf Mono, ui-sans-serif, system-ui;
 }
 
+.prose-img-large {
+  cursor: zoom-in !important;
+}
+
+.cssbox_full {
+  cursor: zoom-out !important;
+}
+
 /* .hero { @apply
   text-[3.3rem] md:text-8xl text-slate-900 dark:text-slate-50 font-mono italic
   mix-blend-luminosity opacity-60
@@ -1798,11 +1806,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .prose :is(:where(blockquote):not(:where([class~="not-prose"] *))) {
-  border-left-width: 1px;
+  margin-bottom: 0px;
+  border-left-width: 0px;
   --tw-border-opacity: 1;
   border-left-color: rgb(161 161 170 / var(--tw-border-opacity));
+  padding-left: 0px;
   font-family: Vulf Sans, ui-sans-serif, system-ui;
+  font-size: 1.875rem;
   font-weight: 400;
+  line-height: 1.375;
 }
 
 .prose :is(:where(code):not(:where([class~="not-prose"] *))) {
@@ -1846,6 +1858,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .dark .prose :is(:where(p):not(:where([class~="not-prose"] *))) {
   --tw-text-opacity: 1;
   color: rgb(228 228 231 / var(--tw-text-opacity));
+}
+
+@media (min-width: 376px) {
+  .prose :is(:where(blockquote):not(:where([class~="not-prose"] *))) {
+    font-size: 1.875rem;
+  }
 }
 
 .hover\:bg-gray-100:hover {
@@ -1972,5 +1990,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   .md\:py-20 {
     padding-top: 5rem;
     padding-bottom: 5rem;
+  }
+
+  .md\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 }

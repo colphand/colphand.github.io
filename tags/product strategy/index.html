@@ -15,13 +15,15 @@
   
   <link rel="icon"
   href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💭</text></svg>">
-  <link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
+  <!-- <link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png"> -->
   <link rel="manifest" href="/manifest.json" />
   <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter&family=M+PLUS+1p&display=swap" rel="stylesheet">
   <link href="/assets/styles/tailwind.css" rel="stylesheet" />
   <link href="/assets/styles/index.css" rel="stylesheet" />
+  <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
   <script>
+     
     const isDarkMode = () => localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
     if (isDarkMode()) {
       document.documentElement.classList.add('dark');
@@ -49,7 +51,7 @@
   
 <div class="min-h-screen flex flex-col">
 
-  <main class="flex-1 w-11/12 sm:w-10/12 max-w-screen-md md:max-w-screen-md mx-auto">
+  <main id="swup" class="flex-1 w-11/12 sm:w-10/12 max-w-screen-md md:max-w-screen-md mx-auto transition-fade">
 
     <!-- <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" class="noise"></svg> -->
 
@@ -156,6 +158,7 @@
 
   <script>
 
+
     document.getElementById("toggleDarkMode").addEventListener("click", function () {
       if (isDarkMode()) {
         localStorage.theme = 'light'
@@ -178,7 +181,7 @@
     var randomItem = quotes[Math.random() * quotes.length | 0];
     document.getElementById('quote').innerHTML = randomItem;
 
-
+    const swup = new Swup();
 
  
     // let color = '#';
