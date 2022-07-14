@@ -12,9 +12,9 @@
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#D6D3D1">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1E293B">
 
-  
+
   <link rel="icon"
-  href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💭</text></svg>">
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💭</text></svg>">
   <!-- <link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png"> -->
   <link rel="manifest" href="/manifest.json" />
   <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
@@ -23,7 +23,7 @@
   <link href="/assets/styles/index.css" rel="stylesheet" />
   <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
   <script>
-     
+
     const isDarkMode = () => localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
     if (isDarkMode()) {
       document.documentElement.classList.add('dark');
@@ -47,14 +47,14 @@
     <br />
     ▒
   </p>
-
-  <main id="swup" class="swup-transition-test">
+  <!-- <div id="swup" class="swup-transition"> -->
+  
 <div class="min-h-screen flex flex-col">
 
   <main class="flex-1 w-11/12 sm:w-10/12 max-w-screen-md md:max-w-screen-md mx-auto">
 
+    <!-- <div id="swup" class="swup-transition"> -->
     <!-- <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" class="noise"></svg> -->
-
     
 <nav class="mb-8 flex content-between">
   <!-- 
@@ -105,9 +105,9 @@
             <p class="writing_date">Sep. 2022</p>
             <p class="writing_excerpt">Both products managers and UX Designers love to decide.
 
-                <span class="button">
+                <button class="button">
                     <a href="/posts/2020/07/solution/">Read more</a>
-                </span>
+                </button>
             </p>
         </div>
 
@@ -122,9 +122,9 @@
             <p class="writing_date">Jun. 2022</p>
             <p class="writing_excerpt">Oh no not this again...
 
-                <span class="button">
+                <button class="button">
                     <a href="/posts/2020/07/should_designers_know_how_to_code/">Read more</a>
-                </span>
+                </button>
             </p>
         </div>
 
@@ -139,9 +139,9 @@
             <p class="writing_date">Jun. 2022</p>
             <p class="writing_excerpt">Rotating ownership and designers can bring a new perspective.
 
-                <span class="button">
+                <button class="button">
                     <a href="/posts/2020/07/file_fatigue/">Read more</a>
-                </span>
+                </button>
             </p>
         </div>
 
@@ -156,9 +156,9 @@
             <p class="writing_date">Jun. 2022</p>
             <p class="writing_excerpt">A tale of two extremes.
 
-                <span class="button">
+                <button class="button">
                     <a href="/posts/2020/07/documenting_documentation/">Read more</a>
-                </span>
+                </button>
             </p>
         </div>
 
@@ -174,9 +174,9 @@
             <p class="writing_excerpt">How to approach designing each.
 
 
-                <span class="button">
+                <button class="button">
                     <a href="/posts/2020/07/opinionated/">Read more</a>
-                </span>
+                </button>
             </p>
         </div>
 
@@ -184,6 +184,7 @@
 
 
 
+    <!-- </div> -->
 
   </main>
 
@@ -217,8 +218,8 @@
   <div class="poolsuite"></div>
 
 </footer>
-</div></main>
-
+</div>
+  <!-- </div> -->
   <script>
 
 
@@ -233,26 +234,37 @@
         // document.getElementById('toggleDarkMode').innerHTML = 'light mode';
       }
     });
-    
-    var currDate = new Date();
-    var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    var dayOfWeekNumber = currDate.getDay();
-    var nameOfDay = daysOfWeek[dayOfWeekNumber];
-    var niceDay = "Have a nice " + nameOfDay + "!";
-    var quotes = ["🥐", "You're telling me a user centered this design?", "⌐■-■", "A E S T H E T I C S", "Don't forget to like and subscribe", "lorem ipsum dolor dolor bills", "Built with 11ty, Tailwind and too much googling", "Press Cancel to Cancel", "Can gradients save the world?", "No pixels were harmed in making this website", "That's all Folks!", "This website is from the internet, check that it is genuine."];
-    quotes.push(niceDay);
-    var randomItem = quotes[Math.random() * quotes.length | 0];
-    document.getElementById('quote').innerHTML = randomItem;
 
-    let options = {
-    // LINK_SELECTOR: 'a',
-    debugMode: true,
-    animationSelector: '[class*="swup-transition-"]',
-    };
+    function init() {
+      if (document.querySelector('#quote')) {
+        var currDate = new Date();
+        var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        var dayOfWeekNumber = currDate.getDay();
+        var nameOfDay = daysOfWeek[dayOfWeekNumber];
+        var niceDay = "Have a nice " + nameOfDay + "!";
+        var quotes = ["🥐", "You're telling me a user centered this design?", "⌐■-■", "A E S T H E T I C S", "Don't forget to like and subscribe", "lorem ipsum dolor dolor bills", "Built with 11ty, Tailwind and too much googling", "Press Cancel to Cancel", "Can gradients save the world?", "No pixels were harmed in making this website", "That's all Folks!", "This website is from the internet, check that it is genuine."];
+        quotes.push(niceDay);
+        var randomItem = quotes[Math.random() * quotes.length | 0];
+        document.getElementById('quote').innerHTML = randomItem;
+      }
+    }
 
-    const swup = new Swup(options);
 
- 
+
+      let options = {
+        // LINK_SELECTOR: 'a',
+        debugMode: true,
+        animationSelector: '[class*="swup-transition-"]',
+      };
+
+      // const swup = new Swup(options);
+
+      // run once 
+      init();
+      // this event runs for every page view after initial load
+      // swup.on('contentReplaced', init);
+
+
     // let color = '#';
     // for (let i = 0; i < 6; i++) {
     //   const random = Math.random();

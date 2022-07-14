@@ -1991,9 +1991,4 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
-
-  .md\:px-12 {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
 }
