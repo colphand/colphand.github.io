@@ -114,8 +114,8 @@
 <div class="md:flex md:flex-row">
   <div class="md:flex-1 md:mr-5">
     <p class="header mb-4">Is a Product Designer, currently improving patient care at Lyceum Health.</p>
-    <p class="header mb-4">He has <button class="button font-light"><a href="/work">worked</a></button> with startups, Saas companies, agencies and as a freelancer. </p>
-    <p class="header mb-4">He sometimes <button class="button font-light"><a href="/writing">writes</a></button> blog posts when the impostor syndrome kicks in.</p>
+    <p class="header mb-4">He has <button class="home_button font-light"><a href="/work">worked</a></button> with startups, Saas companies, agencies and as a freelancer. </p>
+    <p class="header mb-4">He sometimes <button class="home_button font-light"><a href="/writing">writes</a></button> blog posts when the impostor syndrome kicks in.</p>
   </div>
 
   <div class="md:flex-1">
@@ -123,15 +123,16 @@
       He loves quantum physics, typography, and detaching instances.
     </p>
     <p class="header mb-4">
-      He has an <button class="button font-light"><a href="/about">about</a></button> page where he stops talking in the 3rd person.
+      He has an <button class="home_button font-light"><a href="/about">about</a></button> page where he stops talking in the 3rd person.
     </p>
     <p class="header mb-4">
       Sounds like a fun guy. <br> Why not
-      <button class="button font-light"><a href="mailto:colinolphand@gmail.com">work with him ↗</a></button>
+      <button class="home_button font-light"><a href="mailto:colinolphand@gmail.com">work with him ↗</a></button>
       
     </p>
   </div>
 </div>
+
 
 
 
@@ -192,7 +193,7 @@
         var dayOfWeekNumber = currDate.getDay();
         var nameOfDay = daysOfWeek[dayOfWeekNumber];
         var niceDay = "Have a nice " + nameOfDay + "!";
-        var quotes = ["🥐", "You're telling me a user centered this design?", "⌐■-■", "A E S T H E T I C S", "Don't forget to like and subscribe", "lorem ipsum dolor dolor bills", "Built with 11ty, Tailwind and too much googling", "Press Cancel to Cancel", "Can gradients save the world?", "No pixels were harmed in making this website", "That's all Folks!", "This website is from the internet, check that it is genuine."];
+        var quotes = ["🥐", "You're telling me a user centered this design?", "⌐■-■", "A E S T H E T I C S", "Don't forget to like and subscribe", "Lorem ipsum dolor dolor bills", "Built with 11ty, Tailwind and too much googling", "Press Cancel to Cancel", "Can gradients save the world?", "No pixels were harmed in making this website", "That's all Folks!", "This website is from the internet, check that it is genuine.", "Designing at the intersection of crossroads and roundabouts."];
         quotes.push(niceDay);
         var randomItem = quotes[Math.random() * quotes.length | 0];
         document.getElementById('quote').innerHTML = randomItem;

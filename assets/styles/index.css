@@ -157,8 +157,8 @@ html.is-animating .swup-transition-test {
   .home_button {
     position: inherit;
     top: 0px;
-    padding-top: 6px;
-    padding-bottom: 5px;
+    /* padding-top: 6px;
+    padding-bottom: 5px; */
   }
   .home_button a {
     position: inherit;

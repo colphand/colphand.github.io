@@ -51,7 +51,7 @@
   
 <div class="min-h-screen flex flex-col">
 
-  <main class="flex-1 w-11/12 sm:w-10/12 max-w-screen-md md:max-w-screen-md mx-auto">
+  <main class="flex-1 w-11/12 sm:w-10/12 max-w-[40rem] mx-auto">
 
     <!-- <div id="swup" class="swup-transition"> -->
     <!-- <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" class="noise"></svg> -->
@@ -134,7 +134,7 @@ But thanks for dropping by.</p>
         var dayOfWeekNumber = currDate.getDay();
         var nameOfDay = daysOfWeek[dayOfWeekNumber];
         var niceDay = "Have a nice " + nameOfDay + "!";
-        var quotes = ["🥐", "You're telling me a user centered this design?", "⌐■-■", "A E S T H E T I C S", "Don't forget to like and subscribe", "lorem ipsum dolor dolor bills", "Built with 11ty, Tailwind and too much googling", "Press Cancel to Cancel", "Can gradients save the world?", "No pixels were harmed in making this website", "That's all Folks!", "This website is from the internet, check that it is genuine."];
+        var quotes = ["🥐", "You're telling me a user centered this design?", "⌐■-■", "A E S T H E T I C S", "Don't forget to like and subscribe", "Lorem ipsum dolor dolor bills", "Built with 11ty, Tailwind and too much googling", "Press Cancel to Cancel", "Can gradients save the world?", "No pixels were harmed in making this website", "That's all Folks!", "This website is from the internet, check that it is genuine.", "Designing at the intersection of crossroads and roundabouts."];
         quotes.push(niceDay);
         var randomItem = quotes[Math.random() * quotes.length | 0];
         document.getElementById('quote').innerHTML = randomItem;
