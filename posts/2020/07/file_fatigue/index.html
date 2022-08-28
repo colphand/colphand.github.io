@@ -13,15 +13,15 @@
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1E293B">
 
 
-  <link rel="icon"
-    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💭</text></svg>">
-  <!-- <link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png"> -->
+  <!-- <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💭</text></svg>"> -->
+  <link rel="icon" href="/assets/img/melon.png">
   <link rel="manifest" href="/manifest.json" />
   <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter&family=M+PLUS+1p&display=swap" rel="stylesheet">
   <link href="/assets/styles/tailwind.css" rel="stylesheet" />
   <link href="/assets/styles/index.css" rel="stylesheet" />
-  <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+  <!-- <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script> -->
   <script>
 
     const isDarkMode = () => localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
@@ -33,7 +33,7 @@
   </script>
 </head>
 
-<body class="text-serif antialiased text-zinc-900 bg-stone-200 dark:text-zinc-100 dark:bg-slate-800 ">
+<body class="text-serif antialiased text-zinc-900 bg-stone-200 dark:text-zinc-100 dark:bg-zinc-800 ">
 
   <p class="ascii">
     ░&emsp;&emsp;▒&emsp;&emsp;▒░▓<br />
@@ -54,7 +54,7 @@
   <main class="flex-1 w-11/12 sm:w-10/12 max-w-[40rem] mx-auto">
 
     <!-- <div id="swup" class="swup-transition"> -->
-    <!-- <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" class="noise"></svg> -->
+    <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" class="noise"></svg>
     
 <nav class="mb-8 flex content-between">
   <!-- 
@@ -190,7 +190,7 @@
         var dayOfWeekNumber = currDate.getDay();
         var nameOfDay = daysOfWeek[dayOfWeekNumber];
         var niceDay = "Have a nice " + nameOfDay + "!";
-        var quotes = ["🥐", "You're telling me a user centered this design?", "⌐■-■", "A E S T H E T I C S", "Don't forget to like and subscribe", "Lorem ipsum dolor dolor bills", "Built with 11ty, Tailwind and too much googling", "Press Cancel to Cancel", "Can gradients save the world?", "No pixels were harmed in making this website", "That's all Folks!", "This website is from the internet, check that it is genuine.", "Designing at the intersection of crossroads and roundabouts."];
+        var quotes = ["🥐", "You're telling me a user centered this design?", "⌐■-■", "A E S T H E T I C S", "Don't forget to like and subscribe", "Lorem ipsum dolor dolor bills", "Built with 11ty, Tailwind and too much googling", "Press Cancel to Cancel", "Can gradients save the world?", "No pixels were harmed in making this website.", "That's all Folks!", "This website is from the internet, check that it is genuine.", "TL;DR: Hire me!", "Even cooler in person", "Pls stop reloading"];
         quotes.push(niceDay);
         var randomItem = quotes[Math.random() * quotes.length | 0];
         document.getElementById('quote').innerHTML = randomItem;

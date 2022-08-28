@@ -13,15 +13,15 @@
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1E293B">
 
 
-  <link rel="icon"
-    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💭</text></svg>">
-  <!-- <link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png"> -->
+  <!-- <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💭</text></svg>"> -->
+  <link rel="icon" href="/assets/img/melon.png">
   <link rel="manifest" href="/manifest.json" />
   <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter&family=M+PLUS+1p&display=swap" rel="stylesheet">
   <link href="/assets/styles/tailwind.css" rel="stylesheet" />
   <link href="/assets/styles/index.css" rel="stylesheet" />
-  <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+  <!-- <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script> -->
   <script>
 
     const isDarkMode = () => localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
@@ -33,7 +33,7 @@
   </script>
 </head>
 
-<body class="text-serif antialiased text-zinc-900 bg-stone-200 dark:text-zinc-100 dark:bg-slate-800 ">
+<body class="text-serif antialiased text-zinc-900 bg-stone-200 dark:text-zinc-100 dark:bg-zinc-800 ">
 
   <p class="ascii">
     ░&emsp;&emsp;▒&emsp;&emsp;▒░▓<br />
@@ -54,7 +54,7 @@
   <main class="flex-1 w-11/12 sm:w-10/12 max-w-[40rem] mx-auto">
 
     <!-- <div id="swup" class="swup-transition"> -->
-    <!-- <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" class="noise"></svg> -->
+    <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" class="noise"></svg>
     
 <nav class="mb-8 flex content-between">
   <!-- 
@@ -68,9 +68,9 @@
   
 </nav>
 
-<p class="writing_article-title text-3xl">
+<!-- <p class="writing_article-title text-3xl">
   Lyceum
-</p>
+</p> -->
 
 <!-- <div class="flex items-baseline flex-wrap space-x-2 mt-2 sm:mt-0">
     
@@ -84,7 +84,7 @@
 
     <span class="font-serif opacity-60 text-lg">&middot;</span> 
 
-    <span class="font-serif opacity-60 text-lg">4 min</span>
+    <span class="font-serif opacity-60 text-lg">9 min</span>
 
 </div> -->
 
@@ -102,9 +102,12 @@
     </div>
     </div> -->
 <!-- <div class="md:flex md:flex-row mt-4"><div class="md:flex-1 md:mr-5"><video class="" width="353" height="715" controls loop autoplay preload="auto"><source src="/assets/img/posts/dtx_symptom.mp4" type="video/mp4">Your browser does not support the video tag.</video></div><div class="md:flex-1">Digital Therapeutics chatbot concept, "Add a symptom"</div></div> -->
-<p>Lyceum creates health platforms to support patients suffering from advanced diseases, and to help their healthcare teams monitor their condition and determine their coverage. I joined the company in 2019 as their first designer, and hired another UX Designer in 2021 to help out.</p>
-<p>I wore many hats (which I love, but only figuratively): I helped shape the product vision and strategy, coded some of my designs, worked on localization, introduced new tools[notion] and workflows. Oh and yeah, lots of UX!
-<div class="flex flex-col md:flex-row mt-4 space-y-1 md:space-y-0 md:space-x-1">
+<!-- : Starting from a Parking Lot that everyone could contribute to, an Idea could become a Story through Business and Product approval, where it would then be refined and pitched to the Product and Dev teams, sized and prioritized. -->
+ <img class="prose-img-large mt-4" src="/assets/img/posts/logo.png" alt="Lyceum logo" />
+<!-- insert a value here to set % size? -->
+<p>Lyceum creates health platforms to support patients suffering from advanced diseases, and to help their healthcare teams monitor their condition and determine their coverage. I joined the company in 2019 as their first designer and hired another designer in 2021 to help out.</p>
+<p>I wore many hats (which I love, but only figuratively). I built a UX practice from the ground up, helped shape the product vision and strategy, coded some of my designs, worked on localization, and introduced new tools and workflows to the team.
+<div class="md:space-x-1 flex flex-col md:flex-row mt-4 space-y-1 md:space-y-0">
 <div>
 <img class="cssbox_thumb prose-img-large" tabindex=1 src="/assets/img/posts/dtx_pt_profile2.png">
 <span class="cssbox_full"><img src="/assets/img/posts/dtx_pt_profile2.png" /></span>
@@ -120,46 +123,66 @@
 </div>
 </div>
 </div>
-<p class="text-center opacity-60 text-sm">Digital Therapeutics, early concepts.</p></p>
+<p class="text-center !text-zinc-100 text-sm">Digital Therapeutics, early concepts.</p></p>
 <h2>Challenges</h2>
 <ul>
-<li>
-<p><strong>Lot of users.</strong> We designed for patients, caregivers, nurses, doctors and pharmaceutical stakeholders.</p>
-</li>
-<li>
-<p><strong>B2B2C model.</strong> Patients were hard to reach because of confidentiality issues and their PII (Personally Identifiable Information). Doctors and Nurses had very limited and expensive time.</p>
-</li>
-<li>
-<p><strong>Complex workflows.</strong> Each clinic operates differently, so we took the time to understand their differences and how our tools could be best put to use ~</p>
-</li>
-<li>
-<p><strong>No analytics.</strong> For privacy and security reasons, we could not use tools such as Google Analytics, Hotjar or Pendo.</p>
-</li>
+<li><strong>User variety.</strong> We designed for patients, caregivers, nurses, doctors, and pharmaceutical companies.</li>
+<li><strong>Stakeholder availability.</strong> Patients were hard to reach because of confidentiality issues and PII (Personally Identifiable Information). Doctors and Nurses had limited and expensive time.</li>
+<li><strong>Complex workflows.</strong> Each clinic operates differently, so we researched and analyzed their differences to determine how our tools could be best used.</li>
+<li><strong>No analytics.</strong> For privacy and security reasons, we could not use tools such as Google Analytics, Hotjar, or Pendo. We had to rely on surveys and user interviews.</li>
 </ul>
-<div class="md:flex md:flex-row mt-4"><div class="md:flex-1 md:mr-5"><video class="" width="353" height="715" controls loop autoplay preload="auto"><source src="/assets/img/posts/dtx_features.mp4" type="video/mp4">Your browser does not support the video tag.</video></div><div class="md:flex-1">Digital Therapeutics chatbot concept, "Add a symptom"</div></div>
-<h2>Accomplishments</h2>
-<h3>Strategy</h3>
+<h2>Outcomes</h2>
+<div class="md:flex md:flex-row mt-4"><div class="md:flex-1 md:mr-5"><video class="" width="353" height="715" controls loop autoplay preload="auto"><source src="/assets/img/posts/dtx_features.mp4" type="video/mp4">Your browser does not support the video tag.</video></div><div class="md:flex-1"></div></div>
+<h3>Product Strategy</h3>
+<p>In 2018, Lyceum was very much in a zero-to-one phase, figuring out the product/market fit. As the fourth employee, my goal was to <strong>minimize uncertainty</strong> in what we wanted to build as well as make sure that our core features were well designed, built and tested. It was crucial at this stage to gather direct feedback from our early adopters.</p>
+<p>I put together a process to take Ideas to Stories and then Features. Its guiding principles were:</p>
 <ul>
-<li>Roadmap. Early roadmaps, Themes,</li>
+<li><strong>Collaboration.</strong> Everyone could add Ideas, and their owners were responsible for pushing them along the different stages of the process.</li>
+<li><strong>Traceability.</strong> It had to be clear where the Idea originated from, as context was key when prioritizing ideas.</li>
+<li><strong>Documentation.</strong> We realized early the importance of centralizing uncertainties, known unknowns, and decisions in one place, as well as how to write well for our colleagues.</li>
+<li><strong>Outcomes.</strong> With a small dev team, we had to validate Ideas and realize value quickly.</li>
 </ul>
-<h3>Design</h3>
+<p>Influences: <a href="https://basecamp.com/shapeup">Shape Up</a>, <a href="https://alistapart.com/article/jobs-to-be-done">Jobs to be Done</a>, <a href="https://cutlefish.substack.com/archive">John Cutler</a>.</p>
+<h3>Design Ops</h3>
+<p>I also worked on:</p>
 <ul>
-<li>Design system.</li>
-<li>Design ops and evangelization. UX KPIs, UX Roadmap, User research initiatives. Interview bank, lunch and learn, tighter feedback loops between Product and Dev.</li>
-<li>Mentorship and growth.</li>
+<li>
+<p>A <strong>Design System</strong> in Figma and helped implement it in <a href="https://storybook.js.org/">Storybook</a>.</p>
+</li>
+<li>
+<p>A <strong>UX Roadmap</strong>. User research, testing, and ideation workshops were priorities, and I received resources to build toward a more complete UX Process at Lyceum.</p>
+</li>
+<li>
+<p><strong>UX Metrics</strong> around 5 key themes, following a typical user journey: Enrolment, Engagement, Retention, Usability, and Satisfaction.</p>
+</li>
+<li>
+<p><strong>Mentorship and growth.</strong> I had the opportunity to hire another designer to help me with the workload. It was an amazing experience mentoring her and seeing her grow more comfortable. Thanks, Taylor!</p>
+  <div class="md:space-x-1 flex flex-col md:flex-row mt-4 space-y-1 md:space-y-0">
+  <div>
+      <img class="cssbox_thumb prose-img-large" tabindex=1 src="/assets/img/posts/cap_pp.png">
+      <span class="cssbox_full"><img src="/assets/img/posts/cap_pp.png" /></span>
+  </div>
+  <div class="flex flex-row space-x-1">
+      <div>
+          <img class="cssbox_thumb prose-img-large" tabindex=1 src="/assets/img/posts/cap_pp2.png">
+          <span class="cssbox_full"><img src="/assets/img/posts/cap_pp2.png" /></span>
+      </div>
+      <div>
+          <img class="cssbox_thumb prose-img-large" tabindex=1 src="/assets/img/posts/treatment_modal.png">
+          <span class="cssbox_full"><img src="/assets/img/posts/treatment_modal.png" /></span>
+      </div>
+  </div>
+  </div>
+  <p class="text-center !text-zinc-100 text-sm">Clinical Assessment Program, Physician side.</p>
+</li>
 </ul>
 <h2>Learnings</h2>
+<!-- * __A whole lot regarding software building.__ I read a lot on SDLC, and  -->
 <ul>
-<li>Process is everything</li>
-<li>Documentation is even more</li>
-<li>Knowledge is siloed</li>
-<li>Build for the future</li>
+<li><strong>Process is everything.</strong> We learned the hard way that we had to define clearly roles and expectations, in an ever changing environment. The concept of appetite</li>
+<li><strong>Don't silo knowledge.</strong>  So much can be improved by making centralized knowledge repos, good documentation practices, taking advantage of automation, using group chats instead of DMs, proactively sharing work and answers received from other team members.</li>
+<li><strong>Build for the future.</strong> It is important to build the right thing, and in that, to not build too much. Feature creep is real, so focus efforts on designing and coding resilient, scalable, customizable, and documented code. Taking advantage of automated testing, modern frameworks, and is especially key for small companies.</li>
 </ul>
-<p>how did that go?
-´´</p>
-<blockquote>
-<p>How to design a system used by</p>
-</blockquote>
 
 </div>
 
@@ -235,7 +258,7 @@
         var dayOfWeekNumber = currDate.getDay();
         var nameOfDay = daysOfWeek[dayOfWeekNumber];
         var niceDay = "Have a nice " + nameOfDay + "!";
-        var quotes = ["🥐", "You're telling me a user centered this design?", "⌐■-■", "A E S T H E T I C S", "Don't forget to like and subscribe", "Lorem ipsum dolor dolor bills", "Built with 11ty, Tailwind and too much googling", "Press Cancel to Cancel", "Can gradients save the world?", "No pixels were harmed in making this website", "That's all Folks!", "This website is from the internet, check that it is genuine.", "Designing at the intersection of crossroads and roundabouts."];
+        var quotes = ["🥐", "You're telling me a user centered this design?", "⌐■-■", "A E S T H E T I C S", "Don't forget to like and subscribe", "Lorem ipsum dolor dolor bills", "Built with 11ty, Tailwind and too much googling", "Press Cancel to Cancel", "Can gradients save the world?", "No pixels were harmed in making this website.", "That's all Folks!", "This website is from the internet, check that it is genuine.", "TL;DR: Hire me!", "Even cooler in person", "Pls stop reloading"];
         quotes.push(niceDay);
         var randomItem = quotes[Math.random() * quotes.length | 0];
         document.getElementById('quote').innerHTML = randomItem;

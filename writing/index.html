@@ -13,15 +13,15 @@
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1E293B">
 
 
-  <link rel="icon"
-    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💭</text></svg>">
-  <!-- <link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png"> -->
+  <!-- <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💭</text></svg>"> -->
+  <link rel="icon" href="/assets/img/melon.png">
   <link rel="manifest" href="/manifest.json" />
   <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter&family=M+PLUS+1p&display=swap" rel="stylesheet">
   <link href="/assets/styles/tailwind.css" rel="stylesheet" />
   <link href="/assets/styles/index.css" rel="stylesheet" />
-  <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+  <!-- <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script> -->
   <script>
 
     const isDarkMode = () => localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
@@ -33,7 +33,7 @@
   </script>
 </head>
 
-<body class="text-serif antialiased text-zinc-900 bg-stone-200 dark:text-zinc-100 dark:bg-slate-800 ">
+<body class="text-serif antialiased text-zinc-900 bg-stone-200 dark:text-zinc-100 dark:bg-zinc-800 ">
 
   <p class="ascii">
     ░&emsp;&emsp;▒&emsp;&emsp;▒░▓<br />
@@ -49,12 +49,13 @@
   </p>
   <!-- <div id="swup" class="swup-transition"> -->
   
+
+
 <div class="min-h-screen flex flex-col">
-
-  <main class="flex-1 w-11/12 sm:w-10/12 max-w-[40rem] mx-auto">
-
+  <main class="flex-1 w-11/12 max-w-screen-md md:max-w-screen-lg mx-auto">
+    
+    <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" class="noise"></svg>
     <!-- <div id="swup" class="swup-transition"> -->
-    <!-- <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" class="noise"></svg> -->
     
 <nav class="mb-8 flex content-between">
   <!-- 
@@ -72,17 +73,17 @@
 
     <p class="text-lg font-serif opacity-60 italic leading-175">Thoughts on</p>
          
-            <span class="hover:!opacity-100">
-                <a class="font-serif link text-lg italic" href="/tags/collaboration">collaboration,</a>
-            </span>
+            <span class="opacity-60 hover:!opacity-100 font-serif">
+                <a class="link text-lg italic" href="/tags/collaboration">collaboration</a>
+            </span><span class="font-serif opacity-60 !ml-0">,</span>
          
-            <span class="hover:!opacity-100">
-                <a class="font-serif link text-lg italic" href="/tags/front-end">front-end,</a>
-            </span>
+            <span class="opacity-60 hover:!opacity-100 font-serif">
+                <a class="link text-lg italic" href="/tags/front-end">front-end</a>
+            </span><span class="font-serif opacity-60 !ml-0">,</span>
          
-            <span class="hover:!opacity-100">
-                <a class="font-serif link text-lg italic" href="/tags/product strategy">product strategy,</a>
-            </span>
+            <span class="opacity-60 hover:!opacity-100 font-serif">
+                <a class="link text-lg italic" href="/tags/product strategy">product strategy</a>
+            </span><span class="font-serif opacity-60 !ml-0">,</span>
         
         <p class="text-lg font-serif opacity-60 italic leading-175">and more.</p>
     
@@ -98,94 +99,113 @@
 
     
 
-        <div class="mb-16">
-            <p class="writing_article-title hover:opacity-100">
-                <a href="/posts/2020/07/solution/">Who owns the solution?</a>
-            </p>
-            <p class="writing_date">Oct. 2022</p>
-            <p class="writing_excerpt">Both products managers and UX Designers love to decide.
+    
+            <div class="my-8">
+                <div class="flex items-baseline  ">
+                <!-- <button class="button">Read more</button> -->
+                <p class="writing_article-title italic hover:opacity-100">
+                    <a href="/posts/2020/07/solution/">Who owns the solution?</a>
+                </p>
+                <div class="border-b-2 border-b-zinc-400 border-dotted flex-1"></div>
+                <p class="writing_date italic">&nbsp;Oct. 2022</p>
+            </div>
+                <!-- <p class="writing_excerpt opacity-80">Both products managers and UX Designers love to decide.
+</p> -->
+            </div>
 
-                <button class="button">
-                    <a href="/posts/2020/07/solution/">Read more</a>
-                </button>
-            </p>
-        </div>
+        <!-- <hr class="my-8 border-1 border-current opacity-10"> -->
+
 
     
 
     
 
-        <div class="mb-16">
-            <p class="writing_article-title hover:opacity-100">
-                <a href="/posts/2020/07/should_designers_know_how_to_code/">Should designers know how to code?</a>
-            </p>
-            <p class="writing_date">Jun. 2022</p>
-            <p class="writing_excerpt">Oh no not this again...
+    
+            <div class="my-8">
+                <div class="flex items-baseline  ">
+                <!-- <button class="button">Read more</button> -->
+                <p class="writing_article-title italic hover:opacity-100">
+                    <a href="/posts/2020/07/should_designers_know_how_to_code/">Should designers know how to code?</a>
+                </p>
+                <div class="border-b-2 border-b-zinc-400 border-dotted flex-1"></div>
+                <p class="writing_date italic">&nbsp;Jun. 2022</p>
+            </div>
+                <!-- <p class="writing_excerpt opacity-80">Oh no not this again...
+</p> -->
+            </div>
 
-                <button class="button">
-                    <a href="/posts/2020/07/should_designers_know_how_to_code/">Read more</a>
-                </button>
-            </p>
-        </div>
+        <!-- <hr class="my-8 border-1 border-current opacity-10"> -->
+
 
     
 
     
 
-        <div class="mb-16">
-            <p class="writing_article-title hover:opacity-100">
-                <a href="/posts/2020/07/file_fatigue/">A set of fresh eyes</a>
-            </p>
-            <p class="writing_date">Jun. 2022</p>
-            <p class="writing_excerpt">Rotating ownership and designers can bring a new perspective.
+    
+            <div class="my-8">
+                <div class="flex items-baseline  ">
+                <!-- <button class="button">Read more</button> -->
+                <p class="writing_article-title italic hover:opacity-100">
+                    <a href="/posts/2020/07/file_fatigue/">A set of fresh eyes</a>
+                </p>
+                <div class="border-b-2 border-b-zinc-400 border-dotted flex-1"></div>
+                <p class="writing_date italic">&nbsp;Jun. 2022</p>
+            </div>
+                <!-- <p class="writing_excerpt opacity-80">Rotating ownership and designers can bring a new perspective.
+</p> -->
+            </div>
 
-                <button class="button">
-                    <a href="/posts/2020/07/file_fatigue/">Read more</a>
-                </button>
-            </p>
-        </div>
+        <!-- <hr class="my-8 border-1 border-current opacity-10"> -->
+
 
     
 
     
 
-        <div class="mb-16">
-            <p class="writing_article-title hover:opacity-100">
-                <a href="/posts/2020/07/documenting_documentation/">Documenting Documentation</a>
-            </p>
-            <p class="writing_date">Jun. 2022</p>
-            <p class="writing_excerpt">A tale of two extremes.
+    
+            <div class="my-8">
+                <div class="flex items-baseline  ">
+                <!-- <button class="button">Read more</button> -->
+                <p class="writing_article-title italic hover:opacity-100">
+                    <a href="/posts/2020/07/documenting_documentation/">Documenting Documentation</a>
+                </p>
+                <div class="border-b-2 border-b-zinc-400 border-dotted flex-1"></div>
+                <p class="writing_date italic">&nbsp;Jun. 2022</p>
+            </div>
+                <!-- <p class="writing_excerpt opacity-80">A tale of two extremes.
+</p> -->
+            </div>
 
-                <button class="button">
-                    <a href="/posts/2020/07/documenting_documentation/">Read more</a>
-                </button>
-            </p>
-        </div>
+        <!-- <hr class="my-8 border-1 border-current opacity-10"> -->
+
 
     
 
     
 
-        <div class="mb-16">
-            <p class="writing_article-title hover:opacity-100">
-                <a href="/posts/2020/07/opinionated/">Opinionated vs. flexible products</a>
-            </p>
-            <p class="writing_date">Apr. 2022</p>
-            <p class="writing_excerpt">How to approach designing each.
+    
+            <div class="my-8">
+                <div class="flex items-baseline  ">
+                <!-- <button class="button">Read more</button> -->
+                <p class="writing_article-title italic hover:opacity-100">
+                    <a href="/posts/2020/07/opinionated/">Opinionated vs. flexible products</a>
+                </p>
+                <div class="border-b-2 border-b-zinc-400 border-dotted flex-1"></div>
+                <p class="writing_date italic">&nbsp;Apr. 2022</p>
+            </div>
+                <!-- <p class="writing_excerpt opacity-80">How to approach designing each.
 
+</p> -->
+            </div>
 
-                <button class="button">
-                    <a href="/posts/2020/07/opinionated/">Read more</a>
-                </button>
-            </p>
-        </div>
+        <!-- <hr class="my-8 border-1 border-current opacity-10"> -->
+
 
     
 
 
 
     <!-- </div> -->
-
   </main>
 
   <footer class="mt-auto flex-shrink-0 w-full pt-12">
@@ -219,6 +239,7 @@
 
 </footer>
 </div>
+
   <!-- </div> -->
   <script>
 
@@ -242,7 +263,7 @@
         var dayOfWeekNumber = currDate.getDay();
         var nameOfDay = daysOfWeek[dayOfWeekNumber];
         var niceDay = "Have a nice " + nameOfDay + "!";
-        var quotes = ["🥐", "You're telling me a user centered this design?", "⌐■-■", "A E S T H E T I C S", "Don't forget to like and subscribe", "Lorem ipsum dolor dolor bills", "Built with 11ty, Tailwind and too much googling", "Press Cancel to Cancel", "Can gradients save the world?", "No pixels were harmed in making this website", "That's all Folks!", "This website is from the internet, check that it is genuine.", "Designing at the intersection of crossroads and roundabouts."];
+        var quotes = ["🥐", "You're telling me a user centered this design?", "⌐■-■", "A E S T H E T I C S", "Don't forget to like and subscribe", "Lorem ipsum dolor dolor bills", "Built with 11ty, Tailwind and too much googling", "Press Cancel to Cancel", "Can gradients save the world?", "No pixels were harmed in making this website.", "That's all Folks!", "This website is from the internet, check that it is genuine.", "TL;DR: Hire me!", "Even cooler in person", "Pls stop reloading"];
         quotes.push(niceDay);
         var randomItem = quotes[Math.random() * quotes.length | 0];
         document.getElementById('quote').innerHTML = randomItem;
