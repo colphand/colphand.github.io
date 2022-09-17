@@ -18,7 +18,9 @@
   <link rel="icon" href="/assets/img/melon.png">
   <link rel="manifest" href="/manifest.json" />
   <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter&family=M+PLUS+1p&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=M+PLUS+1p&display=swap" rel="stylesheet">
   <link href="/assets/styles/tailwind.css" rel="stylesheet" />
   <link href="/assets/styles/index.css" rel="stylesheet" />
   <!-- <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script> -->
@@ -74,27 +76,27 @@
 
 
 
-<div class="flex items-baseline flex-wrap space-x-2 mt-2 sm:mt-0">
+<div class="flex items-baseline flex-wrap space-x-2 mt-2 sm:mt-0 font-serif opacity-60">
     
-  <span class="font-serif opacity-60 text-lg">
+  <span>
     Jun. 2022
   </span>
 
-  <span class="font-serif opacity-60 text-lg">&middot;</span> 
+  <span>&middot;</span> 
 
     
     
     
     
     <a href="/tags/collaboration">
-      <span class="font-serif link opacity-60 text-lg">collaboration</span>
+      <span class="link">collaboration</span>
     </a>
     
     
 
-    <span class="font-serif opacity-60 text-lg">&middot;</span> 
+    <span>&middot;</span> 
 
-    <span class="font-serif opacity-60 text-lg">1 min</span>
+    <span>1 min</span>
 
 </div>
 
@@ -102,8 +104,7 @@
 
 
 <div class="prose dark:prose-invert max-w-none">
-  <p>A tale of two extremes.</p>
-<h2>Is trustworthy</h2>
+  <h2>Is trustworthy</h2>
 <h2>Is maintainable</h2>
 <h2>Is automated</h2>
 <h2>Is concise</h2>
@@ -142,7 +143,7 @@
           <a class="link-footer" href=https://github.com/colphand target="_blank">github</a> &middot;
         
         
-          <a class="link-footer" href= target="_blank">linkedin</a> &middot;
+          <a class="link-footer" href=https://www.linkedin.com/in/olphandc/ target="_blank">linkedin</a> &middot;
         
         
           <a class="link-footer" href=https://twitter.com/colfand target="_blank">twitter</a>
@@ -184,25 +185,67 @@
         var dayOfWeekNumber = currDate.getDay();
         var nameOfDay = daysOfWeek[dayOfWeekNumber];
         var niceDay = "Have a nice " + nameOfDay + "!";
-        var quotes = ["🥐", "You're telling me a user centered this design?", "⌐■-■", "A E S T H E T I C S", "Don't forget to like and subscribe", "Lorem ipsum dolor dolor bills", "Built with 11ty, Tailwind and too much googling", "Press Cancel to Cancel", "Can gradients save the world?", "No pixels were harmed in making this website.", "That's all Folks!", "This website is from the internet, check that it is genuine.", "TL;DR: Hire me!", "Even cooler in person", "Pls stop reloading"];
+        var quotes = ["🥐", "You're telling me a user centered this design?", "⌐■-■", "A E S T H E T I C S", "Don't forget to like and subscribe", "Lorem ipsum dolor dolor bills", "Built with 11ty, Tailwind and too much googling", "Press Cancel to Cancel", "Can gradients save the world?", "No pixels were harmed in making this website.", "That's all Folks!", "This website is from the internet, check that it is genuine.", "TL;DR: Hire me!", "Even cooler in person"];
         quotes.push(niceDay);
         var randomItem = quotes[Math.random() * quotes.length | 0];
         document.getElementById('quote').innerHTML = randomItem;
+
+        var state = history.state || {};
+        var reloadCount = state.reloadCount || 0;
+        if (performance.navigation.type === 1) { // Reload
+          state.reloadCount = ++reloadCount;
+          history.replaceState(state, null, document.URL);
+        } else if (reloadCount) {
+          delete state.reloadCount;
+          reloadCount = 0;
+          history.replaceState(state, null, document.URL);
+        }
+        if (reloadCount >= 25) {
+          delete state.reloadCount;
+          reloadCount === 0;
+          document.getElementById('quote').innerHTML = "I've got all day";
+        }
+        else if (reloadCount >= 20) {
+          delete state.reloadCount;
+          reloadCount === 0;
+          document.getElementById('quote').innerHTML = "Surely you have more productive things to do";
+        }
+        else if (reloadCount >= 16) {
+          delete state.reloadCount;
+          reloadCount === 0;
+          document.getElementById('quote').innerHTML = "There are no more I swear";
+        }
+        else if (reloadCount >= 11) {
+          delete state.reloadCount;
+          reloadCount === 0;
+          document.getElementById('quote').innerHTML = "STAHP";
+        }
+        else if (reloadCount >= 7) {
+          delete state.reloadCount;
+          reloadCount === 0;
+          document.getElementById('quote').innerHTML = "Cmon now";
+        }
+        else if (reloadCount >= 5) {
+          delete state.reloadCount;
+          reloadCount === 0;
+          document.getElementById('quote').innerHTML = "Pls stop reloading";
+        }
+
       }
     }
 
 
 
-      let options = {
-        // LINK_SELECTOR: 'a',
-        debugMode: true,
-        animationSelector: '[class*="swup-transition-"]',
-      };
+    let options = {
+      // LINK_SELECTOR: 'a',
+      debugMode: true,
+      animationSelector: '[class*="swup-transition-"]',
+    };
 
-      // const swup = new Swup(options);
+    // const swup = new Swup(options);
 
-      // run once 
-      init();
+    // run once 
+    init();
       // this event runs for every page view after initial load
       // swup.on('contentReplaced', init);
 

@@ -133,7 +133,7 @@ html.is-animating .swup-transition-test {
   left: 0px;
   /* transform: translateZ(0px); */
   z-index: -1;
-  opacity: .3;
+  opacity: .12;
   background: 
     url(https://grainy-gradients.vercel.app/noise.svg);
     filter: contrast(120%);
@@ -145,26 +145,23 @@ html.is-animating .swup-transition-test {
 
 
 .home_button {
-  position: relative;
-  top: 3px;
+  margin-bottom: -5px;
+  padding-bottom: 5px;
+  line-height: 31px;
 }
-.home_button a {
-  position: relative;
-  top: -3px;
-}
+
 
 /* Firefox 11+ */
 @supports (-moz-appearance:none) {
   .home_button {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    line-height: inherit;
+  }
+  /* .home_button a {
     position: inherit;
     top: 0px;
-    /* padding-top: 6px;
-    padding-bottom: 5px; */
-  }
-  .home_button a {
-    position: inherit;
-    top: 0px;
-  }
+  } */
 }
 
 .header-anchor:hover {

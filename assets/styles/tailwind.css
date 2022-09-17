@@ -876,6 +876,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0;
 }
 
+.invisible {
+  visibility: hidden;
+}
+
+.static {
+  position: static;
+}
+
 .fixed {
   position: fixed;
 }
@@ -922,6 +930,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: auto;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .mt-3 {
   margin-top: 0.75rem;
 }
@@ -938,16 +950,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.75rem;
 }
 
-.mb-16 {
-  margin-bottom: 4rem;
+.-mt-1 {
+  margin-top: -0.25rem;
 }
 
 .mr-6 {
   margin-right: 1.5rem;
 }
 
-.mt-4 {
-  margin-top: 1rem;
+.mb-16 {
+  margin-bottom: 4rem;
 }
 
 .mt-16 {
@@ -978,32 +990,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 0px !important;
 }
 
-.-mt-1 {
-  margin-top: -0.25rem;
-}
-
-.-mt-2 {
-  margin-top: -0.5rem;
-}
-
-.-mt-1 {
-  margin-top: -0.25rem;
-}
-
 .flex {
   display: flex;
-}
-
-.h-8 {
-  height: 2rem;
 }
 
 .h-auto {
   height: auto;
 }
 
+.h-8 {
+  height: 2rem;
+}
+
 .min-h-screen {
   min-height: 100vh;
+}
+
+.w-5 {
+  width: 1.25rem;
 }
 
 .w-fit {
@@ -1022,14 +1026,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-11\/12 {
   width: 91.666667%;
-}
-
-.w-4 {
-  width: 1rem;
-}
-
-.w-5 {
-  width: 1.25rem;
 }
 
 .max-w-screen-md {
@@ -1149,6 +1145,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 0.5rem;
 }
 
+.space-y-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
+}
+
+.space-x-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.25rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
@@ -1159,12 +1167,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-x-1 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.25rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-y-3 > :not([hidden]) ~ :not([hidden]) {
@@ -1280,16 +1282,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: Vulf Mono, ui-sans-serif, system-ui;
 }
 
+.text-sm {
+  font-size: .875rem;
+}
+
 .text-lg {
   font-size: 1.125rem;
 }
 
 .text-xl {
   font-size: 1.25rem;
-}
-
-.text-sm {
-  font-size: .875rem;
 }
 
 .text-3xl {
@@ -1328,6 +1330,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.75;
 }
 
+.\!text-zinc-100 {
+  --tw-text-opacity: 1 !important;
+  color: rgb(244 244 245 / var(--tw-text-opacity)) !important;
+}
+
 .text-gray-800 {
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
@@ -1352,8 +1359,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   opacity: 0.8;
 }
 
-.opacity-10 {
-  opacity: 0.1;
+.opacity-70 {
+  opacity: 0.7;
 }
 
 .opacity-40 {
@@ -1362,6 +1369,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .opacity-60 {
   opacity: 0.6;
+}
+
+.opacity-10 {
+  opacity: 0.1;
 }
 
 .opacity-30 {
@@ -1801,8 +1812,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: Vulf Sans, ui-sans-serif, system-ui;
   font-size: 2.65rem;
   font-weight: 500;
+  font-style: italic;
   line-height: 1;
-  opacity: 0.9;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -1819,11 +1830,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .writing_date {
-  margin-top: 0.25rem;
   white-space: nowrap;
   font-family: Vulf Sans, ui-sans-serif, system-ui;
   font-size: 1.125rem;
-  opacity: 0.6;
+  opacity: 0.7;
 }
 
 .writing_excerpt {
@@ -2045,12 +2055,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     top: 5rem;
   }
 
-  .md\:mt-0 {
-    margin-top: 0px;
-  }
-
   .md\:mr-5 {
     margin-right: 1.25rem;
+  }
+
+  .md\:mt-0 {
+    margin-top: 0px;
   }
 
   .md\:mb-4 {
@@ -2081,8 +2091,30 @@ Ensure the default browser behavior of the `hidden` attribute.
     flex-direction: row;
   }
 
+  .md\:items-baseline {
+    align-items: baseline;
+  }
+
+  .md\:space-x-1 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0.25rem * var(--tw-space-x-reverse));
+    margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .md\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
   .md\:py-20 {
     padding-top: 5rem;
     padding-bottom: 5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:visible {
+    visibility: visible;
   }
 }
