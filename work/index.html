@@ -60,45 +60,18 @@
 
     <defs>
       <radialGradient id="Gradient1" cx="50%" cy="50%" fx="97%%" fy="50%" r=".5">
-        <!-- <animate attributeName="fx" dur="34s" values="0%;3%;0%" repeatCount="indefinite"></animate> -->
         <stop offset="0%" stop-color="#ff0"></stop>
         <stop offset="100%" stop-color="#ff00"></stop>
       </radialGradient>
-      <!-- <radialGradient id="Gradient2" cx="50%" cy="50%" fx="25%" fy="50%" r=".5">
-        <animate attributeName="fx" dur="23.5s" values="0%;3%;0%" repeatCount="indefinite"></animate>
-        <stop offset="0%" stop-color="#9EFF00"></stop>
-        <stop offset="100%" stop-color="#0ff0"></stop>
-      </radialGradient> -->
-      <radialGradient id="Gradient3" cx="50%" cy="50%" fx="1%" fy="50%" r=".5">
-        <!-- <animate attributeName="fx" dur="21.5s" values="0%;3%;0%" repeatCount="indefinite"></animate> -->
+
+      <radialGradient id="Gradient3" cx="50%" cy="50%" fx="1%" fy="50%" r=".5" opacity="10%">
         <stop offset="0%" stop-color="#f0f"></stop>
         <stop offset="100%" stop-color="#f0f0"></stop>
       </radialGradient>
     </defs>
 
-    <filter id='noiseFilter'>
-        <feTurbulence type='fractalNoise' baseFrequency='8' numOctaves='1' stitchTiles='stitch' />
-    </filter>
-
-
-    <rect x="-10" y="40" width="180%" height="180%" fill="url(#Gradient1)">
-      <!-- <animate attributeName="x" dur="20s" values="25%;0%;25%" repeatCount="indefinite"></animate> -->
-      <!-- <animate attributeName="y" dur="21s" values="0%;25%;0%" repeatCount="indefinite"></animate> -->
-      <!-- <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="17s"
-        repeatCount="indefinite"></animateTransform> -->
-    </rect>
-    <rect x="-20" y="30" width="60%" height="60%" fill="url(#Gradient2)">
-      <!-- <animate attributeName="x" dur="23s" values="-25%;0%;-25%" repeatCount="indefinite"></animate>
-      <animate attributeName="y" dur="24s" values="0%;50%;0%" repeatCount="indefinite"></animate>
-      <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="18s"
-        repeatCount="indefinite"></animateTransform> -->
-    </rect>
-    <rect x="-40%" y="-130%" width="200%" height="200%" fill="url(#Gradient3)">
-      <!-- <animate attributeName="x" dur="25s" values="0%;25%;0%" repeatCount="indefinite"></animate>
-      <animate attributeName="y" dur="26s" values="0%;25%;0%" repeatCount="indefinite"></animate>
-      <animateTransform attributeName="transform" type="rotate" from="360 50 50" to="0 50 50" dur="19s"
-        repeatCount="indefinite"></animateTransform> -->
-    </rect>
+    <rect class="gradient_opacity" x="-10" y="40" width="180%" height="180%" fill="url(#Gradient1)"></rect>
+    <rect x="-40%" y="-130%" width="200%" height="200%" fill="url(#Gradient3)"></rect>
   </svg>
 
 </div>
@@ -309,7 +282,7 @@
         var dayOfWeekNumber = currDate.getDay();
         var nameOfDay = daysOfWeek[dayOfWeekNumber];
         var niceDay = "Have a nice " + nameOfDay + "!";
-        var quotes = ["🥐", "You're telling me a user centered this design?", "⌐■-■", "A E S T H E T I C S", "Don't forget to like and subscribe", "Lorem ipsum dolor dolor bills", "Built with 11ty, Tailwind and too much googling", "Press Cancel to Cancel", "Can gradients save the world?", "No pixels were harmed in making this website.", "That's all Folks!", "This website is from the internet, check that it is genuine.", "TL;DR: Hire me!", "Even cooler in person", "The quick brown fox jumps over the lazy dog"];
+        var quotes = ["🥐", "You're telling me a user centered this design?", "⌐■-■", "A E S T H E T I C S", "Don't forget to like and subscribe", "Lorem ipsum dolor dolor bills", "Built with 11ty, Tailwind and too much googling", "Press Cancel to Cancel", "No pixels were harmed in making this website.", "That's all Folks!", "This website is from the internet, check that it is genuine.", "TL;DR: Hire me!", "Even cooler in person", "The quick brown fox jumps over the lazy dog", "Proudly emoji-free"];
         quotes.push(niceDay);
         var randomItem = quotes[Math.random() * quotes.length | 0];
         document.getElementById('quote').innerHTML = randomItem;
@@ -324,27 +297,22 @@
           reloadCount = 0;
           history.replaceState(state, null, document.URL);
         }
-        if (reloadCount >= 25) {
+        else if (reloadCount >= 22) {
           delete state.reloadCount;
           reloadCount === 0;
           document.getElementById('quote').innerHTML = "I've got all day";
         }
-        else if (reloadCount >= 20) {
+        else if (reloadCount >= 17) {
           delete state.reloadCount;
           reloadCount === 0;
           document.getElementById('quote').innerHTML = "Surely you have more productive things to do";
         }
-        else if (reloadCount >= 16) {
-          delete state.reloadCount;
-          reloadCount === 0;
-          document.getElementById('quote').innerHTML = "There are no more I swear";
-        }
-        else if (reloadCount >= 11) {
+        else if (reloadCount >= 13) {
           delete state.reloadCount;
           reloadCount === 0;
           document.getElementById('quote').innerHTML = "STAHP";
         }
-        else if (reloadCount >= 7) {
+        else if (reloadCount >= 9) {
           delete state.reloadCount;
           reloadCount === 0;
           document.getElementById('quote').innerHTML = "Cmon now";

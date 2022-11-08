@@ -1408,6 +1408,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   opacity: 0.3;
 }
 
+.gradient_opacity {
+  opacity: 50%;
+}
+
 /* .card { @apply
   px-5 py-5 md:px-10 md:py-8 rounded-lg 
   sm:px-0 sm:py-0 sm:bg-transparent

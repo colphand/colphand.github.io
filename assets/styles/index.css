@@ -134,11 +134,11 @@ html.is-animating .swup-transition-test {
   left: 0px;
   /* transform: translateZ(0px); */
   z-index: -1;
-  opacity: .12;
+  opacity: .25;
   background: 
     url(https://grainy-gradients.vercel.app/noise.svg);
-    filter: contrast(120%);
-    /* mix-blend-mode: difference; */
+    /* filter: contrast(120%); */
+    mix-blend-mode: overlay;
     /* filter: contrast(170%) brightness(1000%); */
     /* filter: saturate(100%); */
 
@@ -152,6 +152,11 @@ html.is-animating .swup-transition-test {
     padding-bottom: 0px;
     line-height: inherit;
   }
+}
+
+/* Safari+ */
+_::-webkit-full-page-media, _:future, :root .dark.gradient2 {
+  opacity: .15;
 }
 
 
