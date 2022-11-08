@@ -1,0 +1,10 @@
+<svg id="spezimen" viewBox="0 0 500 500">
+<!-- https://www.luzi-type.ch/messina-modern -->
+<defs>
+<path d="M50,250c0-110.5,89.5-200,200-200s200,89.5,200,200s-89.5,200-200,200S50,360.5,50,250" id="textcircle">        
+<animateTransform attributeName="transform" begin="0s" dur="30s" type="rotate" from="0 250 250" to="360 250 250" repeatCount="indefinite"></animateTransform>
+</path>
+</defs>
+<text dy="10" textLength="1220"><textPath xlink:href="#textcircle" class="link-titel">Download PDF Samples of the Fonts!</textPath></text>    
+<text class="link-titel center" transform="matrix(1 0 0 1 114 260)">Spezimen</text>
+</svg>

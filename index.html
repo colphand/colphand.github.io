@@ -24,7 +24,10 @@
   <link href="/assets/styles/tailwind.css" rel="stylesheet" />
   <link href="/assets/styles/index.css" rel="stylesheet" />
   <!-- <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script> -->
+  
   <script>
+
+    
 
     const isDarkMode = () => localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
     if (isDarkMode()) {
@@ -180,8 +183,6 @@
 </div>
   <!-- </div> -->
   <script>
-
-
     document.getElementById("toggleDarkMode").addEventListener("click", function () {
       if (isDarkMode()) {
         localStorage.theme = 'light'
@@ -201,7 +202,7 @@
         var dayOfWeekNumber = currDate.getDay();
         var nameOfDay = daysOfWeek[dayOfWeekNumber];
         var niceDay = "Have a nice " + nameOfDay + "!";
-        var quotes = ["🥐", "You're telling me a user centered this design?", "⌐■-■", "A E S T H E T I C S", "Don't forget to like and subscribe", "Lorem ipsum dolor dolor bills", "Built with 11ty, Tailwind and too much googling", "Press Cancel to Cancel", "Can gradients save the world?", "No pixels were harmed in making this website.", "That's all Folks!", "This website is from the internet, check that it is genuine.", "TL;DR: Hire me!", "Even cooler in person"];
+        var quotes = ["🥐", "You're telling me a user centered this design?", "⌐■-■", "A E S T H E T I C S", "Don't forget to like and subscribe", "Lorem ipsum dolor dolor bills", "Built with 11ty, Tailwind and too much googling", "Press Cancel to Cancel", "Can gradients save the world?", "No pixels were harmed in making this website.", "That's all Folks!", "This website is from the internet, check that it is genuine.", "TL;DR: Hire me!", "Even cooler in person", "The quick brown fox jumps over the lazy dog"];
         quotes.push(niceDay);
         var randomItem = quotes[Math.random() * quotes.length | 0];
         document.getElementById('quote').innerHTML = randomItem;
@@ -248,20 +249,24 @@
         }
 
       }
+    
+      
+    
     }
 
+    
 
-
-    let options = {
-      // LINK_SELECTOR: 'a',
-      debugMode: true,
-      animationSelector: '[class*="swup-transition-"]',
-    };
+    // let options = {
+    //   LINK_SELECTOR: 'a',
+    //   debugMode: true,
+    //   animationSelector: '[class*="swup-transition-"]',
+    // };
 
     // const swup = new Swup(options);
 
     // run once 
     init();
+
       // this event runs for every page view after initial load
       // swup.on('contentReplaced', init);
 
@@ -274,8 +279,9 @@
     // };
     // document.getElementById("gradientStop").setAttribute("stop-color", color + "77");
     // document.getElementById("gradientStop2").setAttribute("stop-color", color + "00");
-
+    
   </script>
+  
 
 </body>
 

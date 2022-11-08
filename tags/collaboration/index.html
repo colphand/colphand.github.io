@@ -24,7 +24,10 @@
   <link href="/assets/styles/tailwind.css" rel="stylesheet" />
   <link href="/assets/styles/index.css" rel="stylesheet" />
   <!-- <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script> -->
+  
   <script>
+
+    
 
     const isDarkMode = () => localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
     if (isDarkMode()) {
@@ -51,7 +54,54 @@
   </p>
   <!-- <div id="swup" class="swup-transition"> -->
   
+<div class="gradient2">
 
+  <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" class="gradient">
+
+    <defs>
+      <radialGradient id="Gradient1" cx="50%" cy="50%" fx="97%%" fy="50%" r=".5">
+        <!-- <animate attributeName="fx" dur="34s" values="0%;3%;0%" repeatCount="indefinite"></animate> -->
+        <stop offset="0%" stop-color="#ff0"></stop>
+        <stop offset="100%" stop-color="#ff00"></stop>
+      </radialGradient>
+      <!-- <radialGradient id="Gradient2" cx="50%" cy="50%" fx="25%" fy="50%" r=".5">
+        <animate attributeName="fx" dur="23.5s" values="0%;3%;0%" repeatCount="indefinite"></animate>
+        <stop offset="0%" stop-color="#9EFF00"></stop>
+        <stop offset="100%" stop-color="#0ff0"></stop>
+      </radialGradient> -->
+      <radialGradient id="Gradient3" cx="50%" cy="50%" fx="1%" fy="50%" r=".5">
+        <!-- <animate attributeName="fx" dur="21.5s" values="0%;3%;0%" repeatCount="indefinite"></animate> -->
+        <stop offset="0%" stop-color="#f0f"></stop>
+        <stop offset="100%" stop-color="#f0f0"></stop>
+      </radialGradient>
+    </defs>
+
+    <filter id='noiseFilter'>
+        <feTurbulence type='fractalNoise' baseFrequency='8' numOctaves='1' stitchTiles='stitch' />
+    </filter>
+
+
+    <rect x="-10" y="40" width="180%" height="180%" fill="url(#Gradient1)">
+      <!-- <animate attributeName="x" dur="20s" values="25%;0%;25%" repeatCount="indefinite"></animate> -->
+      <!-- <animate attributeName="y" dur="21s" values="0%;25%;0%" repeatCount="indefinite"></animate> -->
+      <!-- <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="17s"
+        repeatCount="indefinite"></animateTransform> -->
+    </rect>
+    <rect x="-20" y="30" width="60%" height="60%" fill="url(#Gradient2)">
+      <!-- <animate attributeName="x" dur="23s" values="-25%;0%;-25%" repeatCount="indefinite"></animate>
+      <animate attributeName="y" dur="24s" values="0%;50%;0%" repeatCount="indefinite"></animate>
+      <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="18s"
+        repeatCount="indefinite"></animateTransform> -->
+    </rect>
+    <rect x="-40%" y="-130%" width="200%" height="200%" fill="url(#Gradient3)">
+      <!-- <animate attributeName="x" dur="25s" values="0%;25%;0%" repeatCount="indefinite"></animate>
+      <animate attributeName="y" dur="26s" values="0%;25%;0%" repeatCount="indefinite"></animate>
+      <animateTransform attributeName="transform" type="rotate" from="360 50 50" to="0 50 50" dur="19s"
+        repeatCount="indefinite"></animateTransform> -->
+    </rect>
+  </svg>
+
+</div>
 
 <div class="min-h-screen flex flex-col">
   <main class="flex-1 w-11/12 max-w-screen-md md:max-w-screen-lg mx-auto">
@@ -59,16 +109,8 @@
     <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" class="noise"></svg>
     <!-- <div id="swup" class="swup-transition"> -->
     
-<nav class="mb-8 flex content-between">
-  <!-- 
-<div class="fixed right-4">   
-    <div class="circle top-0 -right-20 bg-teal-300 animate-blob"></div>
-    <div class="circle top-0 -right-4 bg-amber-300 animate-blob animation-delay-2000 "></div>
-    <div class="circle -bottom-8 -right-6 bg-pink-300 animate-blob animation-delay-4000"></div>
-</div>  -->
-
-  <a class="font-serif text-7xl opacity-10 hover:opacity-80 transition-all cursor-pointer" onclick="history.back()">&larr;</a>
-  
+<nav class="my-4 flex content-between">
+  <a class=" font-serif text-7xl opacity-20 hover:opacity-80 transition-all cursor-pointer" onclick="history.back()">&larr;</a>
 </nav>
 
 <div class="flex items-baseline flex-wrap space-x-1 mb-8">
@@ -159,8 +201,6 @@
 
   <!-- </div> -->
   <script>
-
-
     document.getElementById("toggleDarkMode").addEventListener("click", function () {
       if (isDarkMode()) {
         localStorage.theme = 'light'
@@ -180,7 +220,7 @@
         var dayOfWeekNumber = currDate.getDay();
         var nameOfDay = daysOfWeek[dayOfWeekNumber];
         var niceDay = "Have a nice " + nameOfDay + "!";
-        var quotes = ["🥐", "You're telling me a user centered this design?", "⌐■-■", "A E S T H E T I C S", "Don't forget to like and subscribe", "Lorem ipsum dolor dolor bills", "Built with 11ty, Tailwind and too much googling", "Press Cancel to Cancel", "Can gradients save the world?", "No pixels were harmed in making this website.", "That's all Folks!", "This website is from the internet, check that it is genuine.", "TL;DR: Hire me!", "Even cooler in person"];
+        var quotes = ["🥐", "You're telling me a user centered this design?", "⌐■-■", "A E S T H E T I C S", "Don't forget to like and subscribe", "Lorem ipsum dolor dolor bills", "Built with 11ty, Tailwind and too much googling", "Press Cancel to Cancel", "Can gradients save the world?", "No pixels were harmed in making this website.", "That's all Folks!", "This website is from the internet, check that it is genuine.", "TL;DR: Hire me!", "Even cooler in person", "The quick brown fox jumps over the lazy dog"];
         quotes.push(niceDay);
         var randomItem = quotes[Math.random() * quotes.length | 0];
         document.getElementById('quote').innerHTML = randomItem;
@@ -227,20 +267,24 @@
         }
 
       }
+    
+      
+    
     }
 
+    
 
-
-    let options = {
-      // LINK_SELECTOR: 'a',
-      debugMode: true,
-      animationSelector: '[class*="swup-transition-"]',
-    };
+    // let options = {
+    //   LINK_SELECTOR: 'a',
+    //   debugMode: true,
+    //   animationSelector: '[class*="swup-transition-"]',
+    // };
 
     // const swup = new Swup(options);
 
     // run once 
     init();
+
       // this event runs for every page view after initial load
       // swup.on('contentReplaced', init);
 
@@ -253,8 +297,9 @@
     // };
     // document.getElementById("gradientStop").setAttribute("stop-color", color + "77");
     // document.getElementById("gradientStop2").setAttribute("stop-color", color + "00");
-
+    
   </script>
+  
 
 </body>
 
