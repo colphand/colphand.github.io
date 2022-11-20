@@ -1,65 +1,67 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta name='viewport' content='width=device-width'>
+  <head>
+    <meta charset="utf-8">
+    <meta name='viewport' content='width=device-width'>
 
-  <title>Colin Olphand</title>
-  <meta name='description' content=Colin Olphand is a Product Designer, currently improving patient care at Lyceum Health.>
+    <title>Colin Olphand</title>
+    <meta name='description' content=Colin Olphand is a Product Designer, currently improving patient care at Lyceum Health.>
 
-  <!-- To rework these using the theme color -->
-  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#D6D3D1">
-  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1E293B">
+    <!-- To rework these using the theme color -->
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#D6D3D1">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1E293B">
 
 
-  <!-- <link rel="icon"
+    <!-- <link rel="icon"
     href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💭</text></svg>"> -->
-  <link rel="icon" href="/assets/img/melon.png">
-  <link rel="manifest" href="/manifest.json" />
-  <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=M+PLUS+1p&display=swap" rel="stylesheet">
-  <link href="/assets/styles/tailwind.css" rel="stylesheet" />
-  <link href="/assets/styles/index.css" rel="stylesheet" />
-  <!-- <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script> -->
-  
-  <script>
+    <link rel="icon" href="/assets/img/melon.png">
+    <link rel="manifest" href="/manifest.json"/>
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=M+PLUS+1p&display=swap" rel="stylesheet">
+    <link href="/assets/styles/tailwind.css" rel="stylesheet"/>
+    <link href="/assets/styles/index.css" rel="stylesheet"/>
+    <!-- <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script> -->
 
+    <script>
+
+
+      const isDarkMode = () => localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
+      if (isDarkMode()) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    </script>
+  </head>
+
+  <body class="text-serif antialiased text-zinc-900 bg-stone-200 dark:text-zinc-100 dark:bg-zinc-800 ">
+
+
+    <p class="ascii">
+      ░&emsp;&emsp;▒&emsp;&emsp;▒░▓<br/>
+      ▒▓&emsp;▓&emsp;<br/>
+      ▒&emsp;▓&emsp;▓&emsp;&emsp;░&emsp;▓<br/>
+      ▒&emsp;▓&emsp;▒<br/>
+      ▒░&emsp;&emsp;&emsp;&emsp;░▓<br/>
+      ░&emsp;▓▒░&emsp;<br/>
+      ▓<br/>
+      ░&emsp;&emsp;<br/>
+      <br/>
+      ▒
+    </p>
+
+
+    <!-- <div id="swup" class="swup-transition"> -->
     
-
-    const isDarkMode = () => localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
-    if (isDarkMode()) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-  </script>
-</head>
-
-<body class="text-serif antialiased text-zinc-900 bg-stone-200 dark:text-zinc-100 dark:bg-zinc-800 ">
-
-  <p class="ascii">
-    ░&emsp;&emsp;▒&emsp;&emsp;▒░▓<br />
-    ▒▓&emsp;▓&emsp;<br />
-    ▒&emsp;▓&emsp;▓&emsp;&emsp;░&emsp;▓<br />
-    ▒&emsp;▓&emsp;▒<br />
-    ▒░&emsp;&emsp;&emsp;&emsp;░▓<br />
-    ░&emsp;▓▒░&emsp;<br />
-    ▓<br />
-    ░&emsp;&emsp;<br />
-    <br />
-    ▒
-  </p>
-  <!-- <div id="swup" class="swup-transition"> -->
-  
 <div class="gradient2">
 
   <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" class="gradient">
 
     <defs>
-      <radialGradient id="Gradient1" cx="50%" cy="50%" fx="97%%" fy="50%" r=".5">
+      <radialGradient id="Gradient1" cx="50%" cy="50%" fx="97%" fy="50%" r=".5">
         <stop offset="0%" stop-color="#ff0"></stop>
         <stop offset="100%" stop-color="#ff00"></stop>
       </radialGradient>
@@ -136,16 +138,18 @@
     <div class="flex flex-row justify-center space-x-4">
 
       <p class="py-2">
-        <span class="link-footer" id="toggleDarkMode"></span> &middot;
+        <span class="link-footer" id="toggleDarkMode"></span>
+        &middot;
         
-          <a class="link-footer" href=https://github.com/colphand target="_blank">github</a> &middot;
         
-        
-          <a class="link-footer" href=https://www.linkedin.com/in/olphandc/ target="_blank">linkedin</a> &middot;
+          <a class="link-footer" href=https://www.linkedin.com/in/olphandc/ target="_blank">linkedin</a>
+          &middot;
         
         
           <a class="link-footer" href=https://twitter.com/colfand target="_blank">twitter</a>
+          &middot;
         
+        <span class="link-footer" id="copyEmail">email</span>
       </p>
 
     </div>
@@ -161,103 +165,134 @@
 </footer>
 </div>
 
-  <!-- </div> -->
-  <script>
-    document.getElementById("toggleDarkMode").addEventListener("click", function () {
-      if (isDarkMode()) {
-        localStorage.theme = 'light'
-        document.documentElement.classList.remove('dark');
-        // document.getElementById('toggleDarkMode').innerHTML = 'dark mode';
-      } else {
-        localStorage.theme = 'dark'
-        document.documentElement.classList.add('dark')
-        // document.getElementById('toggleDarkMode').innerHTML = 'light mode';
+    <!-- </div> -->
+    <script>
+      document.getElementById("toggleDarkMode").addEventListener("click", function() {
+        if (isDarkMode()) {
+          localStorage.theme = 'light'
+          document.documentElement.classList.remove('dark');
+
+          // document.getElementById('toggleDarkMode').innerHTML = 'dark mode';
+        } else {
+          localStorage.theme = 'dark'
+          document.documentElement.classList.add('dark')
+
+          // document.getElementById('toggleDarkMode').innerHTML = 'light mode';
+        }
+      });
+
+      document.getElementById("copyEmail").addEventListener("click", function() {
+
+        var email = "colinolphand@gmail.com";
+
+        navigator.clipboard.writeText(email).then(function() {
+          console.log('Async: Copying to clipboard was successful!');
+          document.getElementById('copyEmail').innerHTML = 'email copied!';
+        }, 
+        function(err) {
+          console.error('Async: Could not copy text: ', err);
+          });
+      });
+
+      function init() {
+        if (document.querySelector('#quote')) {
+          var currDate = new Date();
+          var daysOfWeek = [
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ];
+          var dayOfWeekNumber = currDate.getDay();
+          var nameOfDay = daysOfWeek[dayOfWeekNumber];
+          var niceDay = "Have a nice " + nameOfDay + "!";
+          var quotes = [
+            "🥐",
+            "You're telling me a user centered this design?",
+            "⌐■-■",
+            "A E S T H E T I C S",
+            "Don't forget to like and subscribe",
+            "Lorem ipsum dolor dolor bills",
+            "Built with 11ty, Tailwind and too much googling",
+            "Press Cancel to Cancel",
+            "No pixels were harmed in making this website.",
+            "That's all Folks!",
+            "This website is from the internet, check that it is genuine.",
+            "TL;DR: Hire me!",
+            "Even cooler in person",
+            "The quick brown fox jumps over the lazy dog",
+            "Proudly emoji-free"
+          ];
+          quotes.push(niceDay);
+          var randomItem = quotes[Math.random() * quotes.length | 0];
+          document.getElementById('quote').innerHTML = randomItem;
+
+          var state = history.state || {};
+          var reloadCount = state.reloadCount || 0;
+          if (performance.navigation.type === 1) { // Reload
+            state.reloadCount = ++ reloadCount;
+            history.replaceState(state, null, document.URL);
+          } else if (reloadCount) {
+            delete state.reloadCount;
+            reloadCount = 0;
+            history.replaceState(state, null, document.URL);
+          } else if (reloadCount >= 22) {
+            delete state.reloadCount;
+            reloadCount === 0;
+            document.getElementById('quote').innerHTML = "I've got all day";
+          } else if (reloadCount >= 17) {
+            delete state.reloadCount;
+            reloadCount === 0;
+            document.getElementById('quote').innerHTML = "Surely you have more productive things to do";
+          } else if (reloadCount >= 13) {
+            delete state.reloadCount;
+            reloadCount === 0;
+            document.getElementById('quote').innerHTML = "STAHP";
+          } else if (reloadCount >= 9) {
+            delete state.reloadCount;
+            reloadCount === 0;
+            document.getElementById('quote').innerHTML = "Cmon now";
+          } else if (reloadCount >= 5) {
+            delete state.reloadCount;
+            reloadCount === 0;
+            document.getElementById('quote').innerHTML = "Pls stop reloading";
+          }
+
+        }
+
+
       }
-    });
 
-    function init() {
-      if (document.querySelector('#quote')) {
-        var currDate = new Date();
-        var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-        var dayOfWeekNumber = currDate.getDay();
-        var nameOfDay = daysOfWeek[dayOfWeekNumber];
-        var niceDay = "Have a nice " + nameOfDay + "!";
-        var quotes = ["🥐", "You're telling me a user centered this design?", "⌐■-■", "A E S T H E T I C S", "Don't forget to like and subscribe", "Lorem ipsum dolor dolor bills", "Built with 11ty, Tailwind and too much googling", "Press Cancel to Cancel", "No pixels were harmed in making this website.", "That's all Folks!", "This website is from the internet, check that it is genuine.", "TL;DR: Hire me!", "Even cooler in person", "The quick brown fox jumps over the lazy dog", "Proudly emoji-free"];
-        quotes.push(niceDay);
-        var randomItem = quotes[Math.random() * quotes.length | 0];
-        document.getElementById('quote').innerHTML = randomItem;
 
-        var state = history.state || {};
-        var reloadCount = state.reloadCount || 0;
-        if (performance.navigation.type === 1) { // Reload
-          state.reloadCount = ++reloadCount;
-          history.replaceState(state, null, document.URL);
-        } else if (reloadCount) {
-          delete state.reloadCount;
-          reloadCount = 0;
-          history.replaceState(state, null, document.URL);
-        }
-        else if (reloadCount >= 22) {
-          delete state.reloadCount;
-          reloadCount === 0;
-          document.getElementById('quote').innerHTML = "I've got all day";
-        }
-        else if (reloadCount >= 17) {
-          delete state.reloadCount;
-          reloadCount === 0;
-          document.getElementById('quote').innerHTML = "Surely you have more productive things to do";
-        }
-        else if (reloadCount >= 13) {
-          delete state.reloadCount;
-          reloadCount === 0;
-          document.getElementById('quote').innerHTML = "STAHP";
-        }
-        else if (reloadCount >= 9) {
-          delete state.reloadCount;
-          reloadCount === 0;
-          document.getElementById('quote').innerHTML = "Cmon now";
-        }
-        else if (reloadCount >= 5) {
-          delete state.reloadCount;
-          reloadCount === 0;
-          document.getElementById('quote').innerHTML = "Pls stop reloading";
-        }
+      // let options = {
+      // LINK_SELECTOR: 'a',
+      // debugMode: true,
+      // animationSelector: '[class*="swup-transition-"]',
+      // };
 
-      }
-    
-      
-    
-    }
+      // const swup = new Swup(options);
 
-    
-
-    // let options = {
-    //   LINK_SELECTOR: 'a',
-    //   debugMode: true,
-    //   animationSelector: '[class*="swup-transition-"]',
-    // };
-
-    // const swup = new Swup(options);
-
-    // run once 
-    init();
+      // run once
+      init();
 
       // this event runs for every page view after initial load
       // swup.on('contentReplaced', init);
 
 
-    // let color = '#';
-    // for (let i = 0; i < 6; i++) {
-    //   const random = Math.random();
-    //   const bit = (random * 16) | 0;
-    //   color += (bit).toString(16);
-    // };
-    // document.getElementById("gradientStop").setAttribute("stop-color", color + "77");
-    // document.getElementById("gradientStop2").setAttribute("stop-color", color + "00");
-    
-  </script>
-  
+      // let color = '#';
+      // for (let i = 0; i < 6; i++) {
+      // const random = Math.random();
+      // const bit = (random * 16) | 0;
+      // color += (bit).toString(16);
+      // };
+      // document.getElementById("gradientStop").setAttribute("stop-color", color + "77");
+      // document.getElementById("gradientStop2").setAttribute("stop-color", color + "00");
+    </script>
 
-</body>
+
+  </body>
 
 </html>

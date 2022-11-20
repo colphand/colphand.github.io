@@ -1013,8 +1013,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: none;
 }
 
-.max-w-\[43rem\] {
-  max-width: 43rem;
+.max-w-\[50rem\] {
+  max-width: 50rem;
 }
 
 .flex-1 {
@@ -1251,11 +1251,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.75;
 }
 
-.\!text-zinc-100 {
-  --tw-text-opacity: 1 !important;
-  color: rgb(244 244 245 / var(--tw-text-opacity)) !important;
-}
-
 .text-gray-800 {
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
@@ -1359,6 +1354,27 @@ Ensure the default browser behavior of the `hidden` attribute.
   .paragraph {
     margin-top: 0px;
   }
+}
+
+.spinning-box {
+  position: absolute;
+  top: 25px;
+  right: -62.5px;
+  height: 0.25rem;
+  width: 9rem;
+}
+
+.spinning {
+  margin-top: -3rem;
+  fill: #18181b;
+  font-family: Vulf Mono, ui-sans-serif, system-ui;
+  font-size: 2.25rem;
+  mix-blend-mode: color-burn;
+}
+
+.dark .spinning {
+  fill: #f4f4f5;
+  mix-blend-mode: normal;
 }
 
 .ascii {
@@ -1684,10 +1700,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: Vulf Mono, ui-sans-serif, system-ui;
 }
 
-.prose-img-large {
-  cursor: zoom-in !important;
-}
-
 .cssbox_full {
   cursor: zoom-out !important;
 }
@@ -1704,6 +1716,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .prose-image-large {
   width: 50% !important;
+  cursor: zoom-in !important;
 }
 
 /* .hero { @apply
@@ -1832,6 +1845,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.75;
   --tw-text-opacity: 1;
   color: rgb(24 24 27 / var(--tw-text-opacity));
+  opacity: 0.9;
 }
 
 .prose :is(:where(a):not(:where([class~="not-prose"] *))) {
@@ -1853,6 +1867,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 1.875rem;
   font-weight: 400;
   line-height: 1.375;
+}
+
+.prose :is(:where(strong):not(:where([class~="not-prose"] *))) {
+  font-weight: 500;
+  opacity: 1;
 }
 
 .prose :is(:where(code):not(:where([class~="not-prose"] *))) {
