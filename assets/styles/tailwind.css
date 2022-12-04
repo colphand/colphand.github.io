@@ -897,6 +897,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 2rem;
 }
 
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -909,6 +914,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-4 {
   margin-top: 1rem;
+}
+
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .mt-3 {
@@ -931,12 +948,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 1.5rem;
 }
 
-.mb-16 {
-  margin-bottom: 4rem;
-}
-
 .mt-16 {
   margin-top: 4rem;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
 }
 
 .mr-2 {
@@ -949,10 +966,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-2 {
   margin-top: 0.5rem;
-}
-
-.mt-8 {
-  margin-top: 2rem;
 }
 
 .mb-8 {
@@ -1005,16 +1018,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 91.666667%;
 }
 
-.max-w-screen-md {
-  max-width: 740px;
-}
-
 .max-w-none {
   max-width: none;
 }
 
-.max-w-\[50rem\] {
-  max-width: 50rem;
+.max-w-screen-md {
+  max-width: 740px;
+}
+
+.max-w-\[43rem\] {
+  max-width: 43rem;
 }
 
 .flex-1 {
@@ -1075,10 +1088,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .justify-between {
   justify-content: space-between;
-}
-
-.gap-2 {
-  gap: 0.5rem;
 }
 
 .space-y-1 > :not([hidden]) ~ :not([hidden]) {
@@ -1275,6 +1284,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   opacity: 0.8;
 }
 
+.opacity-30 {
+  opacity: 0.3;
+}
+
 .opacity-70 {
   opacity: 0.7;
 }
@@ -1289,10 +1302,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .opacity-20 {
   opacity: 0.2;
-}
-
-.opacity-30 {
-  opacity: 0.3;
 }
 
 .shadow {
@@ -1346,14 +1355,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .paragraph {
-  margin-top: 0.75rem;
+  margin-top: 6px;
   line-height: 1.75;
-}
-
-@media (min-width: 740px) {
-  .paragraph {
-    margin-top: 0px;
-  }
 }
 
 .spinning-box {
@@ -1411,17 +1414,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 } */
 
 .gradient2 {
+  filter: hue-rotate(300deg);
   position: fixed;
   top: 0px;
   left: 0px;
   z-index: -10;
   height: 100%;
   width: 100%;
-  opacity: 0.8;
+  opacity: 0.6
 }
 
 .dark .gradient2 {
-  opacity: 0.3;
+  opacity: 0.4;
 }
 
 .gradient_opacity {
@@ -1442,7 +1446,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .page_header {
-  margin-bottom: 2rem;
   font-family: Vulf Sans, ui-sans-serif, system-ui;
   font-size: 2.65rem;
   font-weight: 500;
@@ -1594,13 +1597,19 @@ Ensure the default browser behavior of the `hidden` attribute.
 .link-footer {
   cursor: pointer;
   font-family: Vulf Sans, ui-sans-serif, system-ui;
-  letter-spacing: 0.025em;
+  letter-spacing: 0em;
   opacity: 0.8;
   mix-blend-mode: luminosity;
 }
 
 .link-footer:hover {
   opacity: 1;
+}
+
+@media (min-width: 376px) {
+  .link-footer {
+    letter-spacing: 0.025em;
+  }
 }
 
 .quote {
@@ -1641,20 +1650,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 740px) {
-  .profpic {
-    height: auto;
-  }
-
-  .profpic {
-    min-height: 100%;
-  }
-
-  .profpic {
-    min-width: -webkit-min-content;
-    min-width: -moz-min-content;
-    min-width: min-content;
-  }
-
   .profpic {
     background-position: top;
   }
@@ -1806,10 +1801,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 1;
 }
 
+.prose :where(blockquote p:first-of-type):not(:where([class~="not-prose"] *))::before {
+  content: "" !important;
+}
+
+.prose :where(blockquote p:last-of-type):not(:where([class~="not-prose"] *))::after {
+  content: "" !important;
+}
+
 .prose :is(:where(h1, h2, h3, h4, th):not(:where([class~="not-prose"] *))) {
   font-family: Vulf Sans, ui-sans-serif, system-ui;
   --tw-text-opacity: 1;
-  color: rgb(39 39 42 / var(--tw-text-opacity));
+  color: rgb(24 24 27 / var(--tw-text-opacity));
 }
 
 .prose :is(:where(h1):not(:where([class~="not-prose"] *))) {
@@ -1820,16 +1823,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .prose :is(:where(h2):not(:where([class~="not-prose"] *))) {
-  margin-top: 2rem;
+  margin-top: 2.25rem;
   margin-bottom: 0px;
   font-size: 1.875rem;
   font-weight: 400;
 }
 
 .prose :is(:where(h3):not(:where([class~="not-prose"] *))) {
-  margin-top: 1.25rem;
+  margin-top: 1.75rem;
   margin-bottom: 0px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .prose :is(:where(h4):not(:where([class~="not-prose"] *))) {
@@ -1840,7 +1843,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .prose :is(:where(p):not(:where([class~="not-prose"] *))) {
-  margin-top: 0.5rem;
+  margin-top: 0.25rem;
   margin-bottom: 0px;
   line-height: 1.75;
   --tw-text-opacity: 1;
@@ -1864,9 +1867,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-left-color: rgb(161 161 170 / var(--tw-border-opacity));
   padding-left: 0px;
   font-family: Vulf Sans, ui-sans-serif, system-ui;
-  font-size: 1.875rem;
-  font-weight: 400;
-  line-height: 1.375;
+  font-size: 1.5rem;
+  font-style: normal;
 }
 
 .prose :is(:where(strong):not(:where([class~="not-prose"] *))) {
@@ -1884,10 +1886,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(24 24 27 / var(--tw-bg-opacity)) !important;
 }
 
+.prose :is(:where(ul):not(:where([class~="not-prose"] *))) {
+  padding-left: 1rem;
+}
+
 .prose :is(:where(li):not(:where([class~="not-prose"] *))) {
+  margin-top: 0.25rem;
   margin-bottom: 0px;
+  padding-left: 0px;
   --tw-text-opacity: 1;
   color: rgb(24 24 27 / var(--tw-text-opacity));
+  opacity: 0.9;
 }
 
 .prose * :is(:where(li):not(:where([class~="not-prose"] *)))::marker {
@@ -1935,7 +1944,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 @media (min-width: 376px) {
   .prose :is(:where(blockquote):not(:where([class~="not-prose"] *))) {
-    font-size: 1.875rem;
+    font-size: 1.65rem;
   }
 }
 
@@ -1973,6 +1982,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-prose-pre-bg: var(--tw-prose-invert-pre-bg);
   --tw-prose-th-borders: var(--tw-prose-invert-th-borders);
   --tw-prose-td-borders: var(--tw-prose-invert-td-borders);
+}
+
+.dark .dark\:border-b-zinc-600 {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(82 82 91 / var(--tw-border-opacity));
 }
 
 .dark .dark\:bg-zinc-800 {
@@ -2036,10 +2050,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-right: 1rem;
   }
 
-  .md\:-mt-3 {
-    margin-top: -0.75rem;
-  }
-
   .md\:flex {
     display: flex;
   }
@@ -2058,6 +2068,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:items-baseline {
     align-items: baseline;
+  }
+
+  .md\:gap-5 {
+    gap: 1.25rem;
   }
 
   .md\:space-x-1 > :not([hidden]) ~ :not([hidden]) {

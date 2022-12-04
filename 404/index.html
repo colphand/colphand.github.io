@@ -58,29 +58,46 @@
     
 <div class="gradient2">
 
-  <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" class="gradient">
-
-    <defs>
-      <radialGradient id="Gradient1" cx="50%" cy="50%" fx="97%" fy="50%" r=".5">
-        <stop offset="0%" stop-color="#ff0"></stop>
-        <stop offset="100%" stop-color="#ff00"></stop>
-      </radialGradient>
-
-      <radialGradient id="Gradient3" cx="50%" cy="50%" fx="1%" fy="50%" r=".5" opacity="10%">
-        <stop offset="0%" stop-color="#f0f"></stop>
-        <stop offset="100%" stop-color="#f0f0"></stop>
-      </radialGradient>
-    </defs>
-
-    <rect class="gradient_opacity" x="-10" y="40" width="180%" height="180%" fill="url(#Gradient1)"></rect>
-    <rect x="-40%" y="-130%" width="200%" height="200%" fill="url(#Gradient3)"></rect>
-  </svg>
-
-</div>
+    <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" class="gradient2">
+  
+      <defs>
+        <radialGradient id="Gradient1" cx="50%" cy="50%" fx="97%" fy="50%" r=".5">
+          <!-- <animate attributeName="fx" dur="34s" values="0%;3%;0%" repeatCount="indefinite"></animate> -->
+          <stop offset="0%" stop-color="#ff0"></stop>
+          <stop offset="100%" stop-color="#ff00"></stop>
+        </radialGradient>
+        <!-- <radialGradient id="Gradient2" cx="50%" cy="50%" fx="25%" fy="50%" r=".5">
+          <animate attributeName="fx" dur="23.5s" values="0%;3%;0%" repeatCount="indefinite"></animate>
+          <stop offset="0%" stop-color="#9EFF00"></stop>
+          <stop offset="100%" stop-color="#0ff0"></stop>
+        </radialGradient> -->
+        <radialGradient id="Gradient3" cx="50%" cy="50%" fx="1%" fy="50%" r=".5">
+          <!-- <animate attributeName="fx" dur="21.5s" values="0%;3%;0%" repeatCount="indefinite"></animate> -->
+          <stop offset="0%" stop-color="#f0f"></stop>
+          <stop offset="100%" stop-color="#f0f0"></stop>
+        </radialGradient>
+      </defs>
+  
+  
+      <rect x="-10" y="40" width="180%" height="180%" fill="url(#Gradient1)">
+        <!-- <animate attributeName="x" dur="20s" values="25%;0%;25%" repeatCount="indefinite"></animate> -->
+        <!-- <animate attributeName="y" dur="21s" values="0%;25%;0%" repeatCount="indefinite"></animate> -->
+        <!-- <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="17s"
+          repeatCount="indefinite"></animateTransform> -->
+      </rect>
+      <rect x="-40%" y="-130%" width="200%" height="200%" fill="url(#Gradient3)">
+        <!-- <animate attributeName="x" dur="25s" values="0%;25%;0%" repeatCount="indefinite"></animate>
+        <animate attributeName="y" dur="26s" values="0%;25%;0%" repeatCount="indefinite"></animate>
+        <animateTransform attributeName="transform" type="rotate" from="360 50 50" to="0 50 50" dur="19s"
+          repeatCount="indefinite"></animateTransform> -->
+      </rect>
+    </svg>
+  
+  </div>
 
 <div class="min-h-screen flex flex-col">
 
-  <main class="flex-1 w-11/12 sm:w-10/12 max-w-[50rem] mx-auto">
+  <main class="flex-1 w-11/12 sm:w-10/12 max-w-[43rem] mx-auto">
 
     <!-- <div id="swup" class="swup-transition"> -->
     <!-- <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" class="noise"></svg> -->
@@ -107,7 +124,7 @@ But thanks for dropping by.</p>
 
     <div class="flex flex-row justify-center space-x-4">
 
-      <p class="py-2">
+      <p class="py-2 text-center">
         <span class="link-footer" id="toggleDarkMode"></span>
         &middot;
         
@@ -119,6 +136,8 @@ But thanks for dropping by.</p>
           <a class="link-footer" href=https://twitter.com/colfand target="_blank">twitter</a>
           &middot;
         
+        <a class="link-footer" href="/assets/Resume_OLPHAND_Colin.pdf" target="_blank">resume</a>
+        &middot;
         <span class="link-footer" id="copyEmail">email</span>
       </p>
 
@@ -180,15 +199,15 @@ But thanks for dropping by.</p>
           var niceDay = "Have a nice " + nameOfDay + "!";
           var quotes = [
             "🥐",
-            "You're telling me a user centered this design?",
+            "You’re telling me a user centered this design?",
             "⌐■-■",
             "A E S T H E T I C S",
-            "Don't forget to like and subscribe",
+            "Don’t forget to like and subscribe",
             "Lorem ipsum dolor dolor bills",
             "Built with 11ty, Tailwind and too much googling",
             "Press Cancel to Cancel",
             "No pixels were harmed in making this website.",
-            "That's all Folks!",
+            "That’s all Folks!",
             "This website is from the internet, check that it is genuine.",
             "TL;DR: Hire me!",
             "Even cooler in person",
@@ -211,7 +230,7 @@ But thanks for dropping by.</p>
           } else if (reloadCount >= 22) {
             delete state.reloadCount;
             reloadCount === 0;
-            document.getElementById('quote').innerHTML = "I've got all day";
+            document.getElementById('quote').innerHTML = "I’ve got all day";
           } else if (reloadCount >= 17) {
             delete state.reloadCount;
             reloadCount === 0;

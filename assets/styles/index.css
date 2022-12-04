@@ -144,6 +144,11 @@ html.is-animating .swup-transition-test {
 
 }
 
+/* for prose */
+blockquote p {
+  line-height: 1.4 !important;
+}
+
 
 /* Firefox 11+ */
 @supports (-moz-appearance:none) {
@@ -155,9 +160,9 @@ html.is-animating .swup-transition-test {
 }
 
 /* Safari+ */
-_::-webkit-full-page-media, _:future, :root .dark.gradient2 {
-  opacity: .15;
-}
+/* _::-webkit-full-page-media, _:future, .dark.gradient2 {
+  opacity: .4 !important;
+} */
 
 
 

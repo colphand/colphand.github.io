@@ -96,49 +96,47 @@
   </div>
 
 <div class="min-h-screen flex flex-col">
-  <main class="flex-1 w-11/12 max-w-screen-md md:max-w-screen-lg mx-auto">
-    
-    <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" class="noise"></svg>
-    <!-- <div id="swup" class="swup-transition"> -->
-    <div class="gradient">
 
-    <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" class="gradient">
+  <main class="flex-1 w-11/12 sm:w-10/12 max-w-[43rem] mx-auto">
+
+    <!-- <div id="swup" class="swup-transition"> -->
+    <!-- <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" class="noise"></svg> -->
+  <nav class="my-4 flex content-between">
+  <a class=" font-serif text-7xl opacity-20 hover:opacity-80 transition-all cursor-pointer" onclick="history.back()">&larr;</a>
+</nav>
+
+
+<div class="prose dark:prose-invert max-w-none">
   
-      <defs>
-        <radialGradient id="Gradient1" cx="50%" cy="50%" fx="97%" fy="50%" r=".5">
-          <!-- <animate attributeName="fx" dur="34s" values="0%;3%;0%" repeatCount="indefinite"></animate> -->
-          <stop offset="0%" stop-color="#ff0"></stop>
-          <stop offset="100%" stop-color="#ff00"></stop>
-        </radialGradient>
-        <!-- <radialGradient id="Gradient2" cx="50%" cy="50%" fx="25%" fy="50%" r=".5">
-          <animate attributeName="fx" dur="23.5s" values="0%;3%;0%" repeatCount="indefinite"></animate>
-          <stop offset="0%" stop-color="#9EFF00"></stop>
-          <stop offset="100%" stop-color="#0ff0"></stop>
-        </radialGradient> -->
-        <radialGradient id="Gradient3" cx="50%" cy="50%" fx="1%" fy="50%" r=".5">
-          <!-- <animate attributeName="fx" dur="21.5s" values="0%;3%;0%" repeatCount="indefinite"></animate> -->
-          <stop offset="0%" stop-color="#f0f"></stop>
-          <stop offset="100%" stop-color="#f0f0"></stop>
-        </radialGradient>
-      </defs>
-  
-  
-      <rect x="-10" y="40" width="180%" height="180%" fill="url(#Gradient1)">
-        <!-- <animate attributeName="x" dur="20s" values="25%;0%;25%" repeatCount="indefinite"></animate> -->
-        <!-- <animate attributeName="y" dur="21s" values="0%;25%;0%" repeatCount="indefinite"></animate> -->
-        <!-- <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="17s"
-          repeatCount="indefinite"></animateTransform> -->
-      </rect>
-      <rect x="-40%" y="-130%" width="200%" height="200%" fill="url(#Gradient3)">
-        <!-- <animate attributeName="x" dur="25s" values="0%;25%;0%" repeatCount="indefinite"></animate>
-        <animate attributeName="y" dur="26s" values="0%;25%;0%" repeatCount="indefinite"></animate>
-        <animateTransform attributeName="transform" type="rotate" from="360 50 50" to="0 50 50" dur="19s"
-          repeatCount="indefinite"></animateTransform> -->
-      </rect>
-    </svg>
-  
-  </div>
+<p class="page_header">About Me</p>
+
+    
+    <div class="">
+        <div class="profpic mb-2"></div>
+        <p class="mb-2">Hi! I am a French Product Designer currently based in Toronto.</p>
+        <p class="mb-2">Currently Product Lead @ Lyceum Health.</p>
+        <p class="mb-2">I consider myself a generalist designer, well versed in product strategy and development. I thrive in startups, scaleups and more generally small and fast paced environments.</p>
+        <p class="mb-2">I’ve worked with startups, SaaS companies, agencies and as a freelancer. I’ve been one of a team and a team of one. </p>
+        <p class="mb-2">I’ve designed products, systems, and processes. I’ve led design teams and I mentor at Designlab and MyJobGlasses.</p>
+        <p class="mb-2"></p>
+        <p class="mb-2"></p>
+        <p class="mb-2">I love building digital products. It is a field so complex and so rewarding. Everything boils down to why, what and how to build. Strategy, Design and Code. I consider myself a generalist, and I thrive in startups and scaleups. I love to see the bigger picture, and then dive way down to Design Tokens.</p>
+        <!-- I love to lead individuals and encourage them to be better. -->
+        <p class="mb-2"> I embrace the messiness of processes, debates, analytics, and technical debt. I learned front-end code. I am currently open for work. Looking for FT and freelance gigs. Shoot me an email! </p>
+        <h3>Even more about me!</h3>
+        <p class="mb-2"> I like when things move fast.
+        I love to collaborate. You know that feeling of flow, but with collaboratively? That one that stems from a great meeting, solving a well defined problem, by committed, skilled people? That’s my jam. I love to give back to the community: I am currently mentoring at Designlab and MyJobGlasses.</p>
+        
+    </div>
+
+<div class="mt-8">
+    <p class="header">Colophon</p>
+    <p class="font-sans mt-3 md:mt-0">Typeset in Vulf and Inter. Built with 11ty and
+        Tailwind, deployed on Github Sites.</p>
+</div>
+</div>
     <!-- </div> -->
+
   </main>
 
   <footer class="mt-auto flex-shrink-0 w-full pt-12">
@@ -176,7 +174,6 @@
 
 </footer>
 </div>
-
     <!-- </div> -->
     <script>
       document.getElementById("toggleDarkMode").addEventListener("click", function() {

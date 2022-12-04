@@ -58,29 +58,46 @@
     
 <div class="gradient2">
 
-  <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" class="gradient">
-
-    <defs>
-      <radialGradient id="Gradient1" cx="50%" cy="50%" fx="97%" fy="50%" r=".5">
-        <stop offset="0%" stop-color="#ff0"></stop>
-        <stop offset="100%" stop-color="#ff00"></stop>
-      </radialGradient>
-
-      <radialGradient id="Gradient3" cx="50%" cy="50%" fx="1%" fy="50%" r=".5" opacity="10%">
-        <stop offset="0%" stop-color="#f0f"></stop>
-        <stop offset="100%" stop-color="#f0f0"></stop>
-      </radialGradient>
-    </defs>
-
-    <rect class="gradient_opacity" x="-10" y="40" width="180%" height="180%" fill="url(#Gradient1)"></rect>
-    <rect x="-40%" y="-130%" width="200%" height="200%" fill="url(#Gradient3)"></rect>
-  </svg>
-
-</div>
+    <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" class="gradient2">
+  
+      <defs>
+        <radialGradient id="Gradient1" cx="50%" cy="50%" fx="97%" fy="50%" r=".5">
+          <!-- <animate attributeName="fx" dur="34s" values="0%;3%;0%" repeatCount="indefinite"></animate> -->
+          <stop offset="0%" stop-color="#ff0"></stop>
+          <stop offset="100%" stop-color="#ff00"></stop>
+        </radialGradient>
+        <!-- <radialGradient id="Gradient2" cx="50%" cy="50%" fx="25%" fy="50%" r=".5">
+          <animate attributeName="fx" dur="23.5s" values="0%;3%;0%" repeatCount="indefinite"></animate>
+          <stop offset="0%" stop-color="#9EFF00"></stop>
+          <stop offset="100%" stop-color="#0ff0"></stop>
+        </radialGradient> -->
+        <radialGradient id="Gradient3" cx="50%" cy="50%" fx="1%" fy="50%" r=".5">
+          <!-- <animate attributeName="fx" dur="21.5s" values="0%;3%;0%" repeatCount="indefinite"></animate> -->
+          <stop offset="0%" stop-color="#f0f"></stop>
+          <stop offset="100%" stop-color="#f0f0"></stop>
+        </radialGradient>
+      </defs>
+  
+  
+      <rect x="-10" y="40" width="180%" height="180%" fill="url(#Gradient1)">
+        <!-- <animate attributeName="x" dur="20s" values="25%;0%;25%" repeatCount="indefinite"></animate> -->
+        <!-- <animate attributeName="y" dur="21s" values="0%;25%;0%" repeatCount="indefinite"></animate> -->
+        <!-- <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="17s"
+          repeatCount="indefinite"></animateTransform> -->
+      </rect>
+      <rect x="-40%" y="-130%" width="200%" height="200%" fill="url(#Gradient3)">
+        <!-- <animate attributeName="x" dur="25s" values="0%;25%;0%" repeatCount="indefinite"></animate>
+        <animate attributeName="y" dur="26s" values="0%;25%;0%" repeatCount="indefinite"></animate>
+        <animateTransform attributeName="transform" type="rotate" from="360 50 50" to="0 50 50" dur="19s"
+          repeatCount="indefinite"></animateTransform> -->
+      </rect>
+    </svg>
+  
+  </div>
 
 <div class="min-h-screen flex flex-col">
 
-  <main class="flex-1 w-11/12 sm:w-10/12 max-w-[50rem] mx-auto">
+  <main class="flex-1 w-11/12 sm:w-10/12 max-w-[43rem] mx-auto">
 
     <!-- <div id="swup" class="swup-transition"> -->
     <!-- <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" class="noise"></svg> -->
@@ -126,10 +143,10 @@
 <div class="prose dark:prose-invert max-w-none">
   <h2>File fatigue</h2>
 <p>When spending too long on a project or a design, I’ve found myself tired, lacking creativity and less motivated. I call this phenomenon file fatigue.
-It's important to recognize when a routine, rigid systems or processes prevent us from thinking outside the box or from doing our best work.</p>
+It’s important to recognize when a routine, rigid systems or processes prevent us from thinking outside the box or from doing our best work.</p>
 <h2>The solution</h2>
 <p>Designers by nature need novelty. Our industry is full of trends, and we are a curious bunch, always looking for the next thing, or the best way.</p>
-<p>We need to kindle our creativity and inventiveness to keep design playful and push boundaries. Design is a collaborative effort, this is why design critiques are so important. I now try to get feedback from colleagues that don't usually see my designs, in order to get as many different perspectives as possible. I’ve also had success in the past by occasionnally switching projects or responsibilities with teammates, for a few hours up to a few days. Done with regularity, we learned from each other’s ways, and after swapping projects, we also saw the quality of our design reviews sessions increase.</p>
+<p>We need to kindle our creativity and inventiveness to keep design playful and push boundaries. Design is a collaborative effort, this is why design critiques are so important. I now try to get feedback from colleagues that don’t usually see my designs, in order to get as many different perspectives as possible. I’ve also had success in the past by occasionnally switching projects or responsibilities with teammates, for a few hours up to a few days. Done with regularity, we learned from each other’s ways, and after swapping projects, we also saw the quality of our design reviews sessions increase.</p>
 <h3>What about skill gaps?</h3>
 <p>Of course, not all projects or designs can be swapped. You have to take into consideration the experience of your team members as well as their strengths and weaknesses.</p>
 <p>But even with an experience/skill gap, it’s an experience where both parties can learn something. A junior designer will be glad to be working on more complex tasks, and it can keep a more senior designer in touch with the craft, or at least a well deserved break.</p>
@@ -163,7 +180,7 @@ It's important to recognize when a routine, rigid systems or processes prevent u
 
     <div class="flex flex-row justify-center space-x-4">
 
-      <p class="py-2">
+      <p class="py-2 text-center">
         <span class="link-footer" id="toggleDarkMode"></span>
         &middot;
         
@@ -175,6 +192,8 @@ It's important to recognize when a routine, rigid systems or processes prevent u
           <a class="link-footer" href=https://twitter.com/colfand target="_blank">twitter</a>
           &middot;
         
+        <a class="link-footer" href="/assets/Resume_OLPHAND_Colin.pdf" target="_blank">resume</a>
+        &middot;
         <span class="link-footer" id="copyEmail">email</span>
       </p>
 
@@ -236,15 +255,15 @@ It's important to recognize when a routine, rigid systems or processes prevent u
           var niceDay = "Have a nice " + nameOfDay + "!";
           var quotes = [
             "🥐",
-            "You're telling me a user centered this design?",
+            "You’re telling me a user centered this design?",
             "⌐■-■",
             "A E S T H E T I C S",
-            "Don't forget to like and subscribe",
+            "Don’t forget to like and subscribe",
             "Lorem ipsum dolor dolor bills",
             "Built with 11ty, Tailwind and too much googling",
             "Press Cancel to Cancel",
             "No pixels were harmed in making this website.",
-            "That's all Folks!",
+            "That’s all Folks!",
             "This website is from the internet, check that it is genuine.",
             "TL;DR: Hire me!",
             "Even cooler in person",
@@ -267,7 +286,7 @@ It's important to recognize when a routine, rigid systems or processes prevent u
           } else if (reloadCount >= 22) {
             delete state.reloadCount;
             reloadCount === 0;
-            document.getElementById('quote').innerHTML = "I've got all day";
+            document.getElementById('quote').innerHTML = "I’ve got all day";
           } else if (reloadCount >= 17) {
             delete state.reloadCount;
             reloadCount === 0;
