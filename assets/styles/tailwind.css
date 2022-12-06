@@ -1632,6 +1632,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: url('/assets/img/poolsuite_white.png');
 }
 
+.grain {
+  background-image: url('/assets/img/grain.png');
+}
+
 /* ABOUT */
 
 .profpic {
@@ -1989,14 +1993,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-bottom-color: rgb(82 82 91 / var(--tw-border-opacity));
 }
 
-.dark .dark\:bg-zinc-800 {
+.dark .dark\:bg-\[\#262a2b\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(39 39 42 / var(--tw-bg-opacity));
+  background-color: rgb(38 42 43 / var(--tw-bg-opacity));
 }
 
-.dark .dark\:text-zinc-100 {
+.dark .dark\:text-\[\#d0cdc8\] {
   --tw-text-opacity: 1;
-  color: rgb(244 244 245 / var(--tw-text-opacity));
+  color: rgb(208 205 200 / var(--tw-text-opacity));
 }
 
 @media (min-width: 376px) {
