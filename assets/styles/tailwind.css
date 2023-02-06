@@ -424,6 +424,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 *, ::before, ::after {
+  --ot-sups: "sups" 0;
+  --ot-subs: "subs" 0;
+  --ot-sinf: "sinf" 0;
+  --ot-hlig: "hlig" 0;
+  --ot-salt: "salt" 0;
+  --ot-ss01: "ss01" 0;
+  --ot-ss02: "ss02" 0;
+  --ot-ss03: "ss03" 0;
+  --ot-ss04: "ss04" 0;
+  --ot-features: var(--ot-sups), var(--ot-subs), var(--ot-sinf), var(--ot-hlig), var(--ot-salt), var(--ot-ss01), var(--ot-ss02), var(--ot-ss03), var(--ot-ss04);
   --tw-translate-x: 0;
   --tw-translate-y: 0;
   --tw-rotate: 0;
@@ -492,8 +502,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 600;
 }
 
+.prose :where(a strong):not(:where([class~="not-prose"] *)) {
+  color: inherit;
+}
+
+.prose :where(blockquote strong):not(:where([class~="not-prose"] *)) {
+  color: inherit;
+}
+
+.prose :where(thead th strong):not(:where([class~="not-prose"] *)) {
+  color: inherit;
+}
+
 .prose :where(ol):not(:where([class~="not-prose"] *)) {
   list-style-type: decimal;
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
   padding-left: 1.625em;
 }
 
@@ -535,6 +559,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .prose :where(ul):not(:where([class~="not-prose"] *)) {
   list-style-type: disc;
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
   padding-left: 1.625em;
 }
 
@@ -585,6 +611,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .prose :where(h1 strong):not(:where([class~="not-prose"] *)) {
   font-weight: 900;
+  color: inherit;
 }
 
 .prose :where(h2):not(:where([class~="not-prose"] *)) {
@@ -598,6 +625,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .prose :where(h2 strong):not(:where([class~="not-prose"] *)) {
   font-weight: 800;
+  color: inherit;
 }
 
 .prose :where(h3):not(:where([class~="not-prose"] *)) {
@@ -611,6 +639,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .prose :where(h3 strong):not(:where([class~="not-prose"] *)) {
   font-weight: 700;
+  color: inherit;
 }
 
 .prose :where(h4):not(:where([class~="not-prose"] *)) {
@@ -623,6 +652,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .prose :where(h4 strong):not(:where([class~="not-prose"] *)) {
   font-weight: 700;
+  color: inherit;
+}
+
+.prose :where(img):not(:where([class~="not-prose"] *)) {
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .prose :where(figure > *):not(:where([class~="not-prose"] *)) {
@@ -652,7 +687,33 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .prose :where(a code):not(:where([class~="not-prose"] *)) {
-  color: var(--tw-prose-links);
+  color: inherit;
+}
+
+.prose :where(h1 code):not(:where([class~="not-prose"] *)) {
+  color: inherit;
+}
+
+.prose :where(h2 code):not(:where([class~="not-prose"] *)) {
+  color: inherit;
+  font-size: 0.875em;
+}
+
+.prose :where(h3 code):not(:where([class~="not-prose"] *)) {
+  color: inherit;
+  font-size: 0.9em;
+}
+
+.prose :where(h4 code):not(:where([class~="not-prose"] *)) {
+  color: inherit;
+}
+
+.prose :where(blockquote code):not(:where([class~="not-prose"] *)) {
+  color: inherit;
+}
+
+.prose :where(thead th code):not(:where([class~="not-prose"] *)) {
+  color: inherit;
 }
 
 .prose :where(pre):not(:where([class~="not-prose"] *)) {
@@ -726,10 +787,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .prose :where(tbody td):not(:where([class~="not-prose"] *)) {
   vertical-align: baseline;
-  padding-top: 0.5714286em;
-  padding-right: 0.5714286em;
-  padding-bottom: 0.5714286em;
-  padding-left: 0.5714286em;
+}
+
+.prose :where(tfoot):not(:where([class~="not-prose"] *)) {
+  border-top-width: 1px;
+  border-top-color: var(--tw-prose-th-borders);
+}
+
+.prose :where(tfoot td):not(:where([class~="not-prose"] *)) {
+  vertical-align: top;
 }
 
 .prose {
@@ -774,11 +840,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 1.25em;
 }
 
-.prose :where(img):not(:where([class~="not-prose"] *)) {
-  margin-top: 2em;
-  margin-bottom: 2em;
-}
-
 .prose :where(video):not(:where([class~="not-prose"] *)) {
   margin-top: 2em;
   margin-bottom: 2em;
@@ -787,14 +848,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .prose :where(figure):not(:where([class~="not-prose"] *)) {
   margin-top: 2em;
   margin-bottom: 2em;
-}
-
-.prose :where(h2 code):not(:where([class~="not-prose"] *)) {
-  font-size: 0.875em;
-}
-
-.prose :where(h3 code):not(:where([class~="not-prose"] *)) {
-  font-size: 0.9em;
 }
 
 .prose :where(li):not(:where([class~="not-prose"] *)) {
@@ -810,24 +863,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 0.375em;
 }
 
-.prose > :where(ul > li p):not(:where([class~="not-prose"] *)) {
+.prose :where(.prose > ul > li p):not(:where([class~="not-prose"] *)) {
   margin-top: 0.75em;
   margin-bottom: 0.75em;
 }
 
-.prose > :where(ul > li > *:first-child):not(:where([class~="not-prose"] *)) {
+.prose :where(.prose > ul > li > *:first-child):not(:where([class~="not-prose"] *)) {
   margin-top: 1.25em;
 }
 
-.prose > :where(ul > li > *:last-child):not(:where([class~="not-prose"] *)) {
+.prose :where(.prose > ul > li > *:last-child):not(:where([class~="not-prose"] *)) {
   margin-bottom: 1.25em;
 }
 
-.prose > :where(ol > li > *:first-child):not(:where([class~="not-prose"] *)) {
+.prose :where(.prose > ol > li > *:first-child):not(:where([class~="not-prose"] *)) {
   margin-top: 1.25em;
 }
 
-.prose > :where(ol > li > *:last-child):not(:where([class~="not-prose"] *)) {
+.prose :where(.prose > ol > li > *:last-child):not(:where([class~="not-prose"] *)) {
   margin-bottom: 1.25em;
 }
 
@@ -860,19 +913,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 0;
 }
 
-.prose :where(tbody td:first-child):not(:where([class~="not-prose"] *)) {
+.prose :where(tbody td, tfoot td):not(:where([class~="not-prose"] *)) {
+  padding-top: 0.5714286em;
+  padding-right: 0.5714286em;
+  padding-bottom: 0.5714286em;
+  padding-left: 0.5714286em;
+}
+
+.prose :where(tbody td:first-child, tfoot td:first-child):not(:where([class~="not-prose"] *)) {
   padding-left: 0;
 }
 
-.prose :where(tbody td:last-child):not(:where([class~="not-prose"] *)) {
+.prose :where(tbody td:last-child, tfoot td:last-child):not(:where([class~="not-prose"] *)) {
   padding-right: 0;
 }
 
-.prose > :where(:first-child):not(:where([class~="not-prose"] *)) {
+.prose :where(.prose > :first-child):not(:where([class~="not-prose"] *)) {
   margin-top: 0;
 }
 
-.prose > :where(:last-child):not(:where([class~="not-prose"] *)) {
+.prose :where(.prose > :last-child):not(:where([class~="not-prose"] *)) {
   margin-bottom: 0;
 }
 
@@ -1320,6 +1380,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-duration: 150ms;
 }
 
+.common-ligatures, .no-common-ligatures, .discretionary-ligatures, .no-discretionary-ligatures, .contextual, .no-contextual {
+  --ot-liga: var(--tw-empty, /*!*/);
+  --ot-dlig: var(--tw-empty, /*!*/);
+  --ot-calt: var(--tw-empty, /*!*/);
+  font-variant-ligatures: var(--ot-liga) var(--ot-dlig) var(--ot-calt);
+}
+
+.contextual {
+  --ot-calt: contextual;
+}
+
+.salt {
+  --ot-salt: "salt" 1;
+  font-feature-settings: var(--ot-features);
+}
+
 #toggleDarkMode::after {
   --tw-content: 'lights off';
   content: var(--tw-content);
@@ -1599,7 +1675,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: Vulf Sans, ui-sans-serif, system-ui;
   letter-spacing: 0em;
   opacity: 0.8;
-  mix-blend-mode: luminosity;
 }
 
 .link-footer:hover {
@@ -1813,7 +1888,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   content: "" !important;
 }
 
-.prose :is(:where(h1, h2, h3, h4, th):not(:where([class~="not-prose"] *))) {
+.prose :is(:where(h1, h2, h3, h4, h5, h6, th):not(:where([class~="not-prose"] *))) {
   font-family: Vulf Sans, ui-sans-serif, system-ui;
   --tw-text-opacity: 1;
   color: rgb(24 24 27 / var(--tw-text-opacity));
@@ -1931,7 +2006,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   opacity: 0.3;
 }
 
-.dark .prose :is(:where(h1, h2, h3, h4, th):not(:where([class~="not-prose"] *))) {
+.dark .prose :is(:where(h1, h2, h3, h4, h5, h6, th):not(:where([class~="not-prose"] *))) {
   --tw-text-opacity: 1;
   color: rgb(228 228 231 / var(--tw-text-opacity));
 }
@@ -1993,14 +2068,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-bottom-color: rgb(82 82 91 / var(--tw-border-opacity));
 }
 
-.dark .dark\:bg-\[\#262a2b\] {
+.dark .dark\:bg-zinc-800 {
   --tw-bg-opacity: 1;
-  background-color: rgb(38 42 43 / var(--tw-bg-opacity));
+  background-color: rgb(39 39 42 / var(--tw-bg-opacity));
 }
 
-.dark .dark\:text-\[\#d0cdc8\] {
+.dark .dark\:text-zinc-100 {
   --tw-text-opacity: 1;
-  color: rgb(208 205 200 / var(--tw-text-opacity));
+  color: rgb(244 244 245 / var(--tw-text-opacity));
 }
 
 @media (min-width: 376px) {
