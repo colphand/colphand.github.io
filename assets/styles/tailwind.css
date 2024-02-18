@@ -962,6 +962,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 1.5rem;
 }
 
+.my-1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -1308,12 +1313,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 500;
 }
 
+.font-black {
+  font-weight: 900;
+}
+
 .font-bold {
   font-weight: 700;
 }
 
 .italic {
   font-style: italic;
+}
+
+.leading-snug {
+  line-height: 1.375;
 }
 
 .leading-175 {
@@ -1344,8 +1357,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   opacity: 0.8;
 }
 
-.opacity-30 {
-  opacity: 0.3;
+.opacity-10 {
+  opacity: 0.1;
 }
 
 .opacity-70 {
@@ -1362,6 +1375,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .opacity-20 {
   opacity: 0.2;
+}
+
+.opacity-30 {
+  opacity: 0.3;
 }
 
 .shadow {
@@ -1859,7 +1876,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .date {
-  opacity: 0.7;
+  letter-spacing: -0.025em;
+  opacity: 0.6;
 }
 
 .writing_date {
@@ -1922,7 +1940,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .prose :is(:where(p):not(:where([class~="not-prose"] *))) {
-  margin-top: 0.25rem;
+  margin-top: 0.5rem;
   margin-bottom: 0px;
   line-height: 1.75;
   --tw-text-opacity: 1;
