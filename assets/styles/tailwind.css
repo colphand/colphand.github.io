@@ -1675,8 +1675,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   white-space: nowrap;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
-  -webkit-text-decoration-style: dotted;
-          text-decoration-style: dotted;
+  -webkit-text-decoration-color: rgb(39 39 42 / 0.2);
+          text-decoration-color: rgb(39 39 42 / 0.2);
   text-underline-offset: 3px;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1685,6 +1685,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .link:hover {
   opacity: 1 !important;
+}
+
+.dark .link {
+  -webkit-text-decoration-color: rgb(228 228 231 / 0.2);
+          text-decoration-color: rgb(228 228 231 / 0.2);
 }
 
 .link-footer {
@@ -1950,11 +1955,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .prose :is(:where(a):not(:where([class~="not-prose"] *))) {
   cursor: pointer;
-  border-bottom-width: 1px;
-  border-style: dotted;
-  border-color: currentColor;
-  -webkit-text-decoration-line: none;
-          text-decoration-line: none;
+  white-space: nowrap;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-color: rgb(39 39 42 / 0.2);
+          text-decoration-color: rgb(39 39 42 / 0.2);
+  text-underline-offset: 3px;
 }
 
 .prose :is(:where(blockquote):not(:where([class~="not-prose"] *))) {
@@ -2032,6 +2038,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .dark .prose :is(:where(p):not(:where([class~="not-prose"] *))) {
   --tw-text-opacity: 1;
   color: rgb(228 228 231 / var(--tw-text-opacity));
+}
+
+.dark .prose :is(:where(a):not(:where([class~="not-prose"] *))) {
+  -webkit-text-decoration-color: rgb(228 228 231 / 0.2);
+          text-decoration-color: rgb(228 228 231 / 0.2);
 }
 
 .dark .prose :is(:where(li):not(:where([class~="not-prose"] *))) {
@@ -2149,6 +2160,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:flex {
     display: flex;
+  }
+
+  .md\:max-w-\[1100px\] {
+    max-width: 1100px;
   }
 
   .md\:max-w-screen-lg {
